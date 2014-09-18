@@ -1,6 +1,6 @@
 ## DAT3 Course Repository
 
-Course materials for General Assembly's Data Science course in Washington, DC (10/2/14 - 12/18/14).
+Course materials for [General Assembly's Data Science course](https://generalassemb.ly/education/data-science/washington-dc/) in Washington, DC (10/2/14 - 12/18/14). View student work in the [student repository](https://github.com/justmarkham/DAT3-students).
 
 ### Class 1: Introduction
 
