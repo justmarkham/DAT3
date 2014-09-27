@@ -35,19 +35,25 @@ users['gender']
 type(users['gender'])
 users.gender
 
+# summarizing a non-numeric column
+users.gender.describe()
+users.gender.value_counts()
+
 # selecting multiple columns
 users[['age', 'gender']]
 my_cols = ['age', 'gender']
 users[my_cols]
 type(users[my_cols])
 
-# summarizing a non-numeric column
-users.gender.describe()
-users.gender.value_counts()
+# filtering rows by label, and columns by label
+users.loc[1]
+users.loc[1:3]
+users.loc[1:3, 'age':'occupation']
 
-# filtering rows by index
-users.ix[1]
-users.ix[1:3]
+# filtering rows by position, and columns by position
+users.iloc[0]
+users.iloc[0:3]
+users.iloc[0:3, 0:3]
 
 # logical filtering
 users[users.age < 20]
