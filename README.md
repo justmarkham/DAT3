@@ -2,6 +2,9 @@
 
 Course materials for [General Assembly's Data Science course](https://generalassemb.ly/education/data-science/washington-dc/) in Washington, DC (10/2/14 - 12/18/14). View student work in the [student repository](https://github.com/justmarkham/DAT3-students).
 
+**Instructors:** Josiah Davis and Kevin Markham
+
+[Course Project information](project.md)
 
 ### Class 1: Introduction
 
@@ -31,7 +34,7 @@ Course materials for [General Assembly's Data Science course](https://generalass
 **Homework:**
 
 * Create a Markdown file, add it to your folder in the student repo, and send a [pull request](https://help.github.com/articles/using-pull-requests)
-* Review course projects from other GA students
+* Review the [course project information](project.md) and [past projects](https://github.com/ajschumacher/gadsdc/tree/master/final_projects/examples) from other GA students
 
 **Optional:**
 
