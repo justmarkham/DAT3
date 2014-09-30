@@ -14,22 +14,23 @@ You should also take a look at [past projects](https://github.com/ajschumacher/g
 
 ## Project Deliverables
 
-You are responsible for creating a project paper and a project presentation. The paper should be written with a technical audience in mind, while the presentation should target a more general audience. You will deliver your presentation (including slides) during the final week of class, though you are also encouraged to present it to other audiences.
+You are responsible for creating a **project paper** and a **project presentation**. The paper should be written with a technical audience in mind, while the presentation should target a more general audience. You will deliver your presentation (including slides) during the final week of class, though you are also encouraged to present it to other audiences.
 
-Here are the components you should cover in your paper and presentation:
+Here are the components you should aim to cover in your paper:
 
 * Problem statement and hypothesis
 * Description of your data set and how it was obtained
 * Description of any pre-processing steps you took
 * What you learned from exploring the data, including visualizations
 * How you chose which features to use in your analysis
-* How you chose which models to use in your analysis
-* How you validated your models
+* Details of your modeling process, including how you selected your models and validated them
 * Your challenges and successes
 * Possible extensions or business applications of your project
 * Conclusions and key learnings
 
-Your project paper, presentation slides, and code should be included a GitHub repository, along with all of your data (if reasonably possible).
+Your presentation should cover these components with less breadth and depth. Focus on creating an engaging, clear, and informative presentation that tells the story of your project.
+
+Your project paper, presentation slides, and code should be included a **GitHub repository**, along with all of your data and a data dictionary. If it's not possible or practical to include your data, you should link to your data source and provide a sample of the data (anonymized if necessary).
 
 Optionally, it would be exciting to actually implement a "live" system based on your work, and to the degree this is possible within the time frame of the course, it is certainly encouraged!
 
@@ -68,4 +69,4 @@ Submit a more polished version of your work, including drafts of your paper and 
 
 ### Week 11 (12/16): Presentation
 
-Deliver your project presentation and submit your paper.
+Deliver your project presentation and submit all required deliverables (paper, slides, code, data, and data dictionary).
