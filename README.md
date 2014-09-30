@@ -34,7 +34,7 @@ Course materials for [General Assembly's Data Science course](https://generalass
 **Homework:**
 
 * Create a Markdown file, add it to your folder in the student repo, and send a [pull request](https://help.github.com/articles/using-pull-requests)
-* Review the [course project information](project.md) and [past projects](https://github.com/ajschumacher/gadsdc/tree/master/final_projects/examples) from other GA students
+* Review the [course project information](project.md), [past projects](project_examples.md) from other GA students, and [public data sources](public_data.md)
 
 **Optional:**
 

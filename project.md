@@ -9,7 +9,7 @@ Address a data-related problem in your professional field or a field you're inte
 
 To stimulate your thinking, here is an excellent list of [public data sources](public_data.md). Using public data is the most common choice. If you have access to private data, that's also an option, though you'll have to be careful about what results you can release. You are also welcome to compete in a [Kaggle competition](http://www.kaggle.com/) as your project, in which case the data will be provided to you.
 
-You should also take a look at [past projects](https://github.com/ajschumacher/gadsdc/tree/master/final_projects/examples) from other GA Data Science students, to get a sense of the variety and scope of projects.
+You should also take a look at [past projects](project_examples.md) from other GA Data Science students, to get a sense of the variety and scope of projects.
 
 
 ## Project Deliverables
