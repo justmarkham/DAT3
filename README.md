@@ -27,9 +27,10 @@ Course materials for [General Assembly's Data Science course](https://generalass
 
 ### Class 2: Git and GitHub
 
-* Homework discussion: Any installation issues? Interesting GitHub projects? Which type of data scientist do you hope to be?
+* Homework discussion: Any installation issues? Find any interesting GitHub projects? Which "type" of data scientist do you identify with the most?
 * Git and GitHub (slides)
 * [Markdown](https://guides.github.com/features/mastering-markdown/)
+* Discuss the [course project](project.md)
 
 **Homework:**
 
@@ -45,3 +46,10 @@ Course materials for [General Assembly's Data Science course](https://generalass
 
 * [Dillinger](http://dillinger.io/) is a browser-based Markdown editor, useful for checking your Markdown code
 * [GitRef](http://gitref.org/) is an excellent reference guide for Git commands
+
+
+## Class 3: Base Python
+
+* Homework discussion: Any questions about Git/GitHub? What's one thing you learned from reviewing student projects?
+* Why are we programming? Why are we using Python?
+* Base Python lesson
