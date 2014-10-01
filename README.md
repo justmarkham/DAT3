@@ -6,6 +6,21 @@ Course materials for [General Assembly's Data Science course](https://generalass
 
 [Course Project information](project.md)
 
+Week | Tuesday | Thursday
+--- | --- | ---
+0 | | (1) 10/2: Introduction
+1 | (2) 10/7: Git and GitHub | (3) 10/9: Base Python
+2 | (4) 10/14: Getting and Cleaning Data | (5) 10/16: Exploratory Analysis
+3 | (6) 10/21: Linear Regression | (7) 10/23: Logistic Regression
+4 | (8) 10/28: Machine Learning, KNN | (9) 10/30: Model Evaluation
+5 | (10) 11/4: Clustering | (11) 11/6: Naive Bayes and NLP
+6 | (12) 11/11: Dimension Reduction | (13) 11/13: Decision Trees
+7 | (14) 11/18: Project Working Time | (15) 11/20: Ensembling: Random Forests
+8 | (16) 11/25: Recommenders | *Thanksgiving*
+9 | (17) 12/2: Ensembling: Boosting | (18) 12/4: Neural Networks
+10 | (19) 12/9: Review | (20) 12/11: Project Working Time
+11 | (21) 12/16: Project Presentations | (22) 12/18: Project Presentations
+
 ### Class 1: Introduction
 
 * Introduction to General Assembly
