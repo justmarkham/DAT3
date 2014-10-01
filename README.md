@@ -10,7 +10,7 @@ Course materials for [General Assembly's Data Science course](https://generalass
 
 * Introduction to General Assembly
 * Course overview and philosophy ([slides](slides/course_overview.pdf))
-* Data science pipeline (slides)
+* What is data science? (slides)
 * Introduce yourself: technical background, why you joined the course, how do you define success in this course?
 
 **Homework:**
@@ -28,7 +28,7 @@ Course materials for [General Assembly's Data Science course](https://generalass
 ### Class 2: Git and GitHub
 
 * Homework discussion: Any installation issues? Find any interesting GitHub projects? Which "type" of data scientist do you identify with the most?
-* Git and GitHub (slides)
+* Git and GitHub lesson (slides)
 * [Markdown](https://guides.github.com/features/mastering-markdown/)
 * Discuss the [course project](project.md)
 
@@ -52,4 +52,4 @@ Course materials for [General Assembly's Data Science course](https://generalass
 
 * Homework discussion: Any questions about Git/GitHub? What's one thing you learned from reviewing student projects?
 * Why are we programming? Why are we using Python?
-* Base Python lesson
+* Base Python lesson (code)
