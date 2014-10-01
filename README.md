@@ -9,7 +9,7 @@ Course materials for [General Assembly's Data Science course](https://generalass
 ### Class 1: Introduction
 
 * Introduction to General Assembly
-* Course overview and philosophy ([slides](slides/course_overview.pdf))
+* Course overview and philosophy ([slides](slides/01_course_overview.pdf))
 * What is data science? (slides)
 * Introduce yourself: technical background, why you joined the course, how do you define success in this course?
 
