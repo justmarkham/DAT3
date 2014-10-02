@@ -22,9 +22,11 @@
 
 # Command line
 
-# iPython Shell
+# Python interpreter
 
-# iPhython Notebook
+# iPython interpreter
+
+# iPython Notebook
 
 # Spyder IDE (I'll use for this lecture)
 
@@ -47,7 +49,6 @@ type('Data Science')
 # Boolean
 type(False)
 
-
 # You can check datatypes
 isinstance(1, float)
 isinstance(1.0, int)
@@ -65,15 +66,15 @@ int(54L)
 #                           O P E R A T I O N S
 # ==================================================================
 
-# Boolean Operators
 var1 = 3
 var2 = 10
 
+# Boolean Operators
 var1 == var2            # EQUAL TO
 var1 <  var2            # LESS THAN
 var1 <= var2            # LESS THAN OR EQUAL TO        
 (var1 == 1) | (var2 == 10)      # OR
-(var1 == 1) or (var2 == 10)     # OR (altnernative)
+(var1 == 1) or (var2 == 10)     # OR (alternative)
 (var1 == 1) & (var2 == 10)      # AND
 (var1 == 1) and (var2 == 10)    # AND (alternative)
 
@@ -96,7 +97,7 @@ var1 <= var2            # LESS THAN OR EQUAL TO
 10 % 3
 
 # ==================================================================
-#                 L I S T S :  Mutable Data Structures
+#           L I S T S :  Mutable, Ordered Data Structures
 # ==================================================================
 
 # Lists are denoted by []
@@ -104,12 +105,11 @@ lis = [0, 1, 2, 3, 4, 5, 6, 7]
 type(lis)
 
 # Specific elemnents can be accessed using [] as well
-
 lis[4] # Returns the 5th element
 
 # Multiple elements can be accessed using the ':' operator
 # Returns the 1st number through one shy of the 2nd number
-lis[0:4] 
+lis[0:4]
 # Returns the 5th element through the last element
 lis[4:]
 
@@ -130,6 +130,9 @@ lis[4:6] = [500, 600]
 lis[0:3] = ["Guido", "Van", "Rossum"]
 lis[3:7] = ["created", "python,", "programming", "language,"]
 
+# Check if an element is in a list
+"Van" in lis    # returns True
+
 # Elements can be removed with the .remove method
 lis.remove(7)
 
@@ -147,7 +150,7 @@ lis = [[1,2,3],[4,5,6],[7,8,9]]
 lis[1][2]
 
 # A list within a list  within a list within a list within a list
-lis = [[1,2,[3,4,[5,6,[7,8]]]]
+lis = [1,2,[3,4,[5,6,[7,8]]]]
 
 
 # ==================================================================
@@ -155,7 +158,7 @@ lis = [[1,2,[3,4,[5,6,[7,8]]]]
 # ==================================================================
 
 # Example strings
-s1 = "What is the air-speed velocity" 
+s1 = "What is the air-speed velocity"
 s2 = "of an unladen swallow?"
 
 # Concatenate two strings
@@ -165,12 +168,12 @@ s = " ".join([s1, s2])
 # Replace an item within a string
 s = s.replace("unladen", "unladen African")
 
+# Return the index of the first instance of a string
 s.find("swallow")
 
 # Slice the string
 s[-8:]
 s[s.find("swallow"):]
-s[s.index("swallow"):] # Same as find, but returns an error
 
 # Change to upper and lower case
 "swallow".upper()
@@ -185,7 +188,8 @@ s.split()
 s.split(" ") # Same thing
 
 # ==================================================================
-#            D I C T: Data structures with key-value pairs
+#      D I C T: Unordered data structures with key-value pairs
+#               Keys must be unique
 # ==================================================================
 
 dct = {"Name": "Monty Python and the Flying Circus",
@@ -194,17 +198,17 @@ dct = {"Name": "Monty Python and the Flying Circus",
        "Years Active" : 17,
        "# Members": 6}
        
-
 # Access an element within the list
 dct["Years Active"]
 
 # Add a new item to a list within the dictionary
 dct["Known for"].append("Influencing SNL")
 
-# E X E R C I S E: Create a dictionary within a dictionary with your own favorite Monty Python influences
+# E X E R C I S E: Create a dictionary within a dictionary with your own
+# favorite Monty Python influences
 dct["Influence"] = { "Asteroids": [13681, 9618, 9619, 9620, 9621, 9622], 
-                        "Technology": ["Spam", "Python", "IDLE (for Eric Idle)"], 
-                        "Food": ["Monty Python's Holy Ale", "Vermonty Python"]}
+                     "Technology": ["Spam", "Python", "IDLE (for Eric Idle)"],
+                     "Food": ["Monty Python's Holy Ale", "Vermonty Python"]}
 
 # Accessing from a nested dictionary item
 dct["Influence"]["Technology"]
@@ -225,12 +229,17 @@ if var1 > 5:
     print "More than 5"
 elif var1 < 5:
     print "Less than 5"
-else var1 == 5:
+else:
     print "5"
 
 # For loop
-i in range(10):
-    print i*2 - 1
+fruits = ['apple', 'banana', 'cherry', 'plum']
+for i in range(len(fruits)):
+    print fruits[i].upper()
+
+# Better way
+for fruit in fruits:
+    print fruit.upper()
 
 # While statement
 while var1 < 10:
@@ -258,9 +267,10 @@ clf = DecisionTreeClassifier()
 #                           F U N C T I O N S
 # ==================================================================
 
-# Wes McKinney: Functions are the primary and most important method of code organizatin and 
-# reuse in Python. There may not be such a thing as too many functions. In fact, I would argue 
-# that most programmers doing data analysis dont write enough functions! (p. 420 of Python for Data Analysis)
+# Wes McKinney: Functions are the primary and most important method of code
+# organization and reuse in Python. There may not be such a thing as too many
+# functions. In fact, I would argue that most programmers doing data analysis
+# don't write enough functions! (p. 420 of Python for Data Analysis)
 
 # Range returns a list with a defined start/stop point (default start is 0)
 range(5, 10) 
@@ -272,48 +282,52 @@ type(3)
 # Isinstance checks for the variable type
 isinstance(4, str)
 
-# Len returns the length of a list or a string
+# Len returns the length of an object
 len([1, 3, 5, 6])
 len("Holy Grail")
 
-
 # User-defined functions start with the 'def' keyword
-# A function takes an input, and returns an output
-def my_positinal_function(x, y):
+# They may take inputs as arguments, and may return an output
+def my_function(x, y):
     return x - y
 
-my_positinal_function(100,10)
-my_positinal_function(10,100)
+# These are equivalent
+my_function(100, 10)
+my_function(x=100, y=10)
+my_function(y=10, x=100)
 
-# What if we want to make our function robust to the order of the input?
-def my_keyword_function(x = 10, y = 10):
+# What if we want to make one of our arguments optional?
+def my_function_optional(x, y = 10):
     return x - y
-    
-my_keyword_function(x = 100, y = 10)
-my_keyword_function(y = 10,x = 100)
+
+# These are equivalent
+my_function_optional(100, 10)
+my_function_optional(100)
 
 # E X E R C I S E: Create a function that simulates a simple calulator
-def my_calc(x = 10, y = 10, op = "add"):
+def my_calc(x, y, op = "add"):
     if op == "add":
         return x + y
-   elif op == "subtract":
+    elif op == "subtract":
         return x - y
-   elif op == "divide":
+    elif op == "divide":
        return x / y
-   elif op == "multiply":
+    elif op == "multiply":
        return x * y
-   else:
+    else:
        return "please specify one of the following: add, subtract, divide or multiply"
        
 
 # ==================================================================
-#                     L I S T  C O M P R E N S I O N
+#                     L I S T  C O M P R E H E N S I O N
 # ==================================================================
 
-# List comprehension is a popular construct in the python programming language 
-# ... takes a list as the input, and performs a function on each element of that input
+# List comprehension is a popular construct in the python programming language:
+# Takes an iterable as the input, performs a function on each element of that
+# input, and returns a list
 
-# Say you have a list and you want to do something to every element, or a subset of this list
+# Say you have a list and you want to do something to every element,
+# or a subset of this list
 numbers = [100, 45, 132.0, 1, 0, 0.3, 0.5, 1, 3]
 
 # Long form using a for loop
