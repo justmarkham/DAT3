@@ -21,6 +21,7 @@ Week | Tuesday | Thursday
 10 | 12/9: Review | 12/11: Project Working Time
 11 | 12/16: Project Presentations | 12/18: Project Presentations
 
+
 ### Class 1: Introduction
 
 * Introduction to General Assembly
@@ -44,27 +45,28 @@ Week | Tuesday | Thursday
 
 * Homework discussion: Any installation issues? Find any interesting GitHub projects? Which "type" of data scientist do you identify with the most?
 * Git and GitHub lesson (slides)
-* [Markdown](https://guides.github.com/features/mastering-markdown/)
+* Create a Markdown file (`about.md`), add it to your folder in [DAT3-students](https://github.com/justmarkham/DAT3-students), and create a [pull request](https://help.github.com/articles/using-pull-requests)
 * Discuss the [course project](project.md)
 
 **Homework:**
 
-* Create a Markdown file, add it to your folder in the student repo, and send a [pull request](https://help.github.com/articles/using-pull-requests)
 * Review the [course project information](project.md), [past projects](project_examples.md) from other GA students, and [public data sources](public_data.md)
 
 **Optional:**
 
 * Watch [Introduction to Git and GitHub](https://www.youtube.com/playlist?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD) (36 minutes) to repeat a lot of today's presentation
 * Read the first two chapters of [Pro Git](http://git-scm.com/book) for a much deeper understanding of version control and the basic Git commands
+* Learn some more [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and add it to your `about.md` file, then push those edits to GitHub and send another pull request
 
 **Resources:**
 
 * [Dillinger](http://dillinger.io/) is a browser-based Markdown editor, useful for checking your Markdown code
 * [GitRef](http://gitref.org/) is an excellent reference guide for Git commands
+* [Git quick reference for beginners](http://www.dataschool.io/git-quick-reference-for-beginners/) is a shorter reference guide with commands grouped by workflow
 
 
 ## Class 3: Base Python
 
 * Homework discussion: Any questions about Git/GitHub? What's one thing you learned from reviewing student projects?
 * Why are we programming? Why are we using Python?
-* Base Python lesson (code)
+* Base Python lesson ([code](code/03_base_python_class.py))
