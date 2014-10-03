@@ -47,7 +47,7 @@ Week | Tuesday | Thursday
 
 * Homework discussion: Any installation issues? Find any interesting GitHub projects? Which "type" of data scientist do you identify with the most?
 * Introduce yourself: technical background, why you joined the course, how do you define success in this course?
-* Git and GitHub lesson (slides)
+* Git and GitHub lesson (slides coming soon)
 * Create a Markdown file (`about.md`), add it to your folder in [DAT3-students](https://github.com/justmarkham/DAT3-students), and create a [pull request](https://help.github.com/articles/using-pull-requests)
 * Discuss the [course project](project.md)
 
