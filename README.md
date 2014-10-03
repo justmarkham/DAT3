@@ -26,7 +26,7 @@ Week | Tuesday | Thursday
 
 * Introduction to General Assembly
 * Course overview and philosophy ([slides](slides/01_course_overview.pdf))
-* What is data science? (slides)
+* What is data science? ([slides](slides/01_intro_to_data_science.pdf))
 * Introduce yourself: technical background, why you joined the course, how do you define success in this course?
 
 **Homework:**
