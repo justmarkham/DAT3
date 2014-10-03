@@ -27,11 +27,12 @@ Week | Tuesday | Thursday
 * Introduction to General Assembly
 * Course overview and philosophy ([slides](slides/01_course_overview.pdf))
 * What is data science? ([slides](slides/01_intro_to_data_science.pdf))
-* Introduce yourself: technical background, why you joined the course, how do you define success in this course?
+* Brief demo of [Slack](https://slack.com/)
 
 **Homework:**
 
 * Install [Anaconda distribution of Python 2.7](http://continuum.io/downloads), [Git](http://git-scm.com/book/en/Getting-Started-Installing-Git), and [Slack](https://slack.com/)
+* Add a photo to your Slack profile
 * Create a [GitHub account](https://github.com/)
 * Read [Analyzing the Analyzers](http://cdn.oreillystatic.com/oreilly/radarreport/0636920029014/Analyzing_the_Analyzers.pdf) (40 pages) and think about where you'd like to fit in!
 
@@ -45,6 +46,7 @@ Week | Tuesday | Thursday
 ### Class 2: Git and GitHub
 
 * Homework discussion: Any installation issues? Find any interesting GitHub projects? Which "type" of data scientist do you identify with the most?
+* Introduce yourself: technical background, why you joined the course, how do you define success in this course?
 * Git and GitHub lesson (slides)
 * Create a Markdown file (`about.md`), add it to your folder in [DAT3-students](https://github.com/justmarkham/DAT3-students), and create a [pull request](https://help.github.com/articles/using-pull-requests)
 * Discuss the [course project](project.md)
