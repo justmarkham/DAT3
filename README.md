@@ -11,14 +11,14 @@ Week | Tuesday | Thursday
 0 | | 10/2: [Introduction](#class-1-introduction)
 1 | 10/7: [Git and GitHub](#class-2-git-and-github) | 10/9: [Base Python](#class-3-base-python)
 2 | 10/14: Getting and Cleaning Data | 10/16: Exploratory Analysis
-3 | 10/21: Linear Regression | 10/23: Logistic Regression
+3 | 10/21: Linear Regression<br>*Milestone: Question and Data Set(s)* | 10/23: Logistic Regression
 4 | 10/28: Machine Learning, KNN | 10/30: Model Evaluation
-5 | 11/4: Clustering | 11/6: Naive Bayes and NLP
+5 | 11/4: Clustering<br>*Milestone: Data Exploration and Analysis Plan* | 11/6: Naive Bayes and NLP
 6 | 11/11: Dimension Reduction | 11/13: Decision Trees
-7 | 11/18: Project Working Time | 11/20: Ensembling: Random Forests
+7 | 11/18: Project Working Time<br>*Milestone: First Draft Due* | 11/20: Ensembling: Random Forests
 8 | 11/25: Recommenders | *Thanksgiving*
 9 | 12/2: Ensembling: Boosting | 12/4: Neural Networks
-10 | 12/9: Review | 12/11: Project Working Time
+10 | 12/9: Review<br>*Milestone: Second Draft Due* | 12/11: Project Working Time
 11 | 12/16: Project Presentations | 12/18: Project Presentations
 
 
