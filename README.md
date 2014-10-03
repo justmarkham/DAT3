@@ -47,8 +47,9 @@ Week | Tuesday | Thursday
 
 * Homework discussion: Any installation issues? Find any interesting GitHub projects? Which "type" of data scientist do you identify with the most?
 * Introduce yourself: technical background, why you joined the course, how do you define success in this course?
-* Git and GitHub lesson (slides coming soon)
-* Create a Markdown file (`about.md`), add it to your folder in [DAT3-students](https://github.com/justmarkham/DAT3-students), and create a [pull request](https://help.github.com/articles/using-pull-requests)
+* Git and GitHub lesson ([slides](slides/02_git_github.pdf))
+  * Create a repo on GitHub, clone it, make changes, and push up to GitHub
+  * Fork the [DAT3-students](https://github.com/justmarkham/DAT3-students) repo, clone it, add a Markdown file (`about.md`) in your folder, push up to GitHub, and create a [pull request](https://help.github.com/articles/using-pull-requests)
 * Discuss the [course project](project.md)
 
 **Homework:**
@@ -60,6 +61,7 @@ Week | Tuesday | Thursday
 * Watch [Introduction to Git and GitHub](https://www.youtube.com/playlist?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD) (36 minutes) to repeat a lot of today's presentation
 * Read the first two chapters of [Pro Git](http://git-scm.com/book) for a much deeper understanding of version control and the basic Git commands
 * Learn some more [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and add it to your `about.md` file, then push those edits to GitHub and send another pull request
+* Clone this repo (DAT3) for easy access to the course files
 
 **Resources:**
 
