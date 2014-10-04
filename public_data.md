@@ -32,6 +32,7 @@
      * [Apigee](https://apigee.com/providers): explore dozens of popular APIs
      * [Python API](http://www.pythonapi.com/): Python wrappers for many APIs
 * Other interesting datasets:
+     * [FiveThirtyEight](https://github.com/fivethirtyeight/data): data and code related to their articles
      * [Donors Choose](http://data.donorschoose.org/open-data/overview/): data related to their projects
      * [200,000+ Jeopardy questions](http://www.reddit.com/r/datasets/comments/1uyd0t/200000_jeopardy_questions_in_a_json_file/)
 * Other resources:
