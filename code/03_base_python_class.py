@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 ====================================================================
 ====================================================================
@@ -13,23 +12,6 @@
     # What is your programming background? In Python? 
     # Why is programming important?
     # What can make programming difficult to learn?
-
-# ==================================================================
-#           O P T I O N S  F O R  C O D E   E X E C U T I O N
-# ==================================================================
-
-# What are the different ways to run python code?
-
-# Command line
-
-# Python interpreter
-
-# iPython interpreter
-
-# iPython Notebook
-
-# Spyder IDE (I'll use for this lecture)
-
 
 # ==================================================================
 #                           D A T A  T Y P E S
@@ -331,17 +313,49 @@ def my_calc(x, y, op = "add"):
 numbers = [100, 45, 132.0, 1, 0, 0.3, 0.5, 1, 3]
 
 # Long form using a for loop
-lis = []
+lis1 = []
 for x in numbers:
     if isinstance(x,int):
-        lis.append(5*x)
+        lis1.append(5*x)
         
 # Short form using list comprehension
-[x * 5 for x in numbers if isinstance(x, int)]
+lis2 = [x * 5 for x in numbers if isinstance(x, int)]
 
 quote = "Strange women lying in ponds is no basis for government"
 quote = quote.split()
 [x.capitalize() for x in quote if len(x) > 3]
+
+# ==================================================================
+#           O P T I O N S  F O R  C O D E   E X E C U T I O N
+# ==================================================================
+
+"""
+
+Command line
+    - Type: 'python myscript.py' to run a script in that directory
+
+Python interpreter
+    - Type 'python' into the CLI to enter the interpreter
+
+iPython interpreter
+    - Type 'IPython' into the CLI to enter the iPython interpreter
+    - Type: run 03_simple.py to run the a script in that directory
+    - iPython interpreter has some features, for starters, it looks nicer
+
+iPython Notebook
+    - Type 'IPython notebook' into the CLI to open the iPython notebook
+    - This is a browser based interpreter that also features in-line plotting
+    - Nice as a stand-alone and also for teaching
+    - Have heard it doesn't do very well with version control, for that 
+
+Spyder IDE 
+    - Nice because allows you to save your code
+    - Works nicely with version control
+    - Allows you to execute parts of your code
+
+"""
+
+
 
 
 """
