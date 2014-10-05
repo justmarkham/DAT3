@@ -62,6 +62,7 @@ Week | Tuesday | Thursday
 * Read the first two chapters of [Pro Git](http://git-scm.com/book) for a much deeper understanding of version control and the basic Git commands
 * Learn some more [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and add it to your `about.md` file, then push those edits to GitHub and send another pull request
 * Clone this repo (DAT3) for easy access to the course files
+* Read this friendly [command line tutorial](http://seankross.com/notes/cli/cli.html) if you are brand new to the command line
 
 **Resources:**
 
