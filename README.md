@@ -45,8 +45,9 @@ Week | Tuesday | Thursday
 
 ### Class 2: Git and GitHub
 
-* Homework discussion: Any installation issues? Find any interesting GitHub projects? Which "type" of data scientist do you identify with the most?
-* Introduce yourself: technical background, why you joined the course, how do you define success in this course?
+* Homework discussion: Any installation issues? Find any interesting GitHub projects? Any takeaways from "Analyzing the Analyzers"?
+* Introduce yourself: What's your technical background? Why did you join this course? How do you define success in this course?
+* Office hours
 * Git and GitHub lesson ([slides](slides/02_git_github.pdf))
   * Create a repo on GitHub, clone it, make changes, and push up to GitHub
   * Fork the [DAT3-students](https://github.com/justmarkham/DAT3-students) repo, clone it, add a Markdown file (`about.md`) in your folder, push up to GitHub, and create a [pull request](https://help.github.com/articles/using-pull-requests)
