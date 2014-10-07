@@ -309,6 +309,10 @@ quote = "Strange women lying in ponds is no basis for government"
 quote = quote.split()
 [x.capitalize() for x in quote if len(x) > 3]
 
+
+# E X E R C I S E : Create a list comprehension that that adds five to 
+# all numbers
+
 # ==================================================================
 #           O P T I O N S  F O R  C O D E   E X E C U T I O N
 # ==================================================================
