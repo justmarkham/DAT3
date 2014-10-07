@@ -54,15 +54,16 @@ Week | Tuesday | Thursday
 
 **Homework:**
 
-* Review the [course project information](project.md), [past projects](project_examples.md) from other GA students, and [public data sources](public_data.md)
+* Review the [course project information](project.md), [past projects](https://github.com/justmarkham/DAT-project-examples) from other GA students, and [public data sources](public_data.md)
 
 **Optional:**
 
+* Clone this repo (DAT3) for easy access to the course files
 * Watch [Introduction to Git and GitHub](https://www.youtube.com/playlist?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD) (36 minutes) to repeat a lot of today's presentation
 * Read the first two chapters of [Pro Git](http://git-scm.com/book) for a much deeper understanding of version control and the basic Git commands
 * Learn some more [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and add it to your `about.md` file, then push those edits to GitHub and send another pull request
-* Clone this repo (DAT3) for easy access to the course files
 * Read this friendly [command line tutorial](http://seankross.com/notes/cli/cli.html) if you are brand new to the command line
+* For more project inspiration, browse the [student projects](http://cs229.stanford.edu/projects2013.html) from Andrew Ng's [Machine Learning course](http://cs229.stanford.edu/) at Stanford
 
 **Resources:**
 
