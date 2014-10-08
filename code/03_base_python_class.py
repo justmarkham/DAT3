@@ -1,11 +1,9 @@
 """
-====================================================================
-====================================================================
 
+====================================================================
                         B A S E   P Y T H O N 
+====================================================================
 
-====================================================================
-====================================================================
 """
 
 # Questions to get started: 
@@ -186,12 +184,6 @@ dct["Years Active"]
 # Add a new item to a list within the dictionary
 dct["Known for"].append("Influencing SNL")
 
-# E X E R C I S E: Create a dictionary within a dictionary with your own
-# favorite Monty Python influences
-dct["Influence"] = { "Asteroids": [13681, 9618, 9619, 9620, 9621, 9622], 
-                     "Technology": ["Spam", "Python", "IDLE (for Eric Idle)"],
-                     "Food": ["Monty Python's Holy Ale", "Vermonty Python"]}
-
 # Accessing from a nested dictionary item
 dct["Influence"]["Technology"]
 
@@ -199,6 +191,9 @@ dct["Influence"]["Technology"]
 dct.keys()
 # Returns the values
 dct.values()
+
+# E X E R C I S E: Create a dictionary within a dictionary containing your
+# own favorite Monty Python influences
 
 # ==================================================================
 #           I F - S T A T E M E N T S   &   L O O P I N G
@@ -287,19 +282,8 @@ my_function_optional(100, 10)
 my_function_optional(100)
 
 # E X E R C I S E: Create a function that simulates a simple calulator
-def my_calc(x, y, op = "add"):
-    if op == "add":
-        return x + y
-    elif op == "subtract":
-        return x - y
-    elif op == "divide":
-       return x / y
-    elif op == "multiply":
-       return x * y
-    else:
-       return "please specify one of the following: add, subtract, divide or multiply"
-       
 
+       
 # ==================================================================
 #                     L I S T  C O M P R E H E N S I O N
 # ==================================================================
@@ -324,6 +308,10 @@ lis2 = [x * 5 for x in numbers if isinstance(x, int)]
 quote = "Strange women lying in ponds is no basis for government"
 quote = quote.split()
 [x.capitalize() for x in quote if len(x) > 3]
+
+
+# E X E R C I S E : Create a list comprehension that that adds five to 
+# all numbers
 
 # ==================================================================
 #           O P T I O N S  F O R  C O D E   E X E C U T I O N
