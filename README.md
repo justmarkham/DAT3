@@ -51,7 +51,6 @@ Week | Tuesday | Thursday
 * Git and GitHub lesson ([slides](slides/02_git_github.pdf))
   * Create a repo on GitHub, clone it, make changes, and push up to GitHub
   * Fork the [DAT3-students](https://github.com/justmarkham/DAT3-students) repo, clone it, add a Markdown file (`about.md`) in your folder, push up to GitHub, and create a [pull request](https://help.github.com/articles/using-pull-requests)
-* Discuss the [course project](project.md)
 
 **Homework:**
 
@@ -75,6 +74,7 @@ Week | Tuesday | Thursday
 
 ## Class 3: Base Python
 
-* Homework discussion: Any questions about Git/GitHub? What's one thing you learned from reviewing student projects?
+* Any questions about Git/GitHub?
+* Discuss the [course project](project.md).  What's one thing you learned from reviewing student projects?
 * Why are we programming? Why are we using Python?
 * Base Python lesson ([code](code/03_base_python_class.py))
