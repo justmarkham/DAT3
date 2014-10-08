@@ -1,32 +1,34 @@
-# Base Python reference guide
+'''
+Python 2.7x Reference Guide
 
-# Sources:
-#   https://docs.python.org/2/
-#   http://www.codecademy.com/tracks/python
-#   https://developers.google.com/edu/python/
-#   Book: Python for Data Analysis (Appendix)
-#   and many others...
+Sources:
+    https://docs.python.org/2/
+    http://www.codecademy.com/tracks/python
+    https://developers.google.com/edu/python/
+    Book: Python for Data Analysis (Appendix)
+    and many others...
 
-# Table of Contents:
-#   Imports
-#   Data Types
-#   Math
-#   Comparisons and Boolean Operations
-#   Lists
-#   Tuples
-#   Strings
-#   Dictionaries
-#   Sets
+Table of Contents:
+    Imports
+    Data Types
+    Math
+    Comparisons and Boolean Operations
+    Lists
+    Tuples
+    Strings
+    Dictionaries
+    Sets
 
-# Will be added:
-#   Functions
-#   If/else
-#   For loops
-#   While loops
-#   Comprehensions
-#   Lambda functions
-#   Reading/writing files
-#   And more...
+Will be added:
+    Functions
+    If/else
+    For loops
+    While loops
+    Comprehensions
+    Lambda functions
+    Reading/writing files
+    And more...
+'''
 
 
 
@@ -61,23 +63,25 @@ type(2)         # returns 'int'
 type(2.0)       # returns 'float'
 type('two')     # returns 'str'
 type(True)      # returns 'bool'
+type(None)      # returns 'NoneType'
 
 # check if an object is of a given type
 isinstance(2.0, int)            # returns False
 isinstance(2.0, (int, float))   # returns True
 
-# coerce an object to a given type
+# convert an object to a given type
 float(2)
 int(2.9)
 str(2.9)
 
-# zeros and empty containers are coerced to False
+# zero, None, and empty containers are converted to False
 bool(0)
+bool(None)
 bool('')    # empty string
 bool([])    # empty list
 bool({})    # empty dictionary
 
-# non-empty containers and non-zeros are coerced to True
+# non-empty containers and non-zeros are converted to True
 bool(2)
 bool('two')
 bool([2])
@@ -86,6 +90,7 @@ bool([2])
 
 ### MATH ###
 
+# basic operations
 10 + 4          # add (returns 14)
 10 - 4          # subtract (returns 6)
 10 * 4          # multiply (returns 40)
@@ -93,6 +98,11 @@ bool([2])
 10 / 4          # divide (returns 2 because both types are 'int')
 10 / float(4)   # divide (returns 2.5)
 5 % 4           # modulo (returns 1) - also known as the remainder
+
+# force '/' in Python 2.x to perform 'true division' (unnecessary in Python 3.x)
+from __future__ import division
+10 / 4          # true division (returns 2.5)
+10 // 4         # floor division (returns 2)
 
 
 
@@ -174,9 +184,9 @@ insort(num, 30)
 same_num = num
 same_num[0] = 0         # modifies both 'num' and 'same_num'
 
-# copy a list
-new_num = num[:]        # make a copy of num
-new_num = list(num)     # alternative method
+# copy a list (two ways)
+new_num = num[:]
+new_num = list(num)
 
 # examine objects
 id(num) == id(same_num) # returns True
@@ -227,7 +237,7 @@ bart = ('male', 10, 'simpson')  # create a tuple
 ## properties: iterable, immutable
 
 # create a string
-s = str(42)         # coerce another data type into a string
+s = str(42)         # convert another data type into a string
 s = 'I like you'
 
 # examine a string
@@ -293,8 +303,13 @@ print r'first line\nfirst line'     # raw strings treat backslashes as literal c
 empty_dict = {}
 empty_dict = dict()
 
-# create a dictionary (key-value pairs)
+# create a dictionary (two ways)
 family = {'dad':'homer', 'mom':'marge', 'size':6}
+family = dict(dad='homer', mom='marge', size=6)
+
+# convert a list of tuples into a dictionary
+list_of_tuples = [('dad','homer'), ('mom','marge'), ('size', 6)]
+family = dict(list_of_tuples)
 
 # examine a dictionary
 family['dad']       # returns 'homer'
