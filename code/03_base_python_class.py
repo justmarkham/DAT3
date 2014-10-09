@@ -76,6 +76,83 @@ var1 <= var2            # LESS THAN OR EQUAL TO
 # Remainders
 10 % 3
 
+
+# ==================================================================
+#           I F - S T A T E M E N T S   &   L O O P I N G
+# ==================================================================
+
+var1 = 1
+
+# If elif else statement
+if var1 > 5:
+    print "More than 5"
+elif var1 < 5:
+    print "Less than 5"
+else:
+    print "5"
+
+# For loop
+fruits = ['apple', 'banana', 'cherry', 'plum']
+for i in range(len(fruits)):
+    print fruits[i].upper()
+
+# Better way
+for fruit in fruits:
+    print fruit.upper()
+
+# While statement
+while var1 < 10:
+    print var1
+    var1 += 1 # This is commonly used shorthand for var1 = var1 + 1
+    
+
+# ==================================================================
+#                           F U N C T I O N S
+# ==================================================================
+
+# Wes McKinney: Functions are the primary and most important method of code
+# organization and reuse in Python. There may not be such a thing as too many
+# functions. In fact, I would argue that most programmers doing data analysis
+# don't write enough functions! (p. 420 of Python for Data Analysis)
+
+# Range returns a list with a defined start/stop point (default start is 0)
+range(5, 10) 
+range(10)
+
+# Type identifies the object type you pass it
+type(3)
+
+# Isinstance checks for the variable type
+isinstance(4, str)
+
+# Len returns the length of an object
+len([1, 3, 5, 6])
+len("Holy Grail")
+
+# User-defined functions start with the 'def' keyword
+# They may take inputs as arguments, and may return an output
+def my_function(x, y):
+    return x - y
+
+# These are equivalent
+my_function(100, 10)
+my_function(x=100, y=10)
+my_function(y=10, x=100)
+
+# What if we want to make one of our arguments optional?
+def my_function_optional(x, y = 10):
+    return x - y
+
+# These are equivalent
+my_function_optional(100, 10)
+my_function_optional(100)
+
+# EXERCISE #1: 
+# Create a function that acts as a simple calulator
+# So my_calc(1,2,"add") returns 3, and my_calc(4,5,"multiply) returns 20
+# If the operation is not specified, default to addition
+# If the operation is misspecified, return an error
+
 # ==================================================================
 #           L I S T S :  Mutable, Ordered Data Structures
 # ==================================================================
@@ -132,6 +209,17 @@ lis[1][2]
 # A list within a list  within a list within a list within a list
 lis = [1,2,[3,4,[5,6,[7,8]]]]
 
+# EXERCISE #2
+# Given a list of numbers, return a list where
+# all adjacent == elements have been reduced to a single element,
+# so [1, 2, 2, 3] returns [1, 2, 3]. You may create a new list or
+# modify the passed in list.
+
+
+# EXERCISE #2: BONUS
+# Remove all duplicate values, regardless of 
+# whether they are adjascent
+
 
 # ==================================================================
 #                            S T R I N G S
@@ -167,6 +255,24 @@ s.count(" ")
 s.split()
 s.split(" ") # Same thing
 
+# EXERCISE #3 (Easier)
+# Given a string s, return a string made of the first 2
+# and the last 2 chars of the original string,
+# so 'swallow' yields 'swow'. However, if the string length
+# is less than 2, return an empty string.
+
+
+
+# EXERCISE #3 (Harder)
+# Given a string, find the first appearance of the
+# substring 'not' and 'hard'. If the 'hard' follows
+# the 'not', replace the whole 'not'...'hard' substring
+# with 'rather straightforward'.
+# Return the resulting string.
+# So 'Python is not that hard!' yields:
+# Python is rather straightforward!
+
+
 # ==================================================================
 #      D I C T: Unordered data structures with key-value pairs
 #               Keys must be unique
@@ -192,36 +298,9 @@ dct.keys()
 # Returns the values
 dct.values()
 
-# E X E R C I S E: Create a dictionary within a dictionary containing your
-# own favorite Monty Python influences
-
-# ==================================================================
-#           I F - S T A T E M E N T S   &   L O O P I N G
-# ==================================================================
-
-var1 = 1
-
-# If elif else statement
-if var1 > 5:
-    print "More than 5"
-elif var1 < 5:
-    print "Less than 5"
-else:
-    print "5"
-
-# For loop
-fruits = ['apple', 'banana', 'cherry', 'plum']
-for i in range(len(fruits)):
-    print fruits[i].upper()
-
-# Better way
-for fruit in fruits:
-    print fruit.upper()
-
-# While statement
-while var1 < 10:
-    print var1
-    var1 += 1 # This is commonly used shorthand for var1 = var1 + 1
+# EXERCISE #4: Create a dictionary within the 'dct' dictionary 
+# That contains your own favorite Monty Python influences
+# You can search for Monty Python Influence online
 
 # ==================================================================
 #                              I M P O R T
@@ -238,51 +317,6 @@ clf = tree.DecisionTreeClassifier()
 # Import the DecisionTreeClassifer class within the sklearn.tree submodule
 from sklearn.tree import DecisionTreeClassifier
 clf = DecisionTreeClassifier()
-
-
-# ==================================================================
-#                           F U N C T I O N S
-# ==================================================================
-
-# Wes McKinney: Functions are the primary and most important method of code
-# organization and reuse in Python. There may not be such a thing as too many
-# functions. In fact, I would argue that most programmers doing data analysis
-# don't write enough functions! (p. 420 of Python for Data Analysis)
-
-# Range returns a list with a defined start/stop point (default start is 0)
-range(5, 10) 
-range(10)
-
-# Type identifies the object type you pass it
-type(3)
-
-# Isinstance checks for the variable type
-isinstance(4, str)
-
-# Len returns the length of an object
-len([1, 3, 5, 6])
-len("Holy Grail")
-
-# User-defined functions start with the 'def' keyword
-# They may take inputs as arguments, and may return an output
-def my_function(x, y):
-    return x - y
-
-# These are equivalent
-my_function(100, 10)
-my_function(x=100, y=10)
-my_function(y=10, x=100)
-
-# What if we want to make one of our arguments optional?
-def my_function_optional(x, y = 10):
-    return x - y
-
-# These are equivalent
-my_function_optional(100, 10)
-my_function_optional(100)
-
-# E X E R C I S E: Create a function that simulates a simple calulator
-
        
 # ==================================================================
 #                     L I S T  C O M P R E H E N S I O N
@@ -305,13 +339,17 @@ for x in numbers:
 # Short form using list comprehension
 lis2 = [x * 5 for x in numbers if isinstance(x, int)]
 
+# EXERCISE #5: 
+# Take the following string, change it into a list
+# and capitolize all words that are more than 3 characters long
+# Do this using list comprehension
+
 quote = "Strange women lying in ponds is no basis for government"
-quote = quote.split()
-[x.capitalize() for x in quote if len(x) > 3]
 
 
-# E X E R C I S E : Create a list comprehension that that adds five to 
-# all numbers
+# EXERCISE #5: BONUS
+# Same as before, but include all words in the output
+
 
 # ==================================================================
 #           O P T I O N S  F O R  C O D E   E X E C U T I O N
@@ -354,6 +392,24 @@ Spyder IDE
 ====================================================================
 """
 
+
+# ==================================================================
+#           T H E   W O R K I N G    D I R E C T O R Y
+# ==================================================================
+import os
+
+# Check the current working directory
+os.getcwd()
+
+# Change the current directory
+os.chdir('C:\\Python27')
+
+# Change from the current directory
+os.chdir('Scripts')
+
+# List out the files in the current directory
+for i in os.listdir(os.getcwd()):
+    print i
 
 # ==================================================================
 #                   D E S I G N  P H I L O S O P H Y
