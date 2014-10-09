@@ -7,9 +7,9 @@
 """
 
 # Questions to get started: 
+    # Why should data scientists learn to program?
+    # Why are we learning Python?
     # What is your programming background? In Python? 
-    # Why is programming important?
-    # What can make programming difficult to learn?
 
 # ==================================================================
 #                           D A T A  T Y P E S
