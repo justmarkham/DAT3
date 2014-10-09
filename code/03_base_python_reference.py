@@ -13,17 +13,17 @@ Table of Contents:
     Data Types
     Math
     Comparisons and Boolean Operations
+    Conditional Statements
     Lists
     Tuples
     Strings
     Dictionaries
     Sets
+    Defining Functions
+    For Loops
 
 Will be added:
-    Functions
-    If/else
-    For loops
-    While loops
+    While Loops
     Comprehensions
     Lambda functions
     Reading/writing files
@@ -119,6 +119,34 @@ from __future__ import division
 5 > 3 or 5 < 3
 not False
 False or not False and True     # evaluation order: not, and, or
+
+
+
+### CONDITIONAL STATEMENTS ###
+
+# if statement
+if x > 0:
+    print 'positive'
+
+# if/else statement
+if x > 0:
+    print 'positive'
+else:
+    print 'zero or negative'
+
+# if/elif/else statement
+if x > 0:
+    print 'positive'
+elif x == 0:
+    print 'zero'
+else:
+    print 'negative'
+
+# single-line if statement (sometimes discouraged)
+if x > 0: print 'positive'
+
+# single-line if/else statement (sometimes discouraged)
+'positive' if x > 0 else 'negative'
 
 
 
@@ -379,3 +407,79 @@ languages.update('go', 'spark') # add multiple elements (can also pass a list or
 
 # get a sorted list of unique elements from a list
 sorted(set([9, 0, 2, 1, 0]))    # returns [0, 1, 2, 9]
+
+
+
+### DEFINING FUNCTIONS ###
+
+# define a function with no arguments and no return values
+def print_text():
+    print 'this is text'
+
+# call the function
+print_text()
+
+# define a function with one argument and no return values
+def print_this(x):
+    print x
+
+# call the function
+print_this(3)       # prints 3
+n = print_this(3)   # prints 3, but doesn't assign 3 to n
+                    #   because the function has no return statement
+
+# define a function with one argument and one return value
+def square_this(x):
+    squared = x**2
+    return squared
+
+# call the function
+square_this(3)          # prints 9
+var = square_this(3)    # assigns 9 to var, but does not print 9
+
+# define a function with two 'positional arguments' (no default values) and
+# one 'keyword argument' (has a default value)
+def calc(a, b, op='add'):
+    if op == 'add':
+        return a + b
+    elif op == 'sub':
+        return a - b
+    else:
+        print 'valid operations are add and sub'
+
+# call the function
+calc(10, 4, op='add')   # returns 14
+calc(10, 4, 'add')      # also returns 14: unnamed arguments are inferred by position
+calc(10, 4)             # also returns 14: default for 'op' is 'add'
+calc(10, 4, 'sub')      # returns 6
+calc(10, 4, 'div')      # prints 'valid operations are add and sub'
+
+# use 'pass' as a placeholder if you haven't written the function body
+def stub():
+    pass
+
+
+
+### FOR LOOPS ###
+
+# range returns a list of integers
+range(0, 3)     # returns [0, 1, 2]: includes first value but excludes second value
+range(3)        # same thing: starting at zero is the default
+
+# for loop (not recommended)
+fruits = ['apple', 'banana', 'cherry']
+for i in range(len(fruits)):
+    print fruits[i].upper()
+
+# alternative for loop (recommended style)
+for fruit in fruits:
+    print fruit.upper()
+
+# iterate through two things at once (using tuple unpacking)
+family = {'dad':'homer', 'mom':'marge', 'size':6}
+for key, value in family.items():
+    print key, value
+
+# use enumerate if you need to access the index value within the loop
+for index, fruit in enumerate(fruits):
+    print index, fruit
