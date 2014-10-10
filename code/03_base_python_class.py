@@ -181,7 +181,7 @@ s2 = "of an unladen swallow?"
 s = s1 + " " + s2
 s = " ".join([s1, s2])
 
-s = 
+
 " ".join(s)
 # Replace an item within a string
 s = s.replace("unladen", "unladen African")
@@ -282,8 +282,6 @@ for i in range(len(fruits)):
 for fruit in fruits:
     print fruit.upper()
 
-
-
 # ==================================================================
 #                              I M P O R T
 # ==================================================================
@@ -356,8 +354,6 @@ lis2
 # Returns: ['Strange', 'Women', 'Lying', 'in', 'Ponds', 'is', 
 #                                       'no', 'Basis', 'for', 'Government']
               
-
-
 
 """
 ====================================================================
