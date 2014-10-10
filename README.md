@@ -78,3 +78,10 @@ Week | Tuesday | Thursday
 * Discuss the [course project](project.md).  What's one thing you learned from reviewing student projects?
 * Why are we programming? Why are we using Python?
 * Base Python lesson ([code](code/03_base_python_class.py))
+
+** Homework ** 
+* Review the [course project information](project.md), [past projects](https://github.com/justmarkham/DAT-project-examples) from other GA students, and [public data sources](public_data.md)
+* Complete the exercises at the end of the [python script](https://github.com/justmarkham/DAT3/blob/master/code/03_base_python_class.py) we went over in class today and push your solutions up to your repo
+
+** Resouces **
+* Kevin put together an additional [python script](https://github.com/justmarkham/DAT3/blob/master/code/03_base_python_reference.py) that you can use as a supplemental reference for base python
