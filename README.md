@@ -10,7 +10,7 @@ Week | Tuesday | Thursday
 --- | --- | ---
 0 | | 10/2: [Introduction](#class-1-introduction)
 1 | 10/7: [Git and GitHub](#class-2-git-and-github) | 10/9: [Base Python](#class-3-base-python)
-2 | 10/14: Getting and Cleaning Data | 10/16: Exploratory Analysis
+2 | 10/14: [Getting and Cleaning Data](#class-4-getting-and-cleaning-data) | 10/16: [Exploratory Data Analysis](#class-5-exploratory-data-analysis)
 3 | 10/21: Linear Regression<br>**Milestone:** Question and Data Set | 10/23: Logistic Regression
 4 | 10/28: Machine Learning, KNN | 10/30: Model Evaluation
 5 | 11/4: Clustering<br>**Milestone:** Data Exploration and<br>Analysis Plan | 11/6: Naive Bayes and NLP
@@ -75,13 +75,40 @@ Week | Tuesday | Thursday
 ## Class 3: Base Python
 
 * Any questions about Git/GitHub?
-* Discuss the [course project](project.md).  What's one thing you learned from reviewing student projects?
-* Why are we programming? Why are we using Python?
-* Base Python lesson ([code](code/03_base_python_class.py))
+* Discuss the [course project](project.md). What's one thing you learned from reviewing student projects?
+* Base Python lesson, with exercises ([code](code/03_base_python_class.py))
 
 **Homework:** 
-* Review the [course project information](project.md), [past projects](https://github.com/justmarkham/DAT-project-examples) from other GA students, and [public data sources](public_data.md)
-* Complete the exercises at the end of the [python script](https://github.com/justmarkham/DAT3/blob/master/code/03_base_python_class.py) we went over in class today and add your solutions to your folder in the [DAT3-Student repo](https://github.com/justmarkham/DAT3-students)
 
-**Resouces:**
-* Kevin put together an additional [python script](https://github.com/justmarkham/DAT3/blob/master/code/03_base_python_reference.py) that you can use as a supplemental reference for base python
+* Complete the exercises at the end of the [Python script](code/03_base_python_class.py) we went over in class today and add your solutions to your folder in the [DAT3-students repo](https://github.com/justmarkham/DAT3-students)
+* Keep thinking about your [project](project.md), and consult [past projects](https://github.com/justmarkham/DAT-project-examples) and [public data sources](public_data.md) for more inspiration
+
+
+## Class 4: Getting and Cleaning Data
+
+* Discuss homework solutions
+* Downloading data from the web
+* Reading files into Python
+* Getting data from APIs
+* Web scraping
+* Regular expressions
+
+**Homework:**
+
+* Python exercise
+
+**Optional:**
+
+* Scan the [Python reference](code/03_base_python_reference.py) to find things you don't know, and then learn more about those things!
+
+
+## Class 5: Exploratory Data Analysis
+
+* Discuss homework solutions
+* Pandas
+* Visualization
+
+**Homework:**
+
+* Pandas exercise
+* Project milestone: prepare your [question and data set](project.md)
