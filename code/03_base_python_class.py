@@ -6,9 +6,9 @@
 
 """
 
-# Questions to get started: 
-    # Why should data scientists learn to program?
-    # Why are we learning Python?
+# Questions to get started:
+    # Why should data scientists learn to program? 
+    # Why learn Python specifically?
     # What is your programming background? In Python? 
 
 # ==================================================================
@@ -76,83 +76,6 @@ var1 <= var2            # LESS THAN OR EQUAL TO
 # Remainders
 10 % 3
 
-
-# ==================================================================
-#           I F - S T A T E M E N T S   &   L O O P I N G
-# ==================================================================
-
-var1 = 1
-
-# If elif else statement
-if var1 > 5:
-    print "More than 5"
-elif var1 < 5:
-    print "Less than 5"
-else:
-    print "5"
-
-# For loop
-fruits = ['apple', 'banana', 'cherry', 'plum']
-for i in range(len(fruits)):
-    print fruits[i].upper()
-
-# Better way
-for fruit in fruits:
-    print fruit.upper()
-
-# While statement
-while var1 < 10:
-    print var1
-    var1 += 1 # This is commonly used shorthand for var1 = var1 + 1
-    
-
-# ==================================================================
-#                           F U N C T I O N S
-# ==================================================================
-
-# Wes McKinney: Functions are the primary and most important method of code
-# organization and reuse in Python. There may not be such a thing as too many
-# functions. In fact, I would argue that most programmers doing data analysis
-# don't write enough functions! (p. 420 of Python for Data Analysis)
-
-# Range returns a list with a defined start/stop point (default start is 0)
-range(5, 10) 
-range(10)
-
-# Type identifies the object type you pass it
-type(3)
-
-# Isinstance checks for the variable type
-isinstance(4, str)
-
-# Len returns the length of an object
-len([1, 3, 5, 6])
-len("Holy Grail")
-
-# User-defined functions start with the 'def' keyword
-# They may take inputs as arguments, and may return an output
-def my_function(x, y):
-    return x - y
-
-# These are equivalent
-my_function(100, 10)
-my_function(x=100, y=10)
-my_function(y=10, x=100)
-
-# What if we want to make one of our arguments optional?
-def my_function_optional(x, y = 10):
-    return x - y
-
-# These are equivalent
-my_function_optional(100, 10)
-my_function_optional(100)
-
-# EXERCISE #1: 
-# Create a function that acts as a simple calulator
-# So my_calc(1,2,"add") returns 3, and my_calc(4,5,"multiply) returns 20
-# If the operation is not specified, default to addition
-# If the operation is misspecified, return an error
-
 # ==================================================================
 #           L I S T S :  Mutable, Ordered Data Structures
 # ==================================================================
@@ -209,16 +132,41 @@ lis[1][2]
 # A list within a list  within a list within a list within a list
 lis = [1,2,[3,4,[5,6,[7,8]]]]
 
-# EXERCISE #2
-# Given a list of numbers, return a list where
-# all adjacent == elements have been reduced to a single element,
-# so [1, 2, 2, 3] returns [1, 2, 3]. You may create a new list or
-# modify the passed in list.
+# ==================================================================
+#      D I C T: Unordered data structures with key-value pairs
+#               Keys must be unique
+# ==================================================================
+
+dct = {"Name": "Monty Python and the Flying Circus",
+       "Description": "British Comedy Group",
+       "Known for": ["Irreverant Comedy", "Monty Python and the Holy Grail"],
+       "Years Active" : 17,
+       "# Members": 6}
+       
+# Access an element within the list
+dct["Years Active"]
+
+# Add a new item to a list within the dictionary
+dct["Known for"].append("Influencing SNL")
 
 
-# EXERCISE #2: BONUS
-# Remove all duplicate values, regardless of 
-# whether they are adjascent
+# Returns the keys
+dct.keys()
+# Returns the values
+dct.values()
+
+# QUIZ: Create a dictionary within the 'dct' dictionary 
+# That contains your own favorite Monty Python influences
+# You can search for Monty Python Influence online
+# Quiz: Create a dictionary within the 'dct' dictionary containing your
+# own favorite Monty Python influences
+dct["Influence"] = { "Asteroids": [13681, 9618, 9619, 9620, 9621, 9622], 
+                     "Technology": ["Spam", "Python", "IDLE (for Eric Idle)"],
+                     "Food": ["Monty Python's Holy Ale", "Vermonty Python"]}
+
+
+# Accessing from a nested dictionary item
+dct["Influence"]["Technology"]
 
 
 # ==================================================================
@@ -233,6 +181,8 @@ s2 = "of an unladen swallow?"
 s = s1 + " " + s2
 s = " ".join([s1, s2])
 
+s = 
+" ".join(s)
 # Replace an item within a string
 s = s.replace("unladen", "unladen African")
 
@@ -252,65 +202,97 @@ s[s.find("swallow"):]
 s.count(" ")
 
 # Split up a string (returns a list)
-s.split()
+s = s.split()
 s.split(" ") # Same thing
 
-# EXERCISE #3 (Easier)
-# Given a string s, return a string made of the first 2
-# and the last 2 chars of the original string,
-# so 'swallow' yields 'swow'. However, if the string length
-# is less than 2, return an empty string.
+# ==================================================================
+#                           F U N C T I O N S
+# ==================================================================
 
+# Wes McKinney: Functions are the primary and most important method of code
+# organization and reuse in Python. There may not be such a thing as too many
+# functions. In fact, I would argue that most programmers doing data analysis
+# don't write enough functions! (p. 420 of Python for Data Analysis)
 
+# Range returns a list with a defined start/stop point (default start is 0)
+range(1, 10, 2) 
+range(5, 10) 
+range(10)
 
-# EXERCISE #3 (Harder)
-# Given a string, find the first appearance of the
-# substring 'not' and 'hard'. If the 'hard' follows
-# the 'not', replace the whole 'not'...'hard' substring
-# with 'rather straightforward'.
-# Return the resulting string.
-# So 'Python is not that hard!' yields:
-# Python is rather straightforward!
+# Type identifies the object type you pass it
+type(3)
+
+# Isinstance checks for the variable type
+isinstance(4, str)
+
+# Len returns the length of an object
+len("Holy Grail")
+len([3, 4, 5, 1])
+
+# User-defined functions start with the 'def' keyword
+# They may take inputs as arguments, and may return an output
+def my_function(x, y):
+    return x - y
+
+# These are equivalent
+my_function(100, 10)
+my_function(x=100, y=10)
+my_function(y=10, x=100)
+my_function(10,100)
+
+# What if we want to make one of our arguments optional?
+def my_function_optional(x, y = 10):
+    return x - y
+
+# These are equivalent
+my_function_optional(100, 10)
+my_function_optional(100)
 
 
 # ==================================================================
-#      D I C T: Unordered data structures with key-value pairs
-#               Keys must be unique
+#           I F - S T A T E M E N T S   &   L O O P I N G
 # ==================================================================
 
-dct = {"Name": "Monty Python and the Flying Circus",
-       "Description": "British Comedy Group",
-       "Known for": ["Irreverant Comedy", "Monty Python and the Holy Grail"],
-       "Years Active" : 17,
-       "# Members": 6}
-       
-# Access an element within the list
-dct["Years Active"]
+var1 = 10
 
-# Add a new item to a list within the dictionary
-dct["Known for"].append("Influencing SNL")
+# If elif else statement
+# Whitespace is important
 
-# Accessing from a nested dictionary item
-dct["Influence"]["Technology"]
+if var1 > 5:
+    print "More than 5"
+elif var1 < 5:
+    print "Less than 5"
+else:
+    print "5"
 
-# Returns the keys
-dct.keys()
-# Returns the values
-dct.values()
+# While statement
+while var1 < 10:
+    print var1
+    var1 += 1 # This is commonly used shorthand for var1 = var1 + 1
 
-# EXERCISE #4: Create a dictionary within the 'dct' dictionary 
-# That contains your own favorite Monty Python influences
-# You can search for Monty Python Influence online
+# For loop
+for i in range(0,10,2):
+    print i**2
+# For loop in the list
+fruits = ['apple', 'banana', 'cherry', 'plum']
+for i in range(len(fruits)):
+    print fruits[i].upper()
+
+# Better way
+for fruit in fruits:
+    print fruit.upper()
+
+
 
 # ==================================================================
 #                              I M P O R T
 # ==================================================================
 
-# Import a package (collection of submodules)
+# Import a package (collection of (sub)modules)
 import sklearn
 clf = sklearn.tree.DecisionTreeClassifier()
 
-# Import a specific submodule within the sklearn package
+# Import a specific (sub)module within the sklearn package
 from sklearn import tree
 clf = tree.DecisionTreeClassifier()
 
@@ -336,19 +318,54 @@ for x in numbers:
     if isinstance(x,int):
         lis1.append(5*x)
         
+lis1
 # Short form using list comprehension
 lis2 = [x * 5 for x in numbers if isinstance(x, int)]
+lis2
 
-# EXERCISE #5: 
-# Take the following string, change it into a list
-# and capitolize all words that are more than 3 characters long
-# Do this using list comprehension
+# ==================================================================
+#                           E X E R C I S E S 
+# ==================================================================
 
-quote = "Strange women lying in ponds is no basis for government"
+# EXERCISE #1 
+# Create a function that acts as a simple calulator
+# If the operation is not specified, default to addition
+# If the operation is misspecified, return an prompt message
+# Ex: my_calc(4,5,"multiply") returns 20
+# Ex: my_calc(3,5) returns 8
+# Ex: my_calc(1, 2, "something") returns error message
 
 
-# EXERCISE #5: BONUS
-# Same as before, but include all words in the output
+# EXERCISE #2
+# Given a list of numbers, return a list where
+# all adjacent duplicate elements have been reduced to a single element,
+# Ex: [1, 2, 2, 3, 2] returns [1, 2, 3, 2]. 
+# You may create a new list or modify the passed in list.
+# Bonus: Remove all duplicate values (adjascent or not)
+# Ex: [1, 2, 2, 3, 2] returns [1, 2, 3]
+
+
+# EXERCISE #3
+# Take a string, change it into a list and capitalize all words 
+# that are more than 3 characters long using list comprehension
+# Ex: "Strange women lying in ponds is no basis for government"
+# Returns: ['Strange', 'Women', 'Lying', 'Ponds', 'Basis', 'Government'] 
+
+# Bonus: Same as before, but output should include all words
+# Ex: "Strange women lying in ponds is no basis for government"
+# Returns: ['Strange', 'Women', 'Lying', 'in', 'Ponds', 'is', 
+#                                       'no', 'Basis', 'for', 'Government']
+              
+
+
+
+"""
+====================================================================
+====================================================================
+                    B O N U S   C O N T E N T
+====================================================================
+====================================================================
+"""
 
 
 # ==================================================================
@@ -356,7 +373,6 @@ quote = "Strange women lying in ponds is no basis for government"
 # ==================================================================
 
 """
-
 Command line
     - Type: 'python myscript.py' to run a script in that directory
 
@@ -380,18 +396,6 @@ Spyder IDE
     - Allows you to execute parts of your code
 
 """
-
-
-
-
-"""
-====================================================================
-====================================================================
-                            A P P E N D I X
-====================================================================
-====================================================================
-"""
-
 
 # ==================================================================
 #           T H E   W O R K I N G    D I R E C T O R Y
