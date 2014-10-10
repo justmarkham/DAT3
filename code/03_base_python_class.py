@@ -68,7 +68,9 @@ var1 <= var2            # LESS THAN OR EQUAL TO
 10 * 3
 
 # Division
-10 / 3
+10 / 3          # returns 3 in Python 2.x
+10 / 3.0        # returns 3.333...
+10 / float(3)   # returns 3.333...
 
 # Powers
 10**3
@@ -149,25 +151,19 @@ dct["Years Active"]
 # Add a new item to a list within the dictionary
 dct["Known for"].append("Influencing SNL")
 
-
 # Returns the keys
 dct.keys()
 # Returns the values
 dct.values()
 
-# QUIZ: Create a dictionary within the 'dct' dictionary 
-# That contains your own favorite Monty Python influences
-# You can search for Monty Python Influence online
 # Quiz: Create a dictionary within the 'dct' dictionary containing your
 # own favorite Monty Python influences
 dct["Influence"] = { "Asteroids": [13681, 9618, 9619, 9620, 9621, 9622], 
                      "Technology": ["Spam", "Python", "IDLE (for Eric Idle)"],
                      "Food": ["Monty Python's Holy Ale", "Vermonty Python"]}
 
-
-# Accessing from a nested dictionary item
+# Accessing a nested dictionary item
 dct["Influence"]["Technology"]
-
 
 # ==================================================================
 #                            S T R I N G S
@@ -181,8 +177,6 @@ s2 = "of an unladen swallow?"
 s = s1 + " " + s2
 s = " ".join([s1, s2])
 
-
-" ".join(s)
 # Replace an item within a string
 s = s.replace("unladen", "unladen African")
 
@@ -202,7 +196,7 @@ s[s.find("swallow"):]
 s.count(" ")
 
 # Split up a string (returns a list)
-s = s.split()
+s.split()
 s.split(" ") # Same thing
 
 # ==================================================================
@@ -238,7 +232,9 @@ def my_function(x, y):
 my_function(100, 10)
 my_function(x=100, y=10)
 my_function(y=10, x=100)
-my_function(10,100)
+
+# This is not equivalent
+my_function(10, 100)
 
 # What if we want to make one of our arguments optional?
 def my_function_optional(x, y = 10):
@@ -248,7 +244,6 @@ def my_function_optional(x, y = 10):
 my_function_optional(100, 10)
 my_function_optional(100)
 
-
 # ==================================================================
 #           I F - S T A T E M E N T S   &   L O O P I N G
 # ==================================================================
@@ -257,7 +252,6 @@ var1 = 10
 
 # If elif else statement
 # Whitespace is important
-
 if var1 > 5:
     print "More than 5"
 elif var1 < 5:
@@ -273,6 +267,7 @@ while var1 < 10:
 # For loop
 for i in range(0,10,2):
     print i**2
+
 # For loop in the list
 fruits = ['apple', 'banana', 'cherry', 'plum']
 for i in range(len(fruits)):
@@ -316,10 +311,8 @@ for x in numbers:
     if isinstance(x,int):
         lis1.append(5*x)
         
-lis1
 # Short form using list comprehension
 lis2 = [x * 5 for x in numbers if isinstance(x, int)]
-lis2
 
 # ==================================================================
 #                           E X E R C I S E S 
@@ -336,10 +329,11 @@ lis2
 
 # EXERCISE #2
 # Given a list of numbers, return a list where
-# all adjacent duplicate elements have been reduced to a single element,
+# all adjacent duplicate elements have been reduced to a single element.
 # Ex: [1, 2, 2, 3, 2] returns [1, 2, 3, 2]. 
 # You may create a new list or modify the passed in list.
-# Bonus: Remove all duplicate values (adjascent or not)
+
+# Bonus: Remove all duplicate values (adjacent or not)
 # Ex: [1, 2, 2, 3, 2] returns [1, 2, 3]
 
 
@@ -353,7 +347,7 @@ lis2
 # Ex: "Strange women lying in ponds is no basis for government"
 # Returns: ['Strange', 'Women', 'Lying', 'in', 'Ponds', 'is', 
 #                                       'no', 'Basis', 'for', 'Government']
-              
+
 
 
 """
@@ -439,7 +433,6 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 """
-
 
 # ==================================================================
 #      T U P L E S --> Immutable data structures
