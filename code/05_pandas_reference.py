@@ -1,13 +1,15 @@
-# pandas reference guide
+'''
+Pandas Reference Guide
 
-# sources:
-#   http://fonnesbeck.github.io/Bios366/lectures.html
-#   http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/
+Sources:
+    http://fonnesbeck.github.io/Bios366/lectures.html
+    http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/
 
-# files used:
-#   ../data/microbiome.csv
-#   ../data/microbiome_missing.csv
-#   ../data/baseball.csv
+Files used:
+    ../data/microbiome.csv
+    ../data/microbiome_missing.csv
+    ../data/baseball.csv
+'''
 
 import pandas as pd
 import numpy as np
@@ -70,13 +72,13 @@ data.value
 data['value']       # returns a Series
 data[['value']]     # returns a DataFrame
 
-# select column, then filter by index
+# select column, then filter by index (CLARIFY)
 data.value[3]
 
-# select column, then filter by position
+# select column, then filter by position (CLARIFY)
 data.value[0:2]
 
-# filter rows by index
+# filter rows by index (CLARIFY)
 data.ix[3]
 
 # filter rows by boolean
@@ -127,7 +129,7 @@ mb2 = pd.read_csv('../data/microbiome_missing.csv', na_values=['?', -99999])
 
 ### MISSING VALUES ###
 
-# drop any rows with missing values
+# drop any rows with missing values (VERIFY)
 mb2.dropna()
 mb2[mb2.notnull()]
 
@@ -162,7 +164,7 @@ baseball_new.ix['wickmbo012007']
 baseball.reindex(baseball.index[::-1])
 
 
-### SLICING ###
+### SLICING (VERIFY) ###
 
 # select columns
 baseball_new[['h','ab']]
