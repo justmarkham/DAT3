@@ -146,7 +146,7 @@ else:
 if x > 0: print 'positive'
 
 # single-line if/else statement (sometimes discouraged)
-'positive' if x > 0 else 'negative'
+'positive' if x > 0 else 'zero or negative'
 
 
 
