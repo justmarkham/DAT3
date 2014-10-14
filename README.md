@@ -136,7 +136,9 @@ Week | Tuesday | Thursday
     * Data types and "tidy data" (slides coming soon)
     * [Untidy data](https://github.com/fivethirtyeight/data/tree/master/region-survey)
     * [Reproducibility](https://twitter.com/jakevdp/status/519563939177197571): [how to share data](https://github.com/jtleek/datasharing), [example](https://github.com/fivethirtyeight/data/tree/master/classic-rock)
-* Pandas
+* Pandas for data analysis ([code](code/05_pandas_class.py))
+    * [Split-Apply-Combine](http://i.imgur.com/yjNkiwL.png) pattern
+    * Simple examples of [joins in Pandas](http://www.gregreda.com/2013/10/26/working-with-pandas-dataframes/)
 * Visualization
 
 **Homework:**
