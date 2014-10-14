@@ -131,15 +131,21 @@ Week | Tuesday | Thursday
 
 ## Class 5: Exploratory Data Analysis
 
-* Discuss homework solutions
+* Discuss homework solutions (code coming soon)
+* Thinking about data:
+    * Data types and "tidy data" (slides coming soon)
+    * [Untidy data](https://github.com/fivethirtyeight/data/tree/master/region-survey)
+    * [Reproducibility](https://twitter.com/jakevdp/status/519563939177197571): [how to share data](https://github.com/jtleek/datasharing), [example](https://github.com/fivethirtyeight/data/tree/master/classic-rock)
 * Pandas
 * Visualization
 
 **Homework:**
 
-* Pandas exercise
-* Project milestone: prepare your [question and data set](project.md)
+* Project milestone: submit your [question and data set](project.md) to DAT3-students by Tuesday!
 
 **Optional:**
 
+* Post your favorite visualization in the "viz" channel on Slack
+* Read [Reproducibility is not just for researchers](http://www.dataschool.io/reproducibility-is-not-just-for-researchers/)
+* Watch [Colbert on reproducibility](http://thecolbertreport.cc.com/videos/dcyvro/austerity-s-spreadsheet-error) (8 minutes)
 * Scan the [Python reference](code/03_base_python_reference.py) to find things you don't know, and then learn more about those things!
