@@ -88,24 +88,24 @@ Week | Tuesday | Thursday
 
 * Discuss homework solutions (code coming soon)
 * File input/output in Python
-    * [article](http://fivethirtyeight.com/datalab/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/), [original data](https://github.com/fivethirtyeight/data/blob/master/alcohol-consumption/drinks.csv), [modified data](data/drinks.csv)
+    * [Article](http://fivethirtyeight.com/datalab/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/), [original data](https://github.com/fivethirtyeight/data/blob/master/alcohol-consumption/drinks.csv), [modified data](data/drinks.csv)
     * Open in [Sublime Text](http://www.sublimetext.com/3)
     * Reading and writing files ([code](code/04_file_io_class.py))
 * Getting data from APIs
     * What is an API? Why provide one?
-    * Apigee [providers](https://apigee.com/providers) and [Echo Nest console](https://apigee.com/console/echonest)
+    * Apigee: [API providers](https://apigee.com/providers), [Echo Nest API console](https://apigee.com/console/echonest)
     * [Echo Nest Developer Center](http://developer.echonest.com/) for API key and documentation
     * Three options for reading data into Python ([code](code/04_api_json_class.py)):
-        1. [curl](http://curl.haxx.se/docs/manpage.html) to [file](data/echo_nest_top.txt), [view in browser](https://github.com/callumlocke/json-formatter), read with [json module](https://docs.python.org/2/library/json.html)
-        2. use [requests](http://docs.python-requests.org/en/latest/)
-        3. use [Pyechonest](https://github.com/echonest/pyechonest)
+        * [curl](http://curl.haxx.se/docs/manpage.html) to [file](data/echo_nest_top.txt), [view file in browser](https://github.com/callumlocke/json-formatter), read with [json module](https://docs.python.org/2/library/json.html)
+        * Use [requests](http://docs.python-requests.org/en/latest/)
+        * Use [Pyechonest](https://github.com/echonest/pyechonest)
 * Scraping the web for data
     * What is web scraping? Why use it?
     * Web scraping example ([code](code/04_web_scraping_class.py)):
         * [Pages to scrape](http://www.chicagoreader.com/chicago/best-of-chicago-2011-food-drink/BestOf?oid=4106228) using [Beautiful Soup 4](http://www.crummy.com/software/BeautifulSoup/bs4/doc/)
         * Adapted from [Web scraping 101 with Python](http://www.gregreda.com/2013/03/03/web-scraping-101-with-python/)
 * Regular expressions
-    * What are [regular expressions](http://xkcd.com/208/)? [Why use them?](http://geeksta.net/geeklog/exploring-expressions-emotions-github-commit-messages/)
+    * What are [regular expressions](http://xkcd.com/208/)? [Why use them](http://geeksta.net/geeklog/exploring-expressions-emotions-github-commit-messages/)?
     * Regex basics ([code](code/04_regex_reference.py))
     * Regex example ([code](code/04_regex_class.py), [data](data/homicides.txt))
 
@@ -123,7 +123,7 @@ Week | Tuesday | Thursday
 **Resources:**
 
 * [Directory of API wrappers](http://www.pythonapi.com/) for Python
-* Longer web scraping example with Beautiful Soup 4 ([slides](http://www.nyu.edu/projects/politicsdatalab/workshops/BeautifulSoup.pdf), [code](https://github.com/aristotle-tek/BeautifulSoup_pres))
+* Longer web scraping example using Beautiful Soup 4 ([slides](http://www.nyu.edu/projects/politicsdatalab/workshops/BeautifulSoup.pdf), [code](https://github.com/aristotle-tek/BeautifulSoup_pres))
 * Alternatives to web scraping: "turn any website into an API" with [import.io](https://import.io/) or [kimono](https://www.kimonolabs.com/)
 * [Regex reference and tutorial site](http://www.rexegg.com/)
 * [Real-time regex tester](http://www.regexr.com/)
