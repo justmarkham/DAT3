@@ -86,7 +86,7 @@ Week | Tuesday | Thursday
 
 ## Class 4: Getting and Cleaning Data
 
-* Discuss homework solutions (code coming soon)
+* Discuss homework solutions ([code](code/03_base_python_solutions.py))
 * File input/output in Python
     * [Article](http://fivethirtyeight.com/datalab/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/), [original data](https://github.com/fivethirtyeight/data/blob/master/alcohol-consumption/drinks.csv), [modified data](data/drinks.csv)
     * Open in [Sublime Text](http://www.sublimetext.com/3)
