@@ -122,7 +122,7 @@ Week | Tuesday | Thursday
 * Discuss homework solutions (code coming soon)
 * Scraping the web for data
     * What is web scraping? Why use it?
-    * Web scraping example ([code](code/04_web_scraping_class.py)):
+    * Web scraping example ([code](code/05_web_scraping_class.py)):
         * [Pages to scrape](http://www.chicagoreader.com/chicago/best-of-chicago-2011-food-drink/BestOf?oid=4106228) using [Beautiful Soup 4](http://www.crummy.com/software/BeautifulSoup/bs4/doc/)
         * Adapted from [Web scraping 101 with Python](http://www.gregreda.com/2013/03/03/web-scraping-101-with-python/)
 * Tidy data and reproducibility
@@ -134,7 +134,7 @@ Week | Tuesday | Thursday
 * Visualization
 * Regular expressions ("regex"), briefly
     * What are [regular expressions](http://xkcd.com/208/)? [Why use them](http://geeksta.net/geeklog/exploring-expressions-emotions-github-commit-messages/)?
-    * Regex example ([code](code/04_regex_class.py), [data](data/homicides.txt))
+    * Regex example ([code](code/05_regex_class.py), [data](data/homicides.txt))
 
 **Homework:**
 
@@ -151,4 +151,4 @@ Week | Tuesday | Thursday
 
 * Longer web scraping example using Beautiful Soup 4 ([slides](http://www.nyu.edu/projects/politicsdatalab/workshops/BeautifulSoup.pdf), [code](https://github.com/aristotle-tek/BeautifulSoup_pres))
 * Alternatives to web scraping: "turn any website into an API" with [import.io](https://import.io/) or [kimono](https://www.kimonolabs.com/)
-* Getting started with regex: [Python introductory lesson](https://developers.google.com/edu/python/regular-expressions) and [reference guide](code/04_regex_reference.py), [real-time regex tester](http://www.regexr.com/), [in-depth tutorials](http://www.rexegg.com/)
+* Getting started with regex: [Python introductory lesson](https://developers.google.com/edu/python/regular-expressions) and [reference guide](code/05_regex_reference.py), [real-time regex tester](http://www.regexr.com/), [in-depth tutorials](http://www.rexegg.com/)
