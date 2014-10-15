@@ -99,15 +99,6 @@ Week | Tuesday | Thursday
         * [curl](http://curl.haxx.se/docs/manpage.html) to [file](data/echo_nest_top.txt), [view file in browser](https://github.com/callumlocke/json-formatter), read with [json module](https://docs.python.org/2/library/json.html)
         * Use [requests](http://docs.python-requests.org/en/latest/)
         * Use [Pyechonest](https://github.com/echonest/pyechonest)
-* Scraping the web for data
-    * What is web scraping? Why use it?
-    * Web scraping example ([code](code/04_web_scraping_class.py)):
-        * [Pages to scrape](http://www.chicagoreader.com/chicago/best-of-chicago-2011-food-drink/BestOf?oid=4106228) using [Beautiful Soup 4](http://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-        * Adapted from [Web scraping 101 with Python](http://www.gregreda.com/2013/03/03/web-scraping-101-with-python/)
-* Regular expressions
-    * What are [regular expressions](http://xkcd.com/208/)? [Why use them](http://geeksta.net/geeklog/exploring-expressions-emotions-github-commit-messages/)?
-    * Regex basics ([code](code/04_regex_reference.py))
-    * Regex example ([code](code/04_regex_class.py), [data](data/homicides.txt))
 
 **Homework:**
 
@@ -122,28 +113,32 @@ Week | Tuesday | Thursday
 
 **Resources:**
 
+* [Online Python Tutor](http://pythontutor.com/) is useful for visualizing (and debugging) your code
 * [Directory of API wrappers](http://www.pythonapi.com/) for Python
-* Longer web scraping example using Beautiful Soup 4 ([slides](http://www.nyu.edu/projects/politicsdatalab/workshops/BeautifulSoup.pdf), [code](https://github.com/aristotle-tek/BeautifulSoup_pres))
-* Alternatives to web scraping: "turn any website into an API" with [import.io](https://import.io/) or [kimono](https://www.kimonolabs.com/)
-* [Regex reference and tutorial site](http://www.rexegg.com/)
-* [Real-time regex tester](http://www.regexr.com/)
 
 
 ## Class 5: Exploratory Data Analysis
 
 * Discuss homework solutions (code coming soon)
-* Thinking about data:
-    * Data types and "tidy data" (slides coming soon)
-    * [Untidy data](https://github.com/fivethirtyeight/data/tree/master/region-survey)
-    * [Reproducibility](https://twitter.com/jakevdp/status/519563939177197571): [how to share data](https://github.com/jtleek/datasharing), [example](https://github.com/fivethirtyeight/data/tree/master/classic-rock)
+* Scraping the web for data
+    * What is web scraping? Why use it?
+    * Web scraping example ([code](code/04_web_scraping_class.py)):
+        * [Pages to scrape](http://www.chicagoreader.com/chicago/best-of-chicago-2011-food-drink/BestOf?oid=4106228) using [Beautiful Soup 4](http://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+        * Adapted from [Web scraping 101 with Python](http://www.gregreda.com/2013/03/03/web-scraping-101-with-python/)
+* Tidy data and reproducibility
+    * What is [tidy data](http://www.prometheusresearch.com/good-data-management-practices-for-data-analysis-tidy-data-part-2/)? Examples: [tidy](https://github.com/fivethirtyeight/data/tree/master/bob-ross), [untidy](https://github.com/fivethirtyeight/data/tree/master/airline-safety), [very untidy](https://github.com/fivethirtyeight/data/tree/master/region-survey)
+    * What is [reproducibility](https://github.com/jtleek/datasharing)? [Twitter definition](https://twitter.com/jakevdp/status/519563939177197571), [example](https://github.com/fivethirtyeight/data/tree/master/classic-rock)
 * Pandas for data analysis ([code](code/05_pandas_class.py))
     * [Split-Apply-Combine](http://i.imgur.com/yjNkiwL.png) pattern
     * Simple examples of [joins in Pandas](http://www.gregreda.com/2013/10/26/working-with-pandas-dataframes/)
 * Visualization
+* Regular expressions ("regex"), briefly
+    * What are [regular expressions](http://xkcd.com/208/)? [Why use them](http://geeksta.net/geeklog/exploring-expressions-emotions-github-commit-messages/)?
+    * Regex example ([code](code/04_regex_class.py), [data](data/homicides.txt))
 
 **Homework:**
 
-* Project milestone: submit your [question and data set](project.md) to DAT3-students by Tuesday!
+* Project milestone: Submit your [question and data set](project.md) to DAT3-students by Tuesday!
 
 **Optional:**
 
@@ -151,3 +146,9 @@ Week | Tuesday | Thursday
 * Read [Reproducibility is not just for researchers](http://www.dataschool.io/reproducibility-is-not-just-for-researchers/)
 * Watch [Colbert on reproducibility](http://thecolbertreport.cc.com/videos/dcyvro/austerity-s-spreadsheet-error) (8 minutes)
 * Scan the [Python reference](code/03_base_python_reference.py) to find things you don't know, and then learn more about those things!
+
+**Resources:**
+
+* Longer web scraping example using Beautiful Soup 4 ([slides](http://www.nyu.edu/projects/politicsdatalab/workshops/BeautifulSoup.pdf), [code](https://github.com/aristotle-tek/BeautifulSoup_pres))
+* Alternatives to web scraping: "turn any website into an API" with [import.io](https://import.io/) or [kimono](https://www.kimonolabs.com/)
+* Getting started with regex: [Python introductory lesson](https://developers.google.com/edu/python/regular-expressions) and [reference guide](code/04_regex_reference.py), [real-time regex tester](http://www.regexr.com/), [in-depth tutorials](http://www.rexegg.com/)
