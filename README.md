@@ -130,7 +130,7 @@ Week | Tuesday | Thursday
     * What is [reproducibility](https://github.com/jtleek/datasharing)? [Twitter definition](https://twitter.com/jakevdp/status/519563939177197571), [example](https://github.com/fivethirtyeight/data/tree/master/classic-rock)
 * Pandas for data analysis ([code](code/05_pandas_class.py))
     * [Split-Apply-Combine](http://i.imgur.com/yjNkiwL.png) pattern
-    * Simple examples of [joins in Pandas](http://www.gregreda.com/2013/10/26/working-with-pandas-dataframes/)
+    * Simple examples of [joins in Pandas](http://www.gregreda.com/2013/10/26/working-with-pandas-dataframes/#joining)
 * Visualization
 * Regular expressions ("regex"), briefly
     * What are [regular expressions](http://xkcd.com/208/)? [Why use them](http://geeksta.net/geeklog/exploring-expressions-emotions-github-commit-messages/)?
