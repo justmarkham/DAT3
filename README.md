@@ -125,30 +125,26 @@ Week | Tuesday | Thursday
     * Web scraping example ([code](code/05_web_scraping_class.py)):
         * [Pages to scrape](http://www.chicagoreader.com/chicago/best-of-chicago-2011-food-drink/BestOf?oid=4106228) using [Beautiful Soup 4](http://www.crummy.com/software/BeautifulSoup/bs4/doc/)
         * Adapted from [Web scraping 101 with Python](http://www.gregreda.com/2013/03/03/web-scraping-101-with-python/)
-* Tidy data and reproducibility
-    * What is [tidy data](http://www.prometheusresearch.com/good-data-management-practices-for-data-analysis-tidy-data-part-2/)? Examples: [tidy](https://github.com/fivethirtyeight/data/tree/master/bob-ross), [untidy](https://github.com/fivethirtyeight/data/tree/master/airline-safety), [very untidy](https://github.com/fivethirtyeight/data/tree/master/region-survey)
-    * What is [reproducibility](https://github.com/jtleek/datasharing)? [Twitter definition](https://twitter.com/jakevdp/status/519563939177197571), [example](https://github.com/fivethirtyeight/data/tree/master/classic-rock)
-* Pandas for data analysis ([code](code/05_pandas_class.py))
+* Pandas for data analysis and visualization ([code](code/05_pandas_class.py))
     * [Split-Apply-Combine](http://i.imgur.com/yjNkiwL.png) pattern
     * Simple examples of [joins in Pandas](http://www.gregreda.com/2013/10/26/working-with-pandas-dataframes/#joining)
-* Visualization
-* Regular expressions ("regex"), briefly
-    * What are [regular expressions](http://xkcd.com/208/)? [Why use them](http://geeksta.net/geeklog/exploring-expressions-emotions-github-commit-messages/)?
-    * Regex example ([code](code/05_regex_class.py), [data](data/homicides.txt))
+    * [Choosing a Good Chart](http://www.extremepresentation.com/uploads/documents/choosing_a_good_chart.pdf)
 
 **Homework:**
 
 * Project milestone: Submit your [question and data set](project.md) to DAT3-students by Tuesday!
+* Read through this excellent example of [data wrangling and exploration in Pandas](http://nbviewer.ipython.org/github/cs109/content/blob/master/lec_04_wrangling.ipynb)
+* Browse through this notebook on [Pandas plotting](http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section2_7-Plotting-with-Pandas.ipynb) to familiarize yourself with slightly more advanced plotting
 
 **Optional:**
 
+* To learn more Pandas, read through this [three-part tutorial](http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/) (some overlap with today's class), or read through these two excellent (but extremely long) notebooks: [Introduction to Pandas](http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section2_5-Introduction-to-Pandas.ipynb), [Data Wrangling with Pandas](http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section2_6-Data-Wrangling-with-Pandas.ipynb)
 * Post your favorite visualization in the "viz" channel on Slack
-* Read [Reproducibility is not just for researchers](http://www.dataschool.io/reproducibility-is-not-just-for-researchers/)
-* Watch [Colbert on reproducibility](http://thecolbertreport.cc.com/videos/dcyvro/austerity-s-spreadsheet-error) (8 minutes)
-* Scan the [Python reference](code/03_base_python_reference.py) to find things you don't know, and then learn more about those things!
 
 **Resources:**
 
-* Longer web scraping example using Beautiful Soup 4 ([slides](http://www.nyu.edu/projects/politicsdatalab/workshops/BeautifulSoup.pdf), [code](https://github.com/aristotle-tek/BeautifulSoup_pres))
-* Alternatives to web scraping: "turn any website into an API" with [import.io](https://import.io/) or [kimono](https://www.kimonolabs.com/)
-* Getting started with regex: [Python introductory lesson](https://developers.google.com/edu/python/regular-expressions) and [reference guide](code/05_regex_reference.py), [real-time regex tester](http://www.regexr.com/), [in-depth tutorials](http://www.rexegg.com/)
+* For more web scraping with Beautiful Soup 4, here's a longer example: [slides](http://www.nyu.edu/projects/politicsdatalab/workshops/BeautifulSoup.pdf), [code](https://github.com/aristotle-tek/BeautifulSoup_pres)
+* Web scraping without writing any code: "turn any website into an API" with [import.io](https://import.io/) or [kimono](https://www.kimonolabs.com/)
+* Pandas has [excellent documentation](http://pandas.pydata.org/pandas-docs/stable/index.html), including a long section on [visualization](http://pandas.pydata.org/pandas-docs/stable/visualization.html)
+* If you are already a master of ggplot2 in R, you may want to consider learning ggplot for Python: [introduction](http://blog.yhathq.com/posts/ggplot-for-python.html), [tutorial](http://blog.yhathq.com/posts/facebook-ggplot-tutorial.html)
+* This is an excellent [slide deck on visualization](http://www2.research.att.com/~volinsky/DataMining/Columbia2011/Slides/Topic2-EDAViz.ppt) from Columbia's Data Mining class, exploring many more types of visualizations and when to use each one
