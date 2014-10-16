@@ -18,6 +18,7 @@ File source:
 # imports
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 '''
@@ -88,6 +89,13 @@ users.sort_index(ascending=False)
 users.sort_index(by='age')                  # sort rows by specific column
 users.sort_index(by=['occupation', 'age'])  # sort by multiple columns
 
+# detecting duplicate rows
+users.duplicated()                                  # Series of logicals
+users.duplicated().sum()                            # count of duplicates
+users[users.duplicated()]                           # only show duplicates
+users[users.duplicated()==False]                    # only show unique rows
+users.duplicated(['age','gender','zip_code']).sum() # columns for identifying duplicates
+
 
 '''
 Exercise: Variation of the 'drinks' exercise from last class, with Pandas!
@@ -124,6 +132,7 @@ drinks.rename(columns={'total_litres_of_pure_alcohol':'pure_alcohol'}, inplace=T
 
 # hide a column (temporarily)
 drinks.drop(['total_servings'], axis=1)
+drinks[drinks.columns[:-1]]
 
 # delete a column (permanently)
 del drinks['total_servings']
@@ -194,6 +203,10 @@ users.groupby('occupation').age.min()
 users.groupby('occupation').age.max()
 users.groupby('occupation').age.apply(lambda x: x.max() - x.min())
 
+# for each occupation/gender combination, calculate mean age
+users.groupby(['occupation','gender']).age.mean()
+users.groupby(['gender','occupation']).age.mean()
+
 
 '''
 Joining Data
@@ -233,3 +246,36 @@ movie_stats.head()  # hierarchical index
 
 # limit results to movies with more than 100 ratings
 movie_stats[movie_stats.rating.size > 100].sort_index(by=('rating', 'mean'))
+
+
+'''
+Plotting
+'''
+
+# bar plot of number of countries in each continent
+drinks.continent.value_counts().plot(kind='bar', title='Countries per Continent')
+plt.xlabel('Continent')
+plt.ylabel('Count')
+plt.show()
+
+# bar plot of average number of beer servings (per adult per year) by continent
+drinks.groupby('continent').beer_servings.mean().plot(kind='bar')
+
+# histogram of beer servings
+drinks.beer_servings.hist(bins=20)
+
+# grouped histogram of beer servings
+drinks.beer_servings.hist(by=drinks.continent, sharex=True)
+
+# density plot of beer servings
+drinks.beer_servings.plot(kind='density', xlim=(0,500))
+
+# boxplot of beer servings by continent
+drinks.boxplot(column='beer_servings', by='continent')
+
+# scatterplot of beer servings versus wine servings
+drinks.plot(x='beer_servings', y='wine_servings', kind='scatter', alpha=0.3)
+
+# same scatterplot, except all European countries are colored red
+colors = np.where(drinks.continent=='EU', 'r', 'b')
+drinks.plot(x='beer_servings', y='wine_servings', kind='scatter', c=colors)
