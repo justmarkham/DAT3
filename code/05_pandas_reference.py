@@ -1,9 +1,8 @@
 '''
 Pandas Reference Guide
 
-Sources:
+Source:
     http://fonnesbeck.github.io/Bios366/lectures.html
-    http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/
 
 Files used:
     ../data/microbiome.csv
@@ -19,16 +18,16 @@ import numpy as np
 
 # create Series with default index (0, 1, 2, 3)
 counts = pd.Series([632, 1638, 569, 115])
-counts.values
-counts.index
+counts.values   # numpy array
+counts.index    # index object
 
 # create Series and specify index
 bacteria = pd.Series([632, 1638, 569, 115], 
     index=['Firmicutes', 'Proteobacteria', 'Actinobacteria', 'Bacteroidetes'])
 
-# filter
-bacteria['Actinobacteria']
-bacteria[2]
+# filter a Series
+bacteria['Actinobacteria']  # by label
+bacteria[2]                 # by position
 bacteria[[name.endswith('bacteria') for name in bacteria.index]]
 bacteria[bacteria > 1000]
 
@@ -59,11 +58,12 @@ bacteria + bacteria2
 ### DATAFRAME ###
 
 # create DataFrame from dictionary of lists
-# DataFrame has second index representing the columns
 data = pd.DataFrame({'value':[632, 1638, 569, 115, 433, 1130, 754, 555],
     'patient':[1, 1, 1, 1, 2, 2, 2, 2],
     'phylum':['Firmicutes', 'Proteobacteria', 'Actinobacteria', 'Bacteroidetes',
               'Firmicutes', 'Proteobacteria', 'Actinobacteria', 'Bacteroidetes']})
+
+# DataFrame has second index representing the columns
 data.columns
 data.dtypes
 
@@ -72,14 +72,13 @@ data.value
 data['value']       # returns a Series
 data[['value']]     # returns a DataFrame
 
-# select column, then filter by index (CLARIFY)
+# select column, then filter by index (or "label")
 data.value[3]
+data.loc[3, 'value']    # less ambiguous
 
-# select column, then filter by position (CLARIFY)
+# select column, then filter by position
 data.value[0:2]
-
-# filter rows by index (CLARIFY)
-data.ix[3]
+data.iloc[0:2, 2]       # less ambiguous, but requires column position
 
 # filter rows by boolean
 data[data.value>1000]
@@ -129,9 +128,8 @@ mb2 = pd.read_csv('../data/microbiome_missing.csv', na_values=['?', -99999])
 
 ### MISSING VALUES ###
 
-# drop any rows with missing values (VERIFY)
+# drop any rows with missing values
 mb2.dropna()
-mb2[mb2.notnull()]
 
 # only drop a row if every field is a missing value
 mb2.dropna(how='all')
@@ -164,7 +162,7 @@ baseball_new.ix['wickmbo012007']
 baseball.reindex(baseball.index[::-1])
 
 
-### SLICING (VERIFY) ###
+### SLICING ###
 
 # select columns
 baseball_new[['h','ab']]
@@ -172,13 +170,12 @@ baseball_new[baseball_new.ab>500]
 
 # select column, then filter rows by index
 baseball_new.h['womacto012006']
-baseball_new['h']['womacto012006']
-baseball_new['h'][['womacto012006', 'schilcu012006']]
-baseball_new['h']['womacto012006':'myersmi012006']
+baseball_new.h[['womacto012006', 'schilcu012006']]
+baseball_new.h['womacto012006':'myersmi012006']
 
-# select column, then filter rows by position
-baseball_new['h'][0]    # this filters by position, unless your index is an integer
-baseball_new['h'][0:3]  # this always filters by position
+# select column, then filter rows by position (works because index is not an integer)
+baseball_new.h[0]
+baseball_new.h[0:3]
 
 # alternatively: filter rows then select columns
 baseball_new.ix['womacto012006', 'h']
@@ -196,7 +193,7 @@ baseball.drop(['ibb', 'hbp'], axis=1)
 stats = baseball[['h','X2b', 'X3b', 'hr']]
 stats.apply(np.median)      # median of each column
 stats.apply(np.sum, axis=1) # sum of each row
-stats.apply(lambda x: x.max()-x.min())
+stats.apply(lambda x: x.max() - x.min())
 
 # built-in functions
 baseball.mean()         # ignores NaN by defalut

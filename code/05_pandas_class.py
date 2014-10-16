@@ -2,7 +2,7 @@
 CLASS: Pandas for Data Analysis in Python
 
 Adapted from:
-    http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/
+    http://www.gregreda.com/2013/10/26/working-with-pandas-dataframes/
 
 Files used:
     ../data/u.user
@@ -21,7 +21,7 @@ import numpy as np
 
 
 '''
-Basics: reading files, selecting, filtering, sorting, summarizing
+Basics: Reading Files, Selecting, Filtering, Sorting, Summarizing
 '''
 
 # read 'u.user' into 'users'
@@ -33,10 +33,12 @@ users = pd.read_table('../data/u.user', header=None, names=u_cols, sep='|',
 users
 users.head(10)
 users.tail()
-users.describe()        # method
-users.index             # attribute
-users.columns
-users.dtypes
+users.describe()        # describe any numeric columns
+users.index             # "the index" (aka "the labels")
+users.columns           # column names (which is "an index")
+users.dtypes            # data types of each column
+users.values            # underlying numpy array
+users.info()            # concise summary
 
 # DataFrame vs Series, selecting a column
 type(users)
@@ -54,28 +56,30 @@ my_cols = ['age', 'gender']
 users[my_cols]
 type(users[my_cols])
 
-# loc: filter rows by label, and select columns by label
+# loc: filter rows by LABEL, and select columns by LABEL
 users.loc[1]                        # row with label 1
 users.loc[1:3]                      # rows with labels 1 through 3
 users.loc[1:3, 'age':'occupation']  # rows 1-3, columns 'age' through 'occupation'
-users.loc['age':'occupation']       # does not work
 users.loc[:, 'age':'occupation']    # all rows, columns 'age' through 'occupation'
+users.loc[[1,3], ['age','gender']]  # rows 1 and 3, columns 'age' and 'gender'
 
-# iloc: filter rows by position, and select columns by position
+# iloc: filter rows by POSITION, and select columns by POSITION
 users.iloc[0]                       # row with 0th position (first row)
 users.iloc[0:3]                     # rows with positions 0 through 2 (not 3)
 users.iloc[0:3, 0:3]                # rows and columns with positions 0 through 2
 users.iloc[:, 0:3]                  # all rows, columns with positions 0 through 2
+users.iloc[[0,2], [0,1]]            # 1st and 3rd row, 1st and 2nd column
 
-# ix: for mixing label selection and position selection
-users.ix[0:3, 'age':'occupation']   # filter rows by position, select columns by label
-users.ix[1, 'age':'occupation']     # danger! '1' is interpreted as a label
+# mixing: select columns by LABEL, then filter rows by POSITION
+users.age[0:3]
+users[['age', 'gender', 'occupation']][0:3]
 
 # logical filtering
 users[users.age < 20]
 users.age[users.age < 20]
 users[['age', 'occupation']][users.age < 20]
 users[(users.age < 20) & (users.gender=='M')]
+users[users.occupation.isin(['doctor','lawyer'])]
 
 # sorting
 users.age.order()                           # only works for a Series
@@ -91,7 +95,7 @@ Exercise: Variation of the 'drinks' exercise from last class, with Pandas!
 - Read drinks.csv and store it in a DataFrame called 'drinks' (use the default index)
 - Count the number of 'continent' values and make sure it looks correct
 - Calculate the average 'beer_servings' for the entire dataset
-- Calculate the average 'beer servings' for Europe
+- Calculate the average 'beer_servings' for Europe
 - Determine which country has the maximum value for 'beer_servings'
 - Determine which 10 countries have the highest 'total_litres_of_pure_alcohol'
 '''
@@ -105,14 +109,23 @@ drinks.sort_index(by='total_litres_of_pure_alcohol').tail(10)
 
 
 '''
-Adding and Removing Columns
+Adding, Renaming, and Removing Columns
 '''
 
-# adding a new column as a function of existing columns
+# add a new column as a function of existing columns
 drinks['total_servings'] = drinks.beer_servings + drinks.spirit_servings + drinks.wine_servings
+drinks.head()
+
+# alternative method: default is column sums, 'axis=1' does row sums
 drinks['total_servings'] = drinks.loc[:, 'beer_servings':'wine_servings'].sum(axis=1)
 
-# deleting a column
+# rename a column
+drinks.rename(columns={'total_litres_of_pure_alcohol':'pure_alcohol'}, inplace=True)
+
+# hide a column (temporarily)
+drinks.drop(['total_servings'], axis=1)
+
+# delete a column (permanently)
 del drinks['total_servings']
 
 
@@ -126,18 +139,23 @@ drinks = pd.read_csv('../data/drinks.csv')
 # set more values to NaN
 drinks.loc[192, 'beer_servings':'wine_servings'] = np.nan
 
-# look for missing values
+# missing values are often just excluded
 drinks.describe()                           # excludes missing values
 drinks.continent.value_counts()             # excludes missing values
 drinks.continent.value_counts(dropna=False) # includes missing values (new in pandas 0.14.1)
 
-# create a Series of logicals
-drinks.continent.isnull()   # True if NaN, False otherwise
-drinks.continent.notnull()  # False if NaN, True otherwise
+# find missing values in a Series
+drinks.continent.isnull()       # True if NaN, False otherwise
+drinks.continent.notnull()      # False if NaN, True otherwise
+drinks.continent.isnull().sum() # count the missing values
+
+# find missing values in a DataFrame
+drinks.isnull()
+drinks.isnull().sum()
 
 # drop missing values
-drinks.dropna()             # drop a row if it is missing any values
-drinks.dropna(how='all')    # drop a row only if all values are missing
+drinks.dropna()             # drop a row if ANY values are missing
+drinks.dropna(how='all')    # drop a row only if ALL values are missing
 
 # fill in missing values
 drinks.continent.fillna(value='NA', inplace=True)
@@ -167,14 +185,14 @@ Split-Apply-Combine
 # for each occupation, calculate mean age
 users.groupby('occupation').age.mean()
 
-# for each occupation, count number of occurrences
+# for each occupation, count number of occurrences (excluding NaN)
 users.groupby('occupation').occupation.count()
 users.occupation.value_counts()
 
 # for each occupation, calculate the min age, max age, and age range
 users.groupby('occupation').age.min()
 users.groupby('occupation').age.max()
-users.groupby('occupation').age.apply(lambda x: x.max()-x.min())
+users.groupby('occupation').age.apply(lambda x: x.max() - x.min())
 
 
 '''
