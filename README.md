@@ -119,7 +119,7 @@ Week | Tuesday | Thursday
 
 ## Class 5: Exploratory Data Analysis
 
-* Discuss homework solutions (code coming soon)
+* Discuss homework solutions ([code](code/04_file_io_solutions.py))
 * Scraping the web for data
     * What is web scraping? Why use it?
     * Web scraping example ([code](code/05_web_scraping_class.py)):
