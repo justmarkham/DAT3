@@ -11,7 +11,7 @@ Week | Tuesday | Thursday
 0 | | 10/2: [Introduction](#class-1-introduction)
 1 | 10/7: [Git and GitHub](#class-2-git-and-github) | 10/9: [Base Python](#class-3-base-python)
 2 | 10/14: [Getting and Cleaning Data](#class-4-getting-and-cleaning-data) | 10/16: [Exploratory Data Analysis](#class-5-exploratory-data-analysis)
-3 | 10/21: Linear Regression<br>**Milestone:** Question and Data Set | 10/23: Logistic Regression
+3 | 10/21: [Linear Regression](#class-6-linear-regression)<br>**Milestone:** Question and Data Set | 10/23: Logistic Regression
 4 | 10/28: Machine Learning, KNN | 10/30: Model Evaluation
 5 | 11/4: Clustering<br>**Milestone:** Data Exploration and<br>Analysis Plan | 11/6: Naive Bayes and NLP
 6 | 11/11: Dimension Reduction | 11/13: Decision Trees
@@ -125,26 +125,41 @@ Week | Tuesday | Thursday
     * Web scraping example ([code](code/05_web_scraping_class.py)):
         * [Pages to scrape](http://www.chicagoreader.com/chicago/best-of-chicago-2011-food-drink/BestOf?oid=4106228) using [Beautiful Soup 4](http://www.crummy.com/software/BeautifulSoup/bs4/doc/)
         * Adapted from [Web scraping 101 with Python](http://www.gregreda.com/2013/03/03/web-scraping-101-with-python/)
-* Pandas for data analysis and visualization ([code](code/05_pandas_class.py))
+* Pandas for data analysis ([code](code/05_pandas_class.py))
     * [Split-Apply-Combine](http://i.imgur.com/yjNkiwL.png) pattern
-    * Simple examples of [joins in Pandas](http://www.gregreda.com/2013/10/26/working-with-pandas-dataframes/#joining)
-    * [Choosing a Good Chart](http://www.extremepresentation.com/uploads/documents/choosing_a_good_chart.pdf)
 
 **Homework:**
 
 * Project milestone: Submit your [question and data set](project.md) to DAT3-students by Tuesday!
 * Read through this excellent example of [data wrangling and exploration in Pandas](http://nbviewer.ipython.org/github/cs109/content/blob/master/lec_04_wrangling.ipynb)
-* Browse through this notebook on [Pandas plotting](http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section2_7-Plotting-with-Pandas.ipynb) to familiarize yourself with slightly more advanced plotting
 
 **Optional:**
 
 * To learn more Pandas, read through this [three-part tutorial](http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/) (some overlap with today's class), or read through these two excellent (but extremely long) notebooks: [Introduction to Pandas](http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section2_5-Introduction-to-Pandas.ipynb), [Data Wrangling with Pandas](http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section2_6-Data-Wrangling-with-Pandas.ipynb)
-* Post your favorite visualization in the "viz" channel on Slack
 
 **Resources:**
 
 * For more web scraping with Beautiful Soup 4, here's a longer example: [slides](http://www.nyu.edu/projects/politicsdatalab/workshops/BeautifulSoup.pdf), [code](https://github.com/aristotle-tek/BeautifulSoup_pres)
 * Web scraping without writing any code: "turn any website into an API" with [import.io](https://import.io/) or [kimono](https://www.kimonolabs.com/)
-* Pandas has [excellent documentation](http://pandas.pydata.org/pandas-docs/stable/index.html), including a long section on [visualization](http://pandas.pydata.org/pandas-docs/stable/visualization.html)
-* If you are already a master of ggplot2 in R, you may want to consider learning ggplot for Python: [introduction](http://blog.yhathq.com/posts/ggplot-for-python.html), [tutorial](http://blog.yhathq.com/posts/facebook-ggplot-tutorial.html)
-* This is an excellent [slide deck on visualization](http://www2.research.att.com/~volinsky/DataMining/Columbia2011/Slides/Topic2-EDAViz.ppt) from Columbia's Data Mining class, exploring many more types of visualizations and when to use each one
+* Simple examples of [joins in Pandas](http://www.gregreda.com/2013/10/26/working-with-pandas-dataframes/#joining), for when you need to merge multiple DataFrames together
+
+
+## Class 6: Linear Regression
+
+* Discuss your project question and data set
+* Pandas for visualization ([code](code/05_pandas_class.py))
+* Linear regression
+
+**Homework:**
+
+* To be determined
+
+**Optional:**
+
+* Post your favorite visualization in the "viz" channel on Slack, and tell us what you like about it
+
+**Resources:**
+
+* For more on Pandas plotting, browse through this [IPython notebook](http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section2_7-Plotting-with-Pandas.ipynb) or read the [visualization page](http://pandas.pydata.org/pandas-docs/stable/visualization.html) from the official Pandas documentation
+* To explore different types of visualizations and when to use them, [Choosing a Good Chart](http://www.extremepresentation.com/uploads/documents/choosing_a_good_chart.pdf) is a handy one-page reference, and here is an excellent [slide deck](http://www2.research.att.com/~volinsky/DataMining/Columbia2011/Slides/Topic2-EDAViz.ppt) from Columbia's Data Mining class
+* If you are already a master of ggplot2 in R, you may prefer "ggplot for Python" over matplotlib: [introduction](http://blog.yhathq.com/posts/ggplot-for-python.html), [tutorial](http://blog.yhathq.com/posts/facebook-ggplot-tutorial.html)
