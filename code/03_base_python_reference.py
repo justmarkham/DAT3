@@ -5,6 +5,7 @@ Sources:
     https://docs.python.org/2/
     http://www.codecademy.com/tracks/python
     https://developers.google.com/edu/python/
+    http://stackoverflow.com
     Book: Python for Data Analysis (Appendix)
     and many others...
 
@@ -20,11 +21,10 @@ Table of Contents:
     Dictionaries
     Sets
     Defining Functions
-    For Loops
+    For Loops and While Loops
+    Comprehensions
 
 Will be added:
-    While Loops
-    Comprehensions
     Lambda functions
     Reading/writing files
     And more...
@@ -146,6 +146,7 @@ else:
 if x > 0: print 'positive'
 
 # single-line if/else statement (sometimes discouraged)
+# known as a 'ternary operator'
 'positive' if x > 0 else 'zero or negative'
 
 
@@ -460,7 +461,7 @@ def stub():
 
 
 
-### FOR LOOPS ###
+### FOR LOOPS AND WHILE LOOPS ###
 
 # range returns a list of integers
 range(0, 3)     # returns [0, 1, 2]: includes first value but excludes second value
@@ -483,3 +484,72 @@ for key, value in family.items():
 # use enumerate if you need to access the index value within the loop
 for index, fruit in enumerate(fruits):
     print index, fruit
+
+# for/else loop
+for fruit in fruits:
+    if fruit == 'banana':
+        print "Found the banana!"
+        break   # exit the loop and skip the 'else' block
+else:
+    # this block executes ONLY if the for loop completes without hitting 'break'
+    print "Can't find the banana"
+
+# while loop
+count = 0
+while count < 5:
+    print "This will print 5 times"
+    count += 1      # equivalent to 'count = count + 1'
+
+
+
+### COMPREHENSIONS ###
+
+# for loop to create a list of cubes
+nums = [1, 2, 3, 4, 5]
+cubes = []
+for num in nums:
+    cubes.append(num**3)
+
+# equivalent list comprehension
+cubes = [num**3 for num in nums]    # [1, 8, 27, 64, 125]
+
+# for loop to create a list of cubes of even numbers
+cubes_of_even = []
+for num in nums:
+    if num % 2 == 0:
+        cubes_of_even.append(num**3)
+
+# equivalent list comprehension
+# syntax: [expression for variable in iterable if condition]
+cubes_of_even = [num**3 for num in nums if num % 2 == 0]    # [8, 64]
+
+# for loop to cube even numbers and square odd numbers
+cubes_and_squares = []
+for num in nums:
+    if num % 2 == 0:
+        cubes_and_squares.append(num**3)
+    else:
+        cubes_and_squares.append(num**2)
+
+# equivalent list comprehension (using a ternary expression)
+# syntax: [true_condition if condition else false_condition for variable in iterable]
+cubes_and_squares = [num**3 if num % 2 == 0 else num**2 for num in nums]    # [1, 8, 9, 64, 25]
+
+# for loop to flatten a 2d-matrix
+matrix = [[1, 2], [3, 4]]
+items = []
+for row in matrix:
+    for item in row:
+        items.append(item)
+
+# equivalent list comprehension
+items = [item for row in matrix
+              for item in row]      # [1, 2, 3, 4]
+
+# set comprehension
+fruits = ['apple', 'banana', 'cherry']
+unique_lengths = {len(fruit) for fruit in fruits}   # {5, 6}
+
+# dictionary comprehension
+fruit_lengths = {fruit:len(fruit) for fruit in fruits}              # {'apple': 5, 'banana': 6, 'cherry': 6}
+fruit_indices = {fruit:index for index, fruit in enumerate(fruits)} # {'apple': 0, 'banana': 1, 'cherry': 2}
