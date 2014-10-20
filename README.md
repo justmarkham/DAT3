@@ -11,8 +11,8 @@ Week | Tuesday | Thursday
 0 | | 10/2: [Introduction](#class-1-introduction)
 1 | 10/7: [Git and GitHub](#class-2-git-and-github) | 10/9: [Base Python](#class-3-base-python)
 2 | 10/14: [Getting and Cleaning Data](#class-4-getting-and-cleaning-data) | 10/16: [Exploratory Data Analysis](#class-5-exploratory-data-analysis)
-3 | 10/21: [Linear Regression](#class-6-linear-regression)<br>**Milestone:** Question and Data Set | 10/23: Logistic Regression
-4 | 10/28: Machine Learning, KNN | 10/30: Model Evaluation
+3 | 10/21: [Linear Regression](#class-6-linear-regression)<br>**Milestone:** Question and Data Set | 10/23: [Logistic Regression](#class-7-logistic-regression)
+4 | 10/28: [Machine Learning and KNN](#class-8-machine-learning-and-knn) | 10/30: [Model Evaluation](#class-9-model-evaluation)
 5 | 11/4: Clustering<br>**Milestone:** Data Exploration and<br>Analysis Plan | 11/6: Naive Bayes and NLP
 6 | 11/11: Dimension Reduction | 11/13: Decision Trees
 7 | 11/18: Project Working Time<br>**Milestone:** First Draft Due | 11/20: Ensembling: Random Forests
@@ -164,3 +164,54 @@ Week | Tuesday | Thursday
 * To learn how to customize your plots further, browse through this [IPython notebook](http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section2_4-Matplotlib.ipynb) on matplotlib
 * To explore different types of visualizations and when to use them, [Choosing a Good Chart](http://www.extremepresentation.com/uploads/documents/choosing_a_good_chart.pdf) is a handy one-page reference, and here is an excellent [slide deck](http://www2.research.att.com/~volinsky/DataMining/Columbia2011/Slides/Topic2-EDAViz.ppt) from Columbia's Data Mining class
 * If you are already a master of ggplot2 in R, you may prefer "ggplot for Python" over matplotlib: [introduction](http://blog.yhathq.com/posts/ggplot-for-python.html), [tutorial](http://blog.yhathq.com/posts/facebook-ggplot-tutorial.html)
+
+
+## Class 7: Logistic Regression
+
+* Logistic regression
+
+**Homework:**
+
+**Optional:**
+
+**Resources:**
+
+
+## Class 8: Machine Learning and KNN
+
+* "Human learning" on iris data with Pandas
+* Machine learning introduction
+* K-Nearest Neighbors (KNN)
+* scikit-learn with iris data
+* Basic numpy
+
+**Homework:**
+
+* Read about the [Bias-variance tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html) (with KNN)
+
+**Resources:**
+
+* [Introduction to numpy](http://www.engr.ucsb.edu/~shell/che210d/numpy.pdf)
+
+
+## Class 9: Model Evaluation
+
+* Discuss bias-variance tradeoff
+* Training error, overfitting, validation set approach, cross-validation
+* Confusion matrix, ROC curves, other evaluation metrics
+* Introduction to Kaggle
+* Enter a Kaggle competition
+
+**Homework:**
+
+* Read this [simple example](http://googleresearch.blogspot.com/2014/10/smart-autofill-harnessing-predictive.html) of machine learning and see if you understand everything in the article
+* Watch my [Kaggle project presentation video](https://www.youtube.com/watch?v=HGr1yQV3Um0) (16 minutes) for a tour of the machine learning process
+
+**Optional:**
+
+* For more on Kaggle, watch this video on [Data Science as Sport](https://www.youtube.com/watch?v=8w4UY66GKcM) (28 minutes)
+* For more on the Kaggle Allstate competition, read my [project paper](https://github.com/justmarkham/kaggle-allstate) or skim the [solution sharing thread](http://www.kaggle.com/c/allstate-purchase-prediction-challenge/forums/t/8218/solution-sharing)
+
+**Resources:**
+
+* If you'd like to see more on today's topics, these videos from Hastie and Tibshirani are excellent: [bias-variance tradeoff](https://www.youtube.com/watch?v=VusKAosxxyk) (10 minutes), [validation set approach](https://www.youtube.com/watch?v=_2ij6eaaSl0) (14 minutes), [cross-validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (13 minutes) - or you can just read section 5.1 from [their book](http://www-bcf.usc.edu/~gareth/ISL/)
