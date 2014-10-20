@@ -161,5 +161,6 @@ Week | Tuesday | Thursday
 **Resources:**
 
 * For more on Pandas plotting, browse through this [IPython notebook](http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section2_7-Plotting-with-Pandas.ipynb) or read the [visualization page](http://pandas.pydata.org/pandas-docs/stable/visualization.html) from the official Pandas documentation
+* To learn how to customize your plots further, browse through this [IPython notebook](http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section2_4-Matplotlib.ipynb) on matplotlib
 * To explore different types of visualizations and when to use them, [Choosing a Good Chart](http://www.extremepresentation.com/uploads/documents/choosing_a_good_chart.pdf) is a handy one-page reference, and here is an excellent [slide deck](http://www2.research.att.com/~volinsky/DataMining/Columbia2011/Slides/Topic2-EDAViz.ppt) from Columbia's Data Mining class
 * If you are already a master of ggplot2 in R, you may prefer "ggplot for Python" over matplotlib: [introduction](http://blog.yhathq.com/posts/ggplot-for-python.html), [tutorial](http://blog.yhathq.com/posts/facebook-ggplot-tutorial.html)
