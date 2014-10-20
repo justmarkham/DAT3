@@ -156,7 +156,7 @@ Week | Tuesday | Thursday
 
 **Optional:**
 
-* Post your favorite visualization in the "viz" channel on Slack, and tell us what you like about it
+* Post your favorite visualization in the "viz" channel on Slack, and tell us what you like about it!
 
 **Resources:**
 
@@ -214,4 +214,4 @@ Week | Tuesday | Thursday
 
 **Resources:**
 
-* If you'd like to see more on today's topics, these videos from Hastie and Tibshirani are excellent: [bias-variance tradeoff](https://www.youtube.com/watch?v=VusKAosxxyk) (10 minutes), [validation set approach](https://www.youtube.com/watch?v=_2ij6eaaSl0) (14 minutes), [cross-validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (13 minutes) - or you can just read section 5.1 from [their book](http://www-bcf.usc.edu/~gareth/ISL/)
+* If you'd like to see more on today's topics, these videos from Hastie and Tibshirani are excellent: [bias-variance tradeoff](https://www.youtube.com/watch?v=VusKAosxxyk) (10 minutes), [validation set approach](https://www.youtube.com/watch?v=_2ij6eaaSl0) (14 minutes), [cross-validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (14 minutes) - or just read section 5.1 from [their book](http://www-bcf.usc.edu/~gareth/ISL/) (free PDF download!)
