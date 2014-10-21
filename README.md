@@ -148,7 +148,7 @@ Week | Tuesday | Thursday
 
 * Discuss your project question and data set
 * Pandas for visualization ([code](code/05_pandas_class.py))
-* Linear regression ([code](https://github.com/justmarkham/DAT3/blob/master/code/06_regression_class.py))
+* Linear regression ([code](https://github.com/justmarkham/DAT3/blob/master/code/06_regression_class.py)),([.ppt](https://github.com/justmarkham/DAT3/blob/master/slides/06_linear_regression.pptx))
     * What is Linear Regression?
     * How do I compute the model?
     * How do interpret the output?
