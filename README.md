@@ -165,6 +165,7 @@ Week | Tuesday | Thursday
 * One of the best place to go for more information about Linear Regression is Ch. 3 of our course "textbook": [The Introduction to Statistical Learning](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/)
 * For more information about core assumptions check out this [article](http://people.duke.edu/~rnau/testing.htm) and [this one](http://pareonline.net/getvn.asp?n=2&v=8) 
 * For more on log transformations, check out this [article](http://people.duke.edu/~rnau/411log.htm)
+* This [handout](http://www3.nd.edu/~rwilliam/stats2/l02.pdf) provides an overview of the computation of the F-test
 * This may be a helpful [article](http://web.stanford.edu/~mrosenfe/soc_meth_proj3/matrix_OLS_NYU_notes.pdf) on how to derive the coefficient estimates
 * For more on Pandas plotting, browse through this [IPython notebook](http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section2_7-Plotting-with-Pandas.ipynb) or read the [visualization page](http://pandas.pydata.org/pandas-docs/stable/visualization.html) from the official Pandas documentation
 * To learn how to customize your plots further, browse through this [IPython notebook](http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section2_4-Matplotlib.ipynb) on matplotlib
