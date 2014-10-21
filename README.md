@@ -162,7 +162,7 @@ Week | Tuesday | Thursday
 * Post your favorite visualization in the "viz" channel on Slack, and tell us what you like about it!
 
 **Resources:**
-* One of the best place to go for more information about Linear Regression is our course "textbook": (The Introduction to Statistical Learning)[http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/]
+* One of the best place to go for more information about Linear Regression is our course "textbook": [The Introduction to Statistical Learning](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/)
 * For more information about core assumptions check out this [article](http://people.duke.edu/~rnau/testing.htm) and [this one](http://pareonline.net/getvn.asp?n=2&v=8) 
 * For more on log transformations, check out this [article] (http://people.duke.edu/~rnau/411log.htm)
 * This may be a helpful [article](http://web.stanford.edu/~mrosenfe/soc_meth_proj3/matrix_OLS_NYU_notes.pdf) on how to derive the coefficient estimates 
