@@ -149,16 +149,24 @@ Week | Tuesday | Thursday
 * Discuss your project question and data set
 * Pandas for visualization ([code](code/05_pandas_class.py))
 * Linear regression
+    * What is Linear Regression?
+    * How do I compute the model?
+    * How do interpret the output?
+    * What assumptions does Linear Regression depend upon?
+    * What is multicollinearity & heteroskedasticity and why should I care?
+    * How do I represent  categorical variables?
 
 **Homework:**
-
-* To be determined
+* Complete the exercises at the end of the  [python script](https://github.com/justmarkham/DAT3/blob/master/code/06_regression_class.py) from class
 
 **Optional:**
-
 * Post your favorite visualization in the "viz" channel on Slack, and tell us what you like about it!
 
 **Resources:**
+* For more information about core assumptions check out this [article](http://people.duke.edu/~rnau/testing.htm) and [this one](http://pareonline.net/getvn.asp?n=2&v=8) 
+* For more on log transformations, check out this [article] (http://people.duke.edu/~rnau/411log.htm)
+* This may be a helpful [article](http://web.stanford.edu/~mrosenfe/soc_meth_proj3/matrix_OLS_NYU_notes.pdf) on how to derive the coefficient estimates 
+
 
 * For more on Pandas plotting, browse through this [IPython notebook](http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section2_7-Plotting-with-Pandas.ipynb) or read the [visualization page](http://pandas.pydata.org/pandas-docs/stable/visualization.html) from the official Pandas documentation
 * To learn how to customize your plots further, browse through this [IPython notebook](http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section2_4-Matplotlib.ipynb) on matplotlib
