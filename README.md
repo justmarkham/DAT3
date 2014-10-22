@@ -212,6 +212,7 @@ Week | Tuesday | Thursday
 
 **Homework:**
 
+* Project milestone: Submit your "[Data Exploration and Analysis Plan](project.md)" to DAT3-students by Tuesday!
 * Read this [simple example](http://googleresearch.blogspot.com/2014/10/smart-autofill-harnessing-predictive.html) of machine learning and see if you understand everything in the article
 * Watch my [Kaggle project presentation video](https://www.youtube.com/watch?v=HGr1yQV3Um0) (16 minutes) for a tour of the machine learning process
 
