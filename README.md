@@ -178,7 +178,7 @@ Week | Tuesday | Thursday
 
 **Resources:**
 
-* One of the best places to go for more information about linear regression is chapter 3 of our course "textbook": [An Introduction to Statistical Learning](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/)
+* One of the best places to go for more information about linear regression is chapter 3 of our course "textbook": [An Introduction to Statistical Learning](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/) - or just read Kevin's [highly abbreviated version](http://www.dataschool.io/applying-and-interpreting-linear-regression/)
 * For more information about core assumptions, check out this [article](http://people.duke.edu/~rnau/testing.htm) and [this one](http://pareonline.net/getvn.asp?n=2&v=8)
 * For more on log transformations, check out this [article](http://people.duke.edu/~rnau/411log.htm)
 * This [handout](http://www3.nd.edu/~rwilliam/stats2/l02.pdf) provides an overview of the computation of the F-test
