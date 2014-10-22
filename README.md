@@ -148,25 +148,19 @@ Week | Tuesday | Thursday
 
 * Discuss your project question and data set
 * Pandas for visualization ([code](code/05_pandas_class.py))
-* Linear regression ([code](https://github.com/justmarkham/DAT3/blob/master/code/06_regression_class.py)),([.ppt](https://github.com/justmarkham/DAT3/blob/master/slides/06_linear_regression.pptx))
-    * What is Linear Regression?
-    * How do interpret the output?
-    * What assumptions does Linear Regression depend upon?
-    * What is multicollinearity & heteroskedasticity and why should I care?
-    * How do I represent  categorical variables?
-
-**Homework:**
-* Complete the exercises at the end of the  [python script](https://github.com/justmarkham/DAT3/blob/master/code/06_regression_class.py) from class
+* Linear regression ([code](code/06_regression_class.py), [slides](slides/06_linear_regression.pdf))
+    * What is linear regression?
+    * How to interpret the output?
+    * What assumptions does linear regression depend upon?
+    * What is multicollinearity and heteroskedasticity, and why should I care?
+    * How do I represent categorical variables?
 
 **Optional:**
+
 * Post your favorite visualization in the "viz" channel on Slack, and tell us what you like about it!
 
 **Resources:**
-* One of the best place to go for more information about Linear Regression is Ch. 3 of our course "textbook": [The Introduction to Statistical Learning](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/)
-* For more information about core assumptions check out this [article](http://people.duke.edu/~rnau/testing.htm) and [this one](http://pareonline.net/getvn.asp?n=2&v=8) 
-* For more on log transformations, check out this [article](http://people.duke.edu/~rnau/411log.htm)
-* This [handout](http://www3.nd.edu/~rwilliam/stats2/l02.pdf) provides an overview of the computation of the F-test
-* This may be a helpful [article](http://web.stanford.edu/~mrosenfe/soc_meth_proj3/matrix_OLS_NYU_notes.pdf) on how to derive the coefficient estimates
+
 * For more on Pandas plotting, browse through this [IPython notebook](http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section2_7-Plotting-with-Pandas.ipynb) or read the [visualization page](http://pandas.pydata.org/pandas-docs/stable/visualization.html) from the official Pandas documentation
 * To learn how to customize your plots further, browse through this [IPython notebook](http://nbviewer.ipython.org/github/fonnesbeck/Bios366/blob/master/notebooks/Section2_4-Matplotlib.ipynb) on matplotlib
 * To explore different types of visualizations and when to use them, [Choosing a Good Chart](http://www.extremepresentation.com/uploads/documents/choosing_a_good_chart.pdf) is a handy one-page reference, and here is an excellent [slide deck](http://www2.research.att.com/~volinsky/DataMining/Columbia2011/Slides/Topic2-EDAViz.ppt) from Columbia's Data Mining class
@@ -175,13 +169,20 @@ Week | Tuesday | Thursday
 
 ## Class 7: Logistic Regression
 
+* Linear regression, continued
 * Logistic regression
 
 **Homework:**
 
-**Optional:**
+* Complete the exercises at the end of the [python script](code/06_regression_class.py) from class
 
 **Resources:**
+
+* One of the best places to go for more information about linear regression is chapter 3 of our course "textbook": [An Introduction to Statistical Learning](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/)
+* For more information about core assumptions, check out this [article](http://people.duke.edu/~rnau/testing.htm) and [this one](http://pareonline.net/getvn.asp?n=2&v=8)
+* For more on log transformations, check out this [article](http://people.duke.edu/~rnau/411log.htm)
+* This [handout](http://www3.nd.edu/~rwilliam/stats2/l02.pdf) provides an overview of the computation of the F-test
+* This may be a helpful [article](http://web.stanford.edu/~mrosenfe/soc_meth_proj3/matrix_OLS_NYU_notes.pdf) on how to derive the coefficient estimates
 
 
 ## Class 8: Machine Learning and KNN
