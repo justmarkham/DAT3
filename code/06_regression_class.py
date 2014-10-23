@@ -39,13 +39,12 @@ x_prime = pd.DataFrame({'temp': np.linspace(bike_dat.temp.min(),
 y_hat = est_s.predict(x_prime)
 
 # Plot the data with scatter plot
-plt.scatter(bike_dat.temp, bike_dat.cnt, alpha=0.3) 
+plt.scatter(bike_dat.temp, bike_dat.cnt, alpha=0.3)
 plt.xlabel("Temperature")
 plt.ylabel("Number of Bike Rentals")
 
 # Add a line to the same plot
 plt.plot(x_prime, y_hat, 'r', linewidth=2, alpha=0.9)
-
 
 # Plot the residuals (more on this later)
 plt.figure()
@@ -65,8 +64,7 @@ est_m = smf.ols(formula='cnt ~ atemp + temp + workingday + windspeed',
 est_m.summary()
 
 # Scatter plot
-cols = ['cnt','atemp', 'windspeed',
-                                'weathersit','temp','workingday','hum']
+cols = ['cnt','atemp','windspeed','weathersit','temp','workingday','hum']
 pd.scatter_matrix(bike_dat[cols])
 
 # Correlation coefficient matrix
@@ -74,8 +72,12 @@ corr_matrix = np.corrcoef(bike_dat[cols].T)
 sm.graphics.plot_corr(corr_matrix, xnames=cols)
 
 # Let's say we wanted to include an interaction term
-# We would do this by including the : inbetween interacting variables
-est_m = smf.ols(formula='cnt ~ temp + windsped:temp + workingday + windspeed', 
+# We would do this by including the : between interacting variables
+est_m = smf.ols(formula='cnt ~ temp + windspeed + temp:windspeed + workingday', 
+                data=bike_dat).fit()
+
+# Note: this is equivalent to:
+est_m = smf.ols(formula='cnt ~ temp*windspeed + workingday',
                 data=bike_dat).fit()
 
 # What are the pros/cons associated with these methods?
@@ -176,6 +178,6 @@ EXERCISE:
 1) Read in the 'hour.csv' file
 2) Run the regression with: cnt ~ temp + hum + workingday + hour + C(weathersit)
 3) Evaluate the results, how does this compare with the day 
-3) Create a binary variable for rush hour defined by 6-9a & 4-6p
-4) Run the regression again. Does this new variable improve the results?
+4) Create a binary variable for rush hour defined by 6-9a & 4-6p
+5) Run the regression again. Does this new variable improve the results?
 """
