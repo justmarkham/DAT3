@@ -1,4 +1,7 @@
-# Here is some made up data
+"""
+Introduction to Linear Regression
+"""
+
 import pandas as pd
 import statsmodels.formula.api as smf
 import statsmodels.api as sm
@@ -18,7 +21,7 @@ ensemble detectors and background knowledge', Progress in
 Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg,
 """
 # Dataset: How many people rent capitol bikeshare bikes
-bike_dat = pd.read_csv("day.csv")
+bike_dat = pd.read_csv("../data/day.csv")
 bike_dat.head()
 
 # Plot the data in a scatter plot
@@ -30,18 +33,36 @@ est_s = smf.ols(formula='cnt ~ temp', data=bike_dat).fit()
 # View the model estimates
 est_s.summary()
 
-# Create the line based on parameters
-# Create line with 100 points bsed on the x-range
-x_prime = pd.DataFrame({'temp': np.linspace(bike_dat.temp.min(), 
-                                             bike_dat.temp.max(), 100)})
-
-# Generate the predictions using the built in method
-y_hat = est_s.predict(x_prime)
 
 # Plot the data with scatter plot
 plt.scatter(bike_dat.temp, bike_dat.cnt, alpha=0.3) 
 plt.xlabel("Temperature")
 plt.ylabel("Number of Bike Rentals")
+
+# Create the line based on parameters
+# Create line with 100 points bsed on the x-range
+x_prime = pd.DataFrame({'temp': np.linspace(bike_dat.temp.min(), 
+                                             bike_dat.temp.max(), 100)})
+
+
+"""
+QUIZ:
+1) Generate coefficient estimates using the previously discussed code
+2) Given coefficient estimates, predict the y-value for bike_dat.temp.min()
+& bike_dat.temp.max()
+3) Use these predictiont to generate a line
+
+Hint: Use the following convention plt.plot([x_min, x_max], [y_min, y_max])
+"""
+
+plt.plot([bike_dat.temp.min(), bike_dat.temp.max()],
+          [est_s.params.Intercept + est_s.params.temp * bike_dat.temp.min(),
+           est_s.params.Intercept + est_s.params.temp * bike_dat.temp.max()],
+            linewidth=2)
+          
+# Generate the predictions using the built in method
+y_hat = est_s.predict(x_prime)
+
 
 # Add a line to the same plot
 plt.plot(x_prime, y_hat, 'r', linewidth=2, alpha=0.9)
@@ -111,7 +132,7 @@ x_prime = pd.DataFrame({'TV': np.linspace(adv.TV.min(),
 y_hat = est.predict(x_prime)
 plt.xlabel("TV")
 plt.ylabel("Sales")
-plt.title("Example of Heteroskedasticity")
+#plt.title("Example of Heteroskedasticity")
 plt.scatter(adv.TV, adv.Sales, alpha=0.3) 
 plt.plot(x_prime, y_hat, 'r', linewidth=2, alpha=0.9)
 
@@ -123,36 +144,46 @@ plt.ylabel("Residuals")
 
 #####
 # Option #1: Log transform response
-est = smf.ols(formula='np.log(Sales) ~ TV', data=adv).fit()
-y_hat = est.predict(x_prime)
+est_l = smf.ols(formula='np.log(Sales) ~ TV', data=adv).fit()
+y_hat = est_l.predict(x_prime)
 # Plot data
 plt.figure()
 plt.xlabel("TV")
 plt.ylabel("log(Sales)")
-plt.title("Log Transformation of y")
+# plt.title("Log Transformation of y")
 plt.scatter(adv.TV, np.log(adv.Sales), alpha=0.3) 
 plt.plot(x_prime, y_hat, 'r', linewidth=2, alpha=0.9)
+plt.ylim(1.5, 3.5)
 
 # View the residuals
 plt.figure()
-plt.scatter(est.predict(adv), est.resid, alpha=0.3)
+plt.scatter(est_l.predict(adv), est_l.resid, alpha=0.3)
 plt.title("Residuals with Log Transformation of y")
 plt.xlabel("Predicted log(Sales)")
 plt.ylabel("Residuals")
 
 #####
 # Option #2: Weighted least squares
-w =  1./(adv.TV)
-est_wls = smf.wls(formula='Sales ~ TV', data=adv, weights = w).fit()
 
-
-# What is the difference?
 est = smf.ols(formula='Sales ~ TV', data=adv).fit()
+
+
+# 2a (based off median residuals)
+adv['w'] =  1
+adv['w'][abs(est.resid) > np.median(abs(est.resid))] = 1/float(3)
+# This doesn't change the line much, would be more useful for outliers
+
+
+# 2b (based off of TV)
+adv['w'] =  1 / (adv['TV'])
+
+est_wls = smf.wls(formula='Sales ~ TV', data=adv, weights = adv['w']).fit()
+
 y_hat = est.predict(x_prime)
 y_hat_wls = est_wls.predict(x_prime)
 plt.xlabel("TV")
 plt.ylabel("Sales")
-plt.title("OLS (red) vs. WLS (blue")
+plt.title("OLS (red) vs. WLS (blue)")
 plt.scatter(adv.TV, adv.Sales, alpha=0.3) 
 plt.plot(x_prime, y_hat, 'r', linewidth=2, alpha=0.9)
 plt.plot(x_prime, y_hat_wls, 'b', linewidth=2, alpha=0.9)
@@ -179,3 +210,21 @@ EXERCISE:
 3) Create a binary variable for rush hour defined by 6-9a & 4-6p
 4) Run the regression again. Does this new variable improve the results?
 """
+
+
+"""
+DATA TRANSFORMATION
+Logarithms, Standardization, Bootstrapping
+"""
+# Logarithms #2: Changing from positively skewed data to normaly skewed data
+
+# Logarithms #3 
+p1 = est.predict({'TV': 0})
+p2 = est.predict({'TV': 10})
+l1 = est_l.predict({'TV': 0})
+l2 = est_l.predict({'TV': 10})
+
+(p2-p1)/p1
+l2-l1
+
+# Center and scaling example
