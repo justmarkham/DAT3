@@ -54,7 +54,7 @@ plt.ylabel("Residuals")
 
 
 """
-COMMON PROBLEMS - Multicolinearity
+COMMON PROBLEMS - Multicollinearity
 """
 
 # temp is significant by itself
