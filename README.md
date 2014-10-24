@@ -11,11 +11,11 @@ Week | Tuesday | Thursday
 0 | | 10/2: [Introduction](#class-1-introduction)
 1 | 10/7: [Git and GitHub](#class-2-git-and-github) | 10/9: [Base Python](#class-3-base-python)
 2 | 10/14: [Getting and Cleaning Data](#class-4-getting-and-cleaning-data) | 10/16: [Exploratory Data Analysis](#class-5-exploratory-data-analysis)
-3 | 10/21: [Linear Regression](#class-6-linear-regression)<br>**Milestone:** Question and Data Set | 10/23: [Logistic Regression](#class-7-logistic-regression)
+3 | 10/21: [Linear Regression](#class-6-linear-regression)<br>**Milestone:** Question and Data Set | 10/23: [Linear Regression Part 2](#class-7-linear-regression-part-2)
 4 | 10/28: [Machine Learning and KNN](#class-8-machine-learning-and-knn) | 10/30: [Model Evaluation](#class-9-model-evaluation)
-5 | 11/4: Clustering<br>**Milestone:** Data Exploration and<br>Analysis Plan | 11/6: Naive Bayes and NLP
-6 | 11/11: Dimension Reduction | 11/13: Decision Trees
-7 | 11/18: Project Working Time<br>**Milestone:** First Draft Due | 11/20: Ensembling: Random Forests
+5 | 11/4: [Logistic Regression](#class-10-logistic-regression)<br>**Milestone:** Data Exploration and<br>Analysis Plan | 11/6: [Clustering](#class-11-clustering)
+6 | 11/11: Dimension Reduction | 11/13: Naive Bayes and NLP
+7 | 11/18: Decision Trees<br>**Milestone:** First Draft Due | 11/20: Ensembling: Random Forests
 8 | 11/25: Recommenders | *Thanksgiving*
 9 | 12/2: Ensembling: Boosting | 12/4: Neural Networks
 10 | 12/9: Review<br>**Milestone:** Second Draft Due | 12/11: Project Working Time
@@ -224,3 +224,9 @@ Week | Tuesday | Thursday
 **Resources:**
 
 * If you'd like to see more on today's topics, these videos from Hastie and Tibshirani are excellent: [bias-variance tradeoff](https://www.youtube.com/watch?v=VusKAosxxyk) (10 minutes), [validation set approach](https://www.youtube.com/watch?v=_2ij6eaaSl0) (14 minutes), [cross-validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (14 minutes) - or just read section 5.1 from [their book](http://www-bcf.usc.edu/~gareth/ISL/) (free PDF download!)
+
+
+## Class 10: Logistic Regression
+
+
+## Class 11: Clustering
