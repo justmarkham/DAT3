@@ -167,10 +167,9 @@ Week | Tuesday | Thursday
 * If you are already a master of ggplot2 in R, you may prefer "ggplot for Python" over matplotlib: [introduction](http://blog.yhathq.com/posts/ggplot-for-python.html), [tutorial](http://blog.yhathq.com/posts/facebook-ggplot-tutorial.html)
 
 
-## Class 7: Logistic Regression
+## Class 7: Linear Regression Part 2
 
 * Linear regression, continued
-* Logistic regression
 
 **Homework:**
 
