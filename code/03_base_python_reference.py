@@ -21,11 +21,16 @@ Table of Contents:
     Dictionaries
     Sets
     Defining Functions
+    Anonymous (Lambda) Functions
     For Loops and While Loops
     Comprehensions
+    Map, Reduce, Filter
 
 Will be added:
-    Lambda functions
+    Zip
+    Try/Except
+    *args
+    Assertions
     Reading/writing files
     And more...
 '''
@@ -283,6 +288,7 @@ s.lower()           # returns 'i like you'
 s.upper()           # returns 'I LIKE YOU'
 s.startswith('I')   # returns True
 s.endswith('you')   # returns True
+s.isdigit()         # returns False (returns True if every character in the string is a digit)
 s.find('like')      # returns index of first occurrence (2), but doesn't support regex
 s.find('hate')      # returns -1 since not found
 s.replace('like','love')    # replaces all instances of 'like' with 'love'
@@ -431,8 +437,12 @@ n = print_this(3)   # prints 3, but doesn't assign 3 to n
 
 # define a function with one argument and one return value
 def square_this(x):
-    squared = x**2
-    return squared
+    return x**2
+
+# include an optional docstring to describe the effect of a function
+def square_this(x):
+    """Return the square of a number."""
+    return x**2
 
 # call the function
 square_this(3)          # prints 9
@@ -459,6 +469,38 @@ calc(10, 4, 'div')      # prints 'valid operations are add and sub'
 def stub():
     pass
 
+# return two values from a single function
+def min_max(nums):
+    return min(nums), max(nums)
+
+# return values can be assigned to a single variable as a tuple
+nums = [1, 2, 3]
+min_max_num = min_max(nums)         # min_max_num = (1, 3)
+
+# return values can be assigned into multiple variables using tuple unpacking
+min_num, max_num = min_max(nums)    # min_num = 1, max_num = 3
+
+
+
+### ANONYMOUS (LAMBDA) FUNCTIONS ###
+## primarily used to temporarily define a function for use by another function
+
+# define a function the "usual" way
+def squared(x):
+    return x**2
+
+# define an identical function using lambda
+squared = lambda x: x**2
+
+# sort a list of strings by the last letter (without using lambda)
+simpsons = ['homer', 'marge', 'bart']
+def last_letter(word):
+    return word[-1]
+sorted(simpsons, key=last_letter)
+
+# sort a list of strings by the last letter (using lambda)
+sorted(simpsons, key=lambda word: word[-1])
+
 
 
 ### FOR LOOPS AND WHILE LOOPS ###
@@ -466,6 +508,7 @@ def stub():
 # range returns a list of integers
 range(0, 3)     # returns [0, 1, 2]: includes first value but excludes second value
 range(3)        # same thing: starting at zero is the default
+range(0, 5, 2)  # returns [0, 2, 4]: third argument specifies the 'stride'
 
 # for loop (not recommended)
 fruits = ['apple', 'banana', 'cherry']
@@ -475,6 +518,10 @@ for i in range(len(fruits)):
 # alternative for loop (recommended style)
 for fruit in fruits:
     print fruit.upper()
+
+# use xrange when iterating over a large sequence to avoid actually creating the integer list in memory
+for i in xrange(10**6):
+    pass
 
 # iterate through two things at once (using tuple unpacking)
 family = {'dad':'homer', 'mom':'marge', 'size':6}
@@ -553,3 +600,24 @@ unique_lengths = {len(fruit) for fruit in fruits}   # {5, 6}
 # dictionary comprehension
 fruit_lengths = {fruit:len(fruit) for fruit in fruits}              # {'apple': 5, 'banana': 6, 'cherry': 6}
 fruit_indices = {fruit:index for index, fruit in enumerate(fruits)} # {'apple': 0, 'banana': 1, 'cherry': 2}
+
+
+
+### MAP, REDUCE, FILTER ###
+
+# 'map' applies a function to every element of a sequence and returns a list
+simpsons = ['homer', 'marge', 'bart']
+map(len, simpsons)                      # returns [5, 5, 4]
+map(lambda word: word[-1], simpsons)    # returns ['r', 'e', 't']
+
+# equivalent list comprehensions
+[len(word) for word in simpsons]
+[word[-1] for word in simpsons]
+
+# 'reduce' applies a binary function to the first two elements of a sequence,
+# then repeats with the result and the next element, through the end of the sequence
+reduce(lambda x, y: x + y, range(4))    # (((0+1)+2)+3) = 6
+
+# 'filter' returns a sequence containing the items from the original sequence
+# for which the condition is True
+filter(lambda x: x % 2 == 0, range(5))  # returns [0, 2, 4]
