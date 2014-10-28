@@ -186,24 +186,28 @@ Week | Tuesday | Thursday
 
 ## Class 8: Machine Learning and KNN
 
-* "Human learning" on iris data with Pandas
-* Machine learning introduction
-* K-Nearest Neighbors (KNN)
-* scikit-learn with iris data
-* Basic numpy
+* Discuss homework solutions
+* "Human learning" on iris data using Pandas ([code](code/08_iris_class.py))
+* Introduction to numpy ([code](code/08_numpy_reference.py))
+* Machine learning and K-Nearest Neighbors ([slides](slides/08_ml_knn.pdf))
+* Introduction to scikit-learn with iris data ([code](code/08_sklearn_knn_class.py))
 
 **Homework:**
 
-* Read about the [Bias-variance tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html) (with KNN)
+* Read this excellent article, [Understanding the Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html), and be prepared to discuss it on Thursday
+
+**Optional:**
+
+* Walk through the rest of the [numpy reference](code/08_numpy_reference.py) and see if you can understand each of the functions
 
 **Resources:**
 
-* [Introduction to numpy](http://www.engr.ucsb.edu/~shell/che210d/numpy.pdf)
+* For a more thorough introduction to numpy, [this guide](http://www.engr.ucsb.edu/~shell/che210d/numpy.pdf) is quite good
 
 
 ## Class 9: Model Evaluation
 
-* Discuss bias-variance tradeoff
+* Discuss the bias-variance tradeoff
 * Training error, overfitting, validation set approach, cross-validation
 * Confusion matrix, ROC curves, other evaluation metrics
 * Introduction to Kaggle
