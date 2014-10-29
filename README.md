@@ -190,7 +190,6 @@ Week | Tuesday | Thursday
 * "Human learning" on iris data using Pandas ([code](code/08_iris_class.py))
 * Introduction to numpy ([code](code/08_numpy_reference.py))
 * Machine learning and K-Nearest Neighbors ([slides](slides/08_ml_knn.pdf))
-* Introduction to scikit-learn with iris data ([code](code/08_sklearn_knn_class.py))
 
 **Homework:**
 
@@ -207,11 +206,20 @@ Week | Tuesday | Thursday
 
 ## Class 9: Model Evaluation
 
-* Discuss the bias-variance tradeoff
-* Training error, overfitting, validation set approach, cross-validation
-* Confusion matrix, ROC curves, other evaluation metrics
+* Introduction to scikit-learn with iris data ([code](code/08_sklearn_knn_class.py))
+* Discuss the [article](http://scott.fortmann-roe.com/docs/BiasVariance.html) on the bias-variance tradeoff
+* Model evaluation procedures (slides, code)
+    * Training error
+    * Underfitting and overfitting
+    * Test set approach
+    * Cross-validation
+* Model evaluation metrics (slides, code)
+    * Confusion matrix
+    * ROC curves and AUC
+    * Root Mean Squared Error
 * Introduction to Kaggle
-* Enter a Kaggle competition
+    * Enter a competition (code)
+* Advantages and disadvantages of KNN ([final slide](slides/08_ml_knn.pdf))
 
 **Homework:**
 
