@@ -215,7 +215,7 @@ Week | Tuesday | Thursday
     * Cross-validation
 * Model evaluation metrics ([slides](slides/09_model_evaluation.pdf), code)
     * Confusion matrix
-    * ROC curves and AUC
+    * [ROC curves and AUC](http://www.navan.name/roc/)
     * Root Mean Squared Error
 * Introduction to Kaggle
     * Enter a competition (code)
@@ -230,7 +230,7 @@ Week | Tuesday | Thursday
 **Optional:**
 
 * For more on Kaggle, watch this video on [Data Science as Sport](https://www.youtube.com/watch?v=8w4UY66GKcM) (28 minutes)
-* For more on the Kaggle Allstate competition, read Kevin's [project paper](https://github.com/justmarkham/kaggle-allstate) or skim the [solution sharing thread](http://www.kaggle.com/c/allstate-purchase-prediction-challenge/forums/t/8218/solution-sharing)
+* For much more on the [Kaggle Allstate competition](http://www.kaggle.com/c/allstate-purchase-prediction-challenge), read [Kevin's project paper](https://github.com/justmarkham/kaggle-allstate), read a brief [interview with the first place team](http://blog.kaggle.com/2014/07/11/first-place-in-purchase-prediction-challenge/), review the [Python code from the second place team](https://github.com/alzmcr/allstate), or skim the [solution sharing thread](http://www.kaggle.com/c/allstate-purchase-prediction-challenge/forums/t/8218/solution-sharing)
 
 **Resources:**
 
