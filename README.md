@@ -225,16 +225,18 @@ Week | Tuesday | Thursday
 
 * Project milestone: Submit your "[Data Exploration and Analysis Plan](project.md)" to DAT3-students by Tuesday!
 * Read this [simple example](http://googleresearch.blogspot.com/2014/10/smart-autofill-harnessing-predictive.html) of machine learning and see if you understand everything in the article
-* Watch my [Kaggle project presentation video](https://www.youtube.com/watch?v=HGr1yQV3Um0) (16 minutes) for a tour of the machine learning process
+* Watch Kevin's [Kaggle project presentation video](https://www.youtube.com/watch?v=HGr1yQV3Um0) (16 minutes) for a tour of the machine learning process
 
 **Optional:**
 
 * For more on Kaggle, watch this video on [Data Science as Sport](https://www.youtube.com/watch?v=8w4UY66GKcM) (28 minutes)
-* For more on the Kaggle Allstate competition, read my [project paper](https://github.com/justmarkham/kaggle-allstate) or skim the [solution sharing thread](http://www.kaggle.com/c/allstate-purchase-prediction-challenge/forums/t/8218/solution-sharing)
+* For more on the Kaggle Allstate competition, read Kevin's [project paper](https://github.com/justmarkham/kaggle-allstate) or skim the [solution sharing thread](http://www.kaggle.com/c/allstate-purchase-prediction-challenge/forums/t/8218/solution-sharing)
 
 **Resources:**
 
 * If you'd like to see more on today's topics, these videos from Hastie and Tibshirani are excellent: [bias-variance tradeoff](https://www.youtube.com/watch?v=VusKAosxxyk) (10 minutes), [validation set approach](https://www.youtube.com/watch?v=_2ij6eaaSl0) (14 minutes), [cross-validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (14 minutes) - or just read section 5.1 from [their book](http://www-bcf.usc.edu/~gareth/ISL/) (free PDF download!)
+* Kevin wrote a [simple guide to confusion matrix terminology](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/) that you can use as a reference guide
+* The Kaggle wiki has a decent page describing other common [model evaluation metrics](https://www.kaggle.com/wiki/Metrics)
 
 
 ## Class 10: Logistic Regression
