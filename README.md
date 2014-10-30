@@ -208,12 +208,12 @@ Week | Tuesday | Thursday
 
 * Introduction to scikit-learn with iris data ([code](code/08_sklearn_knn_class.py))
 * Discuss the [article](http://scott.fortmann-roe.com/docs/BiasVariance.html) on the bias-variance tradeoff
-* Model evaluation procedures ([slides](slides/09_model_evaluation.pdf), code)
+* Model evaluation procedures ([slides](slides/09_model_evaluation.pdf), [code](code/09_model_evaluation_class.py))
     * Training error
     * Underfitting and overfitting
     * Test set approach
     * Cross-validation
-* Model evaluation metrics ([slides](slides/09_model_evaluation.pdf), code)
+* Model evaluation metrics ([slides](slides/09_model_evaluation.pdf), [code](code/09_model_evaluation_class.py))
     * Confusion matrix
     * [ROC curves and AUC](http://www.navan.name/roc/)
     * Root Mean Squared Error
