@@ -229,8 +229,9 @@ Week | Tuesday | Thursday
 
 **Optional:**
 
-* For more on Kaggle, watch this video on [Data Science as Sport](https://www.youtube.com/watch?v=8w4UY66GKcM) (28 minutes)
+* For more on Kaggle, watch the video [Kaggle Transforms Data Science Into Competitive Sport](https://www.youtube.com/watch?v=8w4UY66GKcM) (28 minutes)
 * For much more on the [Kaggle Allstate competition](http://www.kaggle.com/c/allstate-purchase-prediction-challenge), read [Kevin's project paper](https://github.com/justmarkham/kaggle-allstate), read a brief [interview with the first place team](http://blog.kaggle.com/2014/07/11/first-place-in-purchase-prediction-challenge/), review the [Python code from the second place team](https://github.com/alzmcr/allstate), or skim the [solution sharing thread](http://www.kaggle.com/c/allstate-purchase-prediction-challenge/forums/t/8218/solution-sharing)
+* If you want to try out the [Kaggle Bike Sharing Demand competition](http://www.kaggle.com/c/bike-sharing-demand), feel free to reuse Kevin's [starter code](code/09_kaggle_bike.py)
 
 **Resources:**
 
