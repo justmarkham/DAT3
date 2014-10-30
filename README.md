@@ -234,7 +234,7 @@ Week | Tuesday | Thursday
 
 **Resources:**
 
-* If you'd like to see more on today's topics, these videos from Hastie and Tibshirani are excellent: [bias-variance tradeoff](https://www.youtube.com/watch?v=VusKAosxxyk) (10 minutes), [validation set approach](https://www.youtube.com/watch?v=_2ij6eaaSl0) (14 minutes), [cross-validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (14 minutes) - or just read section 5.1 from [their book](http://www-bcf.usc.edu/~gareth/ISL/) (free PDF download!)
+* If you'd like to see more on today's topics, these videos from Hastie and Tibshirani are excellent: [bias-variance tradeoff](https://www.youtube.com/watch?v=VusKAosxxyk) (10 minutes), [test set (aka "validation set") approach](https://www.youtube.com/watch?v=_2ij6eaaSl0) (14 minutes), [cross-validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (14 minutes) - or just read section 5.1 from [their book](http://www-bcf.usc.edu/~gareth/ISL/) (free PDF download!)
 * Kevin wrote a [simple guide to confusion matrix terminology](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/) that you can use as a reference guide
 * The Kaggle wiki has a decent page describing other common [model evaluation metrics](https://www.kaggle.com/wiki/Metrics)
 
