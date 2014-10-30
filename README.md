@@ -217,8 +217,7 @@ Week | Tuesday | Thursday
     * Confusion matrix
     * [ROC curves and AUC](http://www.navan.name/roc/)
     * Root Mean Squared Error
-* Introduction to Kaggle
-    * Enter a competition (code)
+* Introduction to [Kaggle](http://www.kaggle.com/)
 * Advantages and disadvantages of KNN ([final slide](slides/08_ml_knn.pdf))
 
 **Homework:**
