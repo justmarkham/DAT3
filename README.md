@@ -215,10 +215,7 @@ Week | Tuesday | Thursday
     * Cross-validation
 * Model evaluation metrics ([slides](slides/09_model_evaluation.pdf), [code](code/09_model_evaluation_class.py))
     * Confusion matrix
-    * [ROC curves and AUC](http://www.navan.name/roc/)
-    * Root Mean Squared Error
 * Introduction to [Kaggle](http://www.kaggle.com/)
-* Advantages and disadvantages of KNN ([final slide](slides/08_ml_knn.pdf))
 
 **Homework:**
 
@@ -241,5 +238,15 @@ Week | Tuesday | Thursday
 
 ## Class 10: Logistic Regression
 
+* Any questions from last time: model evaluation, Kaggle, article on Smart Autofill?
+* Summary of your feedback
+* Discuss your data exploration and analysis plan
+* Logistic Regression
+
 
 ## Class 11: Clustering
+
+* Model evaluation metrics, continued ([slides](slides/09_model_evaluation.pdf), [code](code/09_model_evaluation_class.py))
+    * [ROC curves and AUC](http://www.navan.name/roc/)
+    * Root Mean Squared Error
+* Clustering
