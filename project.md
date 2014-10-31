@@ -59,7 +59,7 @@ Example:
 * I analyzed the differences between the training and testing sets, and found that the average fare was slightly higher in the testing set.
 * Since I'm predicting a binary outcome, I plan to use a classification method such as logistic regression to make my predictions.
 
-### Week 7 (11/18): First Draft Due
+### Week 8 (11/25): First Draft Due
 
 Submit a rough copy of your work so far, including code, narrative, and visualizations. Describe your successess and challenges, and provide a detailed plan going forwards. Your peers and instructors will provide feedback.
 

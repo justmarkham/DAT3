@@ -15,8 +15,8 @@ Week | Tuesday | Thursday
 4 | 10/28: [Machine Learning and KNN](#class-8-machine-learning-and-knn) | 10/30: [Model Evaluation](#class-9-model-evaluation)
 5 | 11/4: [Logistic Regression](#class-10-logistic-regression)<br>**Milestone:** Data Exploration and<br>Analysis Plan | 11/6: [Clustering](#class-11-clustering)
 6 | 11/11: Dimension Reduction | 11/13: Naive Bayes and NLP
-7 | 11/18: Decision Trees<br>**Milestone:** First Draft Due | 11/20: Ensembling: Random Forests
-8 | 11/25: Recommenders | *Thanksgiving*
+7 | 11/18: Decision Trees | 11/20: Ensembling: Random Forests
+8 | 11/25: Recommenders<br>**Milestone:** First Draft Due | *Thanksgiving*
 9 | 12/2: Ensembling: Boosting | 12/4: Neural Networks
 10 | 12/9: Review<br>**Milestone:** Second Draft Due | 12/11: Project Working Time
 11 | 12/16: Project Presentations | 12/18: Project Presentations
