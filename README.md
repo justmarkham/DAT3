@@ -244,10 +244,11 @@ Week | Tuesday | Thursday
 * Logistic Regression
 
 **Resources:**
-* [Video: Introduction to Classification](https://www.youtube.com/watch?v=sqq21-VIa1c)
-* [Video: Logistic Regression and Maximum Likelihood](https://www.youtube.com/watch?v=31Q5FGRnxt4)
-* [Video: Multivariate Logistic Regression and Confounding Variables](https://www.youtube.com/watch?v=MpX8rVv_u4E)
-* If you want to know the details of how coefficients are calculated using maximum liklihood, check out this [Chapter](http://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch12.pdf)
+* If you would like a review on the topics we covered today, the videos from Hastie and Tibshirani from Stanford are very goood:
+   * [Introduction to Classification](https://www.youtube.com/watch?v=sqq21-VIa1c)
+   * [Video: Logistic Regression and Maximum Likelihood](https://www.youtube.com/watch?v=31Q5FGRnxt4)
+   * [Video: Multivariate Logistic Regression and Confounding Variables](https://www.youtube.com/watch?v=MpX8rVv_u4E)
+* If you want to go deeper in the math of how coefficients are estimated, check out this  [Chapter](http://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch12.pdf) from Shalizi from CMU
 
 ## Class 11: Clustering
 
