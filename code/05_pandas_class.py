@@ -279,3 +279,5 @@ drinks.plot(x='beer_servings', y='wine_servings', kind='scatter', alpha=0.3)
 # same scatterplot, except all European countries are colored red
 colors = np.where(drinks.continent=='EU', 'r', 'b')
 drinks.plot(x='beer_servings', y='wine_servings', kind='scatter', c=colors)
+
+colormap = np.array(['r', 'g', 'b', 'k', 'm', 'c'])
