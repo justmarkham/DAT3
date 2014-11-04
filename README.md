@@ -256,3 +256,7 @@ Week | Tuesday | Thursday
     * [ROC curves and AUC](http://www.navan.name/roc/)
     * Root Mean Squared Error
 * Clustering
+   * Why cluster?
+   * Different kinds of clustering algorithms
+   * K-means clustering
+   * Excercise
