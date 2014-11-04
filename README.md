@@ -243,6 +243,11 @@ Week | Tuesday | Thursday
 * Discuss your data exploration and analysis plan
 * Logistic Regression
 
+**Resources:**
+* [Video: Introduction to Classification](https://www.youtube.com/watch?v=sqq21-VIa1c)
+* [Video: Logistic Regression and Maximum Likelihood](https://www.youtube.com/watch?v=31Q5FGRnxt4)
+* [Video: Multivariate Logistic Regression and Confounding Variables](https://www.youtube.com/watch?v=MpX8rVv_u4E)
+* If you want to know the details of how coefficients are calculated using maximum liklihood, check out this [Chapter](http://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch12.pdf)
 
 ## Class 11: Clustering
 
