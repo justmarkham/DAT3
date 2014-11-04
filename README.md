@@ -244,7 +244,7 @@ Week | Tuesday | Thursday
 * Logistic Regression
 
 **Resources:**
-* If you would like a review on the topics we covered today, the videos from Hastie and Tibshirani from Stanford are very goood:
+* If you would like a review on the topics we covered today, the videos from Hastie and Tibshirani from Stanford are very good:
    * [Introduction to Classification](https://www.youtube.com/watch?v=sqq21-VIa1c)
    * [Logistic Regression and Maximum Likelihood](https://www.youtube.com/watch?v=31Q5FGRnxt4)
    * [Multivariate Logistic Regression and Confounding Variables](https://www.youtube.com/watch?v=MpX8rVv_u4E)
