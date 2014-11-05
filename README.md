@@ -186,7 +186,7 @@ Week | Tuesday | Thursday
 
 ## Class 8: Machine Learning and KNN
 
-* Discuss homework solutions
+* Discuss homework solutions ([code](code/06_regression_solutions.py))
 * "Human learning" on iris data using Pandas ([code](code/08_iris_class.py))
 * Introduction to numpy ([code](code/08_numpy_reference.py))
 * Machine learning and K-Nearest Neighbors ([slides](slides/08_ml_knn.pdf))
@@ -241,14 +241,16 @@ Week | Tuesday | Thursday
 * Any questions from last time: model evaluation, Kaggle, article on Smart Autofill?
 * Summary of your feedback
 * Discuss your data exploration and analysis plan
-* Logistic Regression
+* Logistic Regression ([slides](slides/10_logistic_regression.pdf), [code](code/10_logistic_regression_exercise.py))
 
 **Resources:**
+
 * If you would like a review on the topics we covered today, the videos from Hastie and Tibshirani from Stanford are very good:
-   * [Introduction to Classification](https://www.youtube.com/watch?v=sqq21-VIa1c)
-   * [Logistic Regression and Maximum Likelihood](https://www.youtube.com/watch?v=31Q5FGRnxt4)
-   * [Multivariate Logistic Regression and Confounding Variables](https://www.youtube.com/watch?v=MpX8rVv_u4E)
-* If you want to go deeper in the math of how coefficients are estimated, check out this  [Chapter](http://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch12.pdf) from Shalizi from CMU
+    * [Introduction to Classification](https://www.youtube.com/watch?v=sqq21-VIa1c) (10 minutes)
+    * [Logistic Regression and Maximum Likelihood](https://www.youtube.com/watch?v=31Q5FGRnxt4) (9 minutes)
+    * [Multivariate Logistic Regression and Confounding Variables](https://www.youtube.com/watch?v=MpX8rVv_u4E) (10 minutes)
+* If you want to go deeper in the math of how coefficients are estimated, check out this [chapter](http://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch12.pdf) from Shalizi from CMU
+
 
 ## Class 11: Clustering
 
@@ -256,7 +258,7 @@ Week | Tuesday | Thursday
     * [ROC curves and AUC](http://www.navan.name/roc/)
     * Root Mean Squared Error
 * Clustering
-   * Why cluster?
-   * Different kinds of clustering algorithms
-   * K-means clustering
-   * Excercise
+    * Why cluster?
+    * Different kinds of clustering algorithms
+    * K-means clustering
+    * Exercise
