@@ -243,6 +243,10 @@ Week | Tuesday | Thursday
 * Discuss your data exploration and analysis plan
 * Logistic Regression ([slides](slides/10_logistic_regression.pdf), [code](code/10_logistic_regression_exercise.py))
 
+**Homework:**
+
+* Continue to work on Part I of the [exercise from class](code/10_logistic_regression_exercise.py) and submit your solution to DAT3-students
+
 **Resources:**
 
 * If you would like a review on the topics we covered today, the videos from Hastie and Tibshirani from Stanford are very good:
@@ -254,11 +258,12 @@ Week | Tuesday | Thursday
 
 ## Class 11: Clustering
 
-* Model evaluation metrics, continued ([slides](slides/09_model_evaluation.pdf), [code](code/09_model_evaluation_class.py))
-    * [ROC curves and AUC](http://www.navan.name/roc/)
-    * Root Mean Squared Error
+* Logistic Regression, continued
 * Clustering
     * Why cluster?
     * Different kinds of clustering algorithms
     * K-means clustering
     * Exercise
+* Model evaluation metrics, continued ([slides](slides/09_model_evaluation.pdf), [code](code/09_model_evaluation_class.py))
+    * [ROC curves and AUC](http://www.navan.name/roc/)
+    * Root Mean Squared Error
