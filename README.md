@@ -261,9 +261,14 @@ Week | Tuesday | Thursday
 * Logistic Regression, continued
 * Clustering
     * Why cluster?
-    * Different kinds of clustering algorithms
     * K-means clustering
+    * Choosing K for k-means
     * Exercise
 * Model evaluation metrics, continued ([slides](slides/09_model_evaluation.pdf), [code](code/09_model_evaluation_class.py))
     * [ROC curves and AUC](http://www.navan.name/roc/)
     * Root Mean Squared Error
+
+**Resources**
+* This [link](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) provide documentation on k-means clustering
+* This [link](http://scikit-learn.org/stable/modules/clustering.html) provides documentation on alternative clustering algorithms
+* This [link](http://scikit-learn.org/stable/modules/classes.html#clustering-metrics) provides documentation on clustering metrics implemented in scikit-learn
