@@ -264,11 +264,20 @@ Week | Tuesday | Thursday
     * K-means clustering
     * Choosing K for k-means
     * Exercise
-* Model evaluation metrics, continued ([slides](slides/09_model_evaluation.pdf), [code](code/09_model_evaluation_class.py))
-    * [ROC curves and AUC](http://www.navan.name/roc/)
-    * Root Mean Squared Error
+
+**Homework**
+* Complete any unfinished exercises in the python script.
+* Read through section 8.2 on [K-means Clustering](http://www-users.cs.umn.edu/~kumar/dmbook/ch8.pdf) from Introduction to Data Mining. What are some of the strengths and limitations of k-means clustering?
 
 **Resources**
 * This [link](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) provide documentation on k-means clustering
 * This [link](http://scikit-learn.org/stable/modules/clustering.html) provides documentation on alternative clustering algorithms
 * This [link](http://scikit-learn.org/stable/modules/classes.html#clustering-metrics) provides documentation on clustering metrics implemented in scikit-learn
+* Vipin Kumar from the University of Minnesota [has a helpful chapter on clustering](http://www-users.cs.umn.edu/~kumar/dmbook/ch8.pdf) from his textbook: Introduction to Data Mining.
+
+## Class 12: Principal Components Analysis
+
+* Principal Components Analysis (Guest Lecturer!)
+* Model evaluation metrics, continued ([slides](slides/09_model_evaluation.pdf), [code](code/09_model_evaluation_class.py))
+    * [ROC curves and AUC](http://www.navan.name/roc/)
+    * Root Mean Squared Error
