@@ -14,7 +14,7 @@ Week | Tuesday | Thursday
 3 | 10/21: [Linear Regression](#class-6-linear-regression)<br>**Milestone:** Question and Data Set | 10/23: [Linear Regression Part 2](#class-7-linear-regression-part-2)
 4 | 10/28: [Machine Learning and KNN](#class-8-machine-learning-and-knn) | 10/30: [Model Evaluation](#class-9-model-evaluation)
 5 | 11/4: [Logistic Regression](#class-10-logistic-regression)<br>**Milestone:** Data Exploration and<br>Analysis Plan | 11/6: [Clustering](#class-11-clustering)
-6 | 11/11: Dimension Reduction | 11/13: Naive Bayes and NLP
+6 | 11/11: [Dimension Reduction](#class-12-dimension-reduction) | 11/13: Naive Bayes and NLP
 7 | 11/18: Decision Trees | 11/20: Ensembling: Random Forests
 8 | 11/25: Recommenders<br>**Milestone:** First Draft Due | *Thanksgiving*
 9 | 12/2: Ensembling: Boosting | 12/4: Neural Networks
@@ -264,11 +264,20 @@ Week | Tuesday | Thursday
     * K-means clustering
     * Choosing K for k-means
     * Exercise
-* Model evaluation metrics, continued ([slides](slides/09_model_evaluation.pdf), [code](code/09_model_evaluation_class.py))
-    * [ROC curves and AUC](http://www.navan.name/roc/)
-    * Root Mean Squared Error
+
+**Homework**
+* Complete any unfinished exercises in the python [code](https://github.com/justmarkham/DAT3/blob/master/code/11_kmeans_clustering_class.py).
+* Read through section 8.2 on [K-means Clustering](http://www-users.cs.umn.edu/~kumar/dmbook/ch8.pdf) from Introduction to Data Mining. What are some of the strengths and limitations of k-means clustering?
 
 **Resources**
 * This [link](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) provide documentation on k-means clustering
 * This [link](http://scikit-learn.org/stable/modules/clustering.html) provides documentation on alternative clustering algorithms
 * This [link](http://scikit-learn.org/stable/modules/classes.html#clustering-metrics) provides documentation on clustering metrics implemented in scikit-learn
+* Vipin Kumar from the University of Minnesota [has a helpful chapter on clustering](http://www-users.cs.umn.edu/~kumar/dmbook/ch8.pdf) from his textbook: Introduction to Data Mining.
+
+## Class 12: Dimension Reduction
+
+* Principal Components Analysis (Guest Lecturer!)
+* Model evaluation metrics, continued ([slides](slides/09_model_evaluation.pdf), [code](code/09_model_evaluation_class.py))
+    * [ROC curves and AUC](http://www.navan.name/roc/)
+    * Root Mean Squared Error
