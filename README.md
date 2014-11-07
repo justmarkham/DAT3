@@ -14,8 +14,8 @@ Week | Tuesday | Thursday
 3 | 10/21: [Linear Regression](#class-6-linear-regression)<br>**Milestone:** Question and Data Set | 10/23: [Linear Regression Part 2](#class-7-linear-regression-part-2)
 4 | 10/28: [Machine Learning and KNN](#class-8-machine-learning-and-knn) | 10/30: [Model Evaluation](#class-9-model-evaluation)
 5 | 11/4: [Logistic Regression](#class-10-logistic-regression)<br>**Milestone:** Data Exploration and<br>Analysis Plan | 11/6: [Logistic Regression Part 2, Clustering](#class-11-logistic-regression-part-2-clustering)
-6 | 11/11: [Dimension Reduction](#class-12-dimension-reduction) | 11/13: [Clustering Part 2, Naive Bayes and NLP](#class-13-clustering--naive-bayes-and-nlp)
-7 | 11/18: Naive Bayes and NLP Part 2 | 11/20: Decision Trees
+6 | 11/11: [Dimension Reduction](#class-12-dimension-reduction) | 11/13: [Clustering Part 2, Naive Bayes](#class-13-clustering-part-2-naive-bayes)
+7 | 11/18: NLP | 11/20: Decision Trees
 8 | 11/25: Recommenders<br>**Milestone:** First Draft Due | *Thanksgiving*
 9 | 12/2: Ensembling: Random Forests | 12/4: Ensembling: Boosting
 10 | 12/9: Review <br>**Milestone:** Second Draft Due | 12/11: Neural Networks
@@ -247,17 +247,20 @@ Week | Tuesday | Thursday
 
 * Continue to work on Part I of the [exercise from class](code/10_logistic_regression_exercise.py) and submit your solution to DAT3-students
 
+
 ## Class 11: Logistic Regression Part 2, Clustering
 
-* Logistic Regression, continued
-* Clustering
+* Logistic Regression, continued ([exercise solution](code/10_logistic_regression_class.py))
+* Clustering ([slides](slides/11_clustering.pdf))
     * Why cluster?
     * Introduction to the K-means algorithm
     
-**Homework**
+**Homework:**
+
 * Read through section 8.2 on [K-means Clustering](http://www-users.cs.umn.edu/~kumar/dmbook/ch8.pdf) from Introduction to Data Mining by next Thursday. What are some of the strengths and limitations of k-means clustering?
 
-**Resources**
+**Resources:**
+
 * If you would like a review on the topics we covered today (and Tuesday), the videos from Hastie and Tibshirani from Stanford are very good:
     * [Introduction to Classification](https://www.youtube.com/watch?v=sqq21-VIa1c) (10 minutes)
     * [Logistic Regression and Maximum Likelihood](https://www.youtube.com/watch?v=31Q5FGRnxt4) (9 minutes)
@@ -266,24 +269,27 @@ Week | Tuesday | Thursday
 * [Documentation](http://matplotlib.org/users/mathtext.html) for plotting math text
 * [Documentation](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter) for plotting scatter plots
 
+
 ## Class 12: Dimension Reduction
 
-* Principal Components Analysis (Guest Lecturer!)
 * Model evaluation metrics, continued ([slides](slides/09_model_evaluation.pdf), [code](code/09_model_evaluation_class.py))
     * [ROC curves and AUC](http://www.navan.name/roc/)
     * Root Mean Squared Error
+* Dimension Reduction (Guest Lecturer: [Sinan Ozdemir](https://generalassemb.ly/instructors/sinan-ozdemir/2644))
 
-## Class 13: Clustering / Naive Bayes and NLP
 
-* Clustering Analysis
+## Class 13: Clustering Part 2, Naive Bayes
+
+* Clustering Analysis ([slides](slides/11_clustering.pdf))
    * Understanding the K-means algorithm
    * Choosing K for k-means
-   * Exercise
-   * Visualizing data in mutli-dimensional space
-* Naive Bayes and Text Analysis
+   * [Exercise](code/11_kmeans_clustering_class.py)
+   * Visualizing data in multi-dimensional space
+* Naive Bayes
 
-**Resources**
-* This [link](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) provide documentation on k-means clustering in scikit-learn
+**Resources:**
+
+* This [link](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) provides documentation on k-means clustering in scikit-learn
 * This [link](http://scikit-learn.org/stable/modules/clustering.html) provides documentation on alternative clustering algorithms in scikit-learn
 * This [link](http://scikit-learn.org/stable/modules/classes.html#clustering-metrics) provides documentation on clustering metrics implemented in scikit-learn
 * Vipin Kumar from the University of Minnesota [has a helpful chapter on clustering](http://www-users.cs.umn.edu/~kumar/dmbook/ch8.pdf) from his textbook: Introduction to Data Mining.
