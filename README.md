@@ -18,7 +18,7 @@ Week | Tuesday | Thursday
 7 | 11/18: Naive Bayes and NLP Part 2 | 11/20: Decision Trees
 8 | 11/25: Recommenders<br>**Milestone:** First Draft Due | *Thanksgiving*
 9 | 12/2: Ensembling: Random Forests | 12/4: Ensembling: Boosting
-10 | 12/9: Neural Networks<br>**Milestone:** Second Draft Due | 12/11: Review / Project Working Day
+10 | 12/9: Review <br>**Milestone:** Second Draft Due | 12/11: Neural Networks
 11 | 12/16: Project Presentations | 12/18: Project Presentations
 
 
