@@ -13,7 +13,7 @@ Week | Tuesday | Thursday
 2 | 10/14: [Getting and Cleaning Data](#class-4-getting-and-cleaning-data) | 10/16: [Exploratory Data Analysis](#class-5-exploratory-data-analysis)
 3 | 10/21: [Linear Regression](#class-6-linear-regression)<br>**Milestone:** Question and Data Set | 10/23: [Linear Regression Part 2](#class-7-linear-regression-part-2)
 4 | 10/28: [Machine Learning and KNN](#class-8-machine-learning-and-knn) | 10/30: [Model Evaluation](#class-9-model-evaluation)
-5 | 11/4: [Logistic Regression](#class-10-logistic-regression)<br>**Milestone:** Data Exploration and<br>Analysis Plan | 11/6: [Logistic Regression Part 2, Clustering](#class-11-logistic-regression-part-2,-clustering)
+5 | 11/4: [Logistic Regression](#class-10-logistic-regression)<br>**Milestone:** Data Exploration and<br>Analysis Plan | 11/6: [Logistic Regression Part 2, Clustering](#class-11-logistic-regression-part-2-clustering)
 6 | 11/11: [Dimension Reduction](#class-12-dimension-reduction) | 11/13: [Clustering Part 2, Naive Bayes and NLP](#class-13-clustering--naive-bayes-and-nlp)
 7 | 11/18: Decision Trees | 11/20: Ensembling: Random Forests
 8 | 11/25: Recommenders<br>**Milestone:** First Draft Due | *Thanksgiving*
