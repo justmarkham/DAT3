@@ -247,33 +247,24 @@ Week | Tuesday | Thursday
 
 * Continue to work on Part I of the [exercise from class](code/10_logistic_regression_exercise.py) and submit your solution to DAT3-students
 
-**Resources:**
-
-* If you would like a review on the topics we covered today, the videos from Hastie and Tibshirani from Stanford are very good:
-    * [Introduction to Classification](https://www.youtube.com/watch?v=sqq21-VIa1c) (10 minutes)
-    * [Logistic Regression and Maximum Likelihood](https://www.youtube.com/watch?v=31Q5FGRnxt4) (9 minutes)
-    * [Multivariate Logistic Regression and Confounding Variables](https://www.youtube.com/watch?v=MpX8rVv_u4E) (10 minutes)
-* If you want to go deeper in the math of how coefficients are estimated, check out this [chapter](http://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch12.pdf) from Shalizi from CMU
-
-
 ## Class 11: Clustering
 
 * Logistic Regression, continued
 * Clustering
     * Why cluster?
-    * K-means clustering
-    * Choosing K for k-means
-    * Exercise
-
+    * Introduction to the K-means algorithm
+    
 **Homework**
-* Complete any unfinished exercises in the python [code](https://github.com/justmarkham/DAT3/blob/master/code/11_kmeans_clustering_class.py).
-* Read through section 8.2 on [K-means Clustering](http://www-users.cs.umn.edu/~kumar/dmbook/ch8.pdf) from Introduction to Data Mining. What are some of the strengths and limitations of k-means clustering?
+* Read through section 8.2 on [K-means Clustering](http://www-users.cs.umn.edu/~kumar/dmbook/ch8.pdf) from Introduction to Data Mining by next Thursday. What are some of the strengths and limitations of k-means clustering?
 
 **Resources**
-* This [link](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) provide documentation on k-means clustering
-* This [link](http://scikit-learn.org/stable/modules/clustering.html) provides documentation on alternative clustering algorithms
-* This [link](http://scikit-learn.org/stable/modules/classes.html#clustering-metrics) provides documentation on clustering metrics implemented in scikit-learn
-* Vipin Kumar from the University of Minnesota [has a helpful chapter on clustering](http://www-users.cs.umn.edu/~kumar/dmbook/ch8.pdf) from his textbook: Introduction to Data Mining.
+* If you would like a review on the topics we covered today (and Tuesday), the videos from Hastie and Tibshirani from Stanford are very good:
+    * [Introduction to Classification](https://www.youtube.com/watch?v=sqq21-VIa1c) (10 minutes)
+    * [Logistic Regression and Maximum Likelihood](https://www.youtube.com/watch?v=31Q5FGRnxt4) (9 minutes)
+    * [Multivariate Logistic Regression and Confounding Variables](https://www.youtube.com/watch?v=MpX8rVv_u4E) (10 minutes)
+* If you want to understand the math of how coefficients are estimated, check out these [notes](http://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch12.pdf) from CMU's Advanced Data Analysis class. Written by Cosma Shalizi, one of CMU's professors.
+* [Documentation](http://matplotlib.org/users/mathtext.html) for plotting math text
+* [Documentation](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter) for plotting scatter plots
 
 ## Class 12: Dimension Reduction
 
@@ -281,3 +272,18 @@ Week | Tuesday | Thursday
 * Model evaluation metrics, continued ([slides](slides/09_model_evaluation.pdf), [code](code/09_model_evaluation_class.py))
     * [ROC curves and AUC](http://www.navan.name/roc/)
     * Root Mean Squared Error
+
+## Class 13: Clustering / Naive Bayes and NLP
+
+* Clustering Analysis
+   * Understanding the K-means algorithm
+   * Choosing K for k-means
+   * Exercise
+   * Visualizing data in mutli-dimensional space
+* Naive Bayes and Text Analysis
+
+**Resources**
+* This [link](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) provide documentation on k-means clustering
+* This [link](http://scikit-learn.org/stable/modules/clustering.html) provides documentation on alternative clustering algorithms
+* This [link](http://scikit-learn.org/stable/modules/classes.html#clustering-metrics) provides documentation on clustering metrics implemented in scikit-learn
+* Vipin Kumar from the University of Minnesota [has a helpful chapter on clustering](http://www-users.cs.umn.edu/~kumar/dmbook/ch8.pdf) from his textbook: Introduction to Data Mining.
