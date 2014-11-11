@@ -272,24 +272,32 @@ Week | Tuesday | Thursday
 
 ## Class 12: Dimension Reduction
 
-* Model evaluation metrics, continued ([slides](slides/09_model_evaluation.pdf), [code](code/09_model_evaluation_class.py))
-    * [ROC curves and AUC](http://www.navan.name/roc/)
-    * Root Mean Squared Error
+* Model evaluation metrics, continued
+    * ROC curves and AUC ([visualization](http://www.navan.name/roc/), [code](code/10_logistic_regression_roc.py))
+    * Root Mean Squared Error ([slides](slides/09_model_evaluation.pdf))
 * Dimension Reduction (Guest Lecturer: [Sinan Ozdemir](https://generalassemb.ly/instructors/sinan-ozdemir/2644))
+
+**Homework:**
+
+* Read Paul Graham's ["A Plan for Spam"](http://www.paulgraham.com/spam.html) in preparation for Thursday's class on Naive Bayes
+
+**Resources:**
+
+* scikit-learn has extensive documentation on [model evaluation](http://scikit-learn.org/stable/modules/model_evaluation.html)
 
 
 ## Class 13: Clustering Part 2, Naive Bayes
 
 * Clustering Analysis ([slides](slides/11_clustering.pdf))
-   * Understanding the K-means algorithm
-   * Choosing K for k-means
-   * [Exercise](code/11_kmeans_clustering_class.py)
-   * Visualizing data in multi-dimensional space
-* Naive Bayes
+    * Understanding the K-means algorithm
+    * Choosing K for k-means
+    * [Exercise](code/11_kmeans_clustering_class.py)
+    * Visualizing data in multi-dimensional space
+* Naive Bayes ([code](code/13_naive_bayes_class.py))
 
 **Resources:**
 
-* This [link](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) provides documentation on k-means clustering in scikit-learn
-* This [link](http://scikit-learn.org/stable/modules/clustering.html) provides documentation on alternative clustering algorithms in scikit-learn
-* This [link](http://scikit-learn.org/stable/modules/classes.html#clustering-metrics) provides documentation on clustering metrics implemented in scikit-learn
-* Vipin Kumar from the University of Minnesota [has a helpful chapter on clustering](http://www-users.cs.umn.edu/~kumar/dmbook/ch8.pdf) from his textbook: Introduction to Data Mining.
+* scikit-learn documentaion on [K-means clustering](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
+* scikit-learn documentation on [alternative clustering algorithms](http://scikit-learn.org/stable/modules/clustering.html)
+* scikit-learn documentation on [clustering metrics](http://scikit-learn.org/stable/modules/classes.html#clustering-metrics)
+* Vipin Kumar from the University of Minnesota has a [helpful chapter on clustering](http://www-users.cs.umn.edu/~kumar/dmbook/ch8.pdf) from his textbook: Introduction to Data Mining
