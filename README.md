@@ -293,11 +293,16 @@ Week | Tuesday | Thursday
     * Choosing K for k-means
     * [Exercise](code/11_kmeans_clustering_class.py)
     * Visualizing data in multi-dimensional space
-* Naive Bayes ([code](code/13_naive_bayes_class.py))
+* Naive Bayes ([slides](slides/13_naive_bayes.pdf), [code](code/13_naive_bayes_class.py))
+    * Briefly discuss ["A Plan for Spam"](http://www.paulgraham.com/spam.html)
+    * Probability and Bayes' Theorem ([original source](http://oscarbonilla.com/2009/05/visualizing-bayes-theorem/), [confusion matrix reference](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/))
+    * Naive Bayes classification
+    * Creating a spam classifier
 
 **Resources:**
 
-* scikit-learn documentaion on [K-means clustering](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
-* scikit-learn documentation on [alternative clustering algorithms](http://scikit-learn.org/stable/modules/clustering.html)
-* scikit-learn documentation on [clustering metrics](http://scikit-learn.org/stable/modules/classes.html#clustering-metrics)
+* For clustering, scikit-learn has documentation on [K-means clustering](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html), [alternative clustering algorithms](http://scikit-learn.org/stable/modules/clustering.html), and [clustering metrics](http://scikit-learn.org/stable/modules/classes.html#clustering-metrics)
 * Vipin Kumar from the University of Minnesota has a [helpful chapter on clustering](http://www-users.cs.umn.edu/~kumar/dmbook/ch8.pdf) from his textbook: Introduction to Data Mining
+* For an alternative introduction to Bayes' Theorem, [Bayes' Rule for Ducks](https://planspacedotorg.wordpress.com/2014/02/23/bayes-rule-for-ducks/), [Bayes' Rule in an animated gif](http://simplystatistics.org/2014/10/17/bayes-rule-in-a-gif/), and this [5-minute video on conditional probability](https://www.youtube.com/watch?v=Zxm4Xxvzohk) may be helpful
+* For more details on Naive Bayes classification, Wikipedia has two useful articles: [Naive Bayes classifier](http://en.wikipedia.org/wiki/Naive_Bayes_classifier), [Naive Bayes spam filtering](http://en.wikipedia.org/wiki/Naive_Bayes_spam_filtering)
+* If you enjoyed Paul Graham's article, you can read [his follow-up article](http://www.paulgraham.com/better.html) on how he improved his spam filter and this [related paper](http://www.merl.com/publications/docs/TR2004-091.pdf) about state-of-the-art spam filtering in 2004
