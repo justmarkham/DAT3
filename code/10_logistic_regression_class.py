@@ -31,7 +31,7 @@ PART I - Exploration
 '''
 
 # 1 - Read in Default.csv and convert all data to numeric
-d = pd.read_csv('Default.csv')
+d = pd.read_csv('../data/Default.csv')
 d.head()
 d.describe()
 
@@ -58,7 +58,6 @@ train_d = train[train.default == 1]
 
 plt.figure()
 plt.scatter(train_nd.balance, train_nd.income, alpha = .5, marker='+', c= 'b')
-
 
 plt.scatter(train_d.balance, train_d.income, marker='o', 
             edgecolors = 'r', facecolors = 'none')
@@ -128,7 +127,7 @@ If you increase x by 1, you multiply the odds by e^0.0057.
 If you increase x by 800, you mutliply the odds by e^(0.0057*800) = 95.583, not 800 * e^(0.0057)
 '''
 
-# Now lets try plotting some points
+# Now let's try plotting some points
 plt.subplot(311)
 pts = np.array([1200, 2000])
 ypts = np.exp(beta[0] + beta[1]*pts) / (1 + np.exp(beta[0] + beta[1]*pts))
@@ -161,21 +160,21 @@ test['pred_class']= np.where(test['pred'] >= 0.5, 1, 0)
 
 # 5 - Compute the overall accuracy, the sensitivity and specificity
 # Accuracy
-accuracy = sum(test.pred_class == test.default) / len(test.default)
+accuracy = sum(test.pred_class == test.default) / float(len(test.default))
 
 # Specificity
 # For those who didn't default, how many did it predict correctly?
 test_nd = test[test.default == 0]
-specificity = sum(test_nd.pred_class == test_nd.default) / len(test_nd.default)
+specificity = sum(test_nd.pred_class == test_nd.default) / float(len(test_nd.default))
 
 # Sensitivity
 # For those who did default, how many did it predict correctly? 
 test_d = test[test.default == 1]
-sensitivity = sum(test_d.pred_class == test_d.default) / len(test_d.default)
+sensitivity = sum(test_d.pred_class == test_d.default) / float(len(test_d.default))
 
 # This raises the question, how does our overall 
 # classification accuracy compare to the not-default rate?
-null = 1 - sum(d.default)  / len(d.default)
+null = 1 - sum(d.default) / float(len(d.default))
 
 # This illustrates an important point, class imbalance can result in accuracy
 # measures that are missleading. After all, if you would have just guessed not
