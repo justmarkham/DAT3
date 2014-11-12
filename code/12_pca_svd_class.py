@@ -2,6 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 # 1) Set up some data and look at it a little
 
 x1 = np.random.normal(loc=40, scale=8, size=100)
@@ -19,7 +20,6 @@ np.cov(X_centered, rowvar=0)
 # same covariance matrix!
 
 
-
 # 2) Do some PCA
 
 eig_vals, Q = np.linalg.eig(np.cov(X_centered, rowvar=0)*99)
@@ -34,8 +34,7 @@ Q = np.column_stack((_[1] for _ in ordered))
 X_transformedPCA = np.dot(Q[:, 0].reshape(2, 1).T, X_centered.T).reshape(100, 1)
 # eigen vector associated with largest eigen value times X
 
-X_reconstituted = np.dot(X_transformedPCA,
-                         Q[:, 0].reshape(1, 2))
+X_reconstituted = np.dot(X_transformedPCA, Q[:, 0].reshape(1, 2))
 
 plt.scatter(X_centered[:, 0], X_centered[:, 1])
 plt.scatter(X_reconstituted[:, 0], X_reconstituted[:, 1], c='r')
@@ -59,7 +58,7 @@ plt.scatter(X_centered[:, 0], X_centered[:, 1])
 plt.scatter(X_reconstituted[:, 0], X_reconstituted[:, 1], c='r')
 
 
-# SKLearn
+# sklearn
 
 from sklearn.decomposition import PCA
 pca = PCA(n_components=1)
@@ -71,9 +70,6 @@ X_reconstituted = pca.inverse_transform(X_transformedSK)
 plt.scatter(X[:, 0], X[:, 1])
 plt.scatter(X_reconstituted[:, 0], X_reconstituted[:, 1], c='r')
 
-
-
 X_transformedPCA[:5:]
 X_transformedSing[:5:]
 X_transformedSK[:5:]
-
