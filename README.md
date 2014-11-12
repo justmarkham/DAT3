@@ -276,6 +276,9 @@ Week | Tuesday | Thursday
     * ROC curves and AUC ([visualization](http://www.navan.name/roc/), [code](code/10_logistic_regression_roc.py))
     * Root Mean Squared Error ([slides](slides/09_model_evaluation.pdf))
 * Dimension Reduction (Guest Lecturer: [Sinan Ozdemir](https://generalassemb.ly/instructors/sinan-ozdemir/2644))
+    * [Slides](slides/12_dimension_reduction.pdf)
+    * Code: [PCA and SVD](code/12_pca_svd_class.py)
+    * Code: [image compression with PCA](code/12_shakira.py) ([original source](http://glowingpython.blogspot.com/2011/07/pca-and-image-compression-with-numpy.html))
 
 **Homework:**
 
@@ -284,6 +287,7 @@ Week | Tuesday | Thursday
 **Resources:**
 
 * scikit-learn has extensive documentation on [model evaluation](http://scikit-learn.org/stable/modules/model_evaluation.html)
+* On Cross Validated, [this question](http://stats.stackexchange.com/questions/2691/making-sense-of-principal-component-analysis-eigenvectors-eigenvalues) has dozens of explanations of PCA, and [this question](http://stats.stackexchange.com/questions/62092/bottom-to-top-explanation-of-the-mahalanobis-distance) has a useful visualization of what is essentially PCA
 
 
 ## Class 13: Clustering Part 2, Naive Bayes
