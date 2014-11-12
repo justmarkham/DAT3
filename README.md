@@ -301,7 +301,7 @@ Week | Tuesday | Thursday
     * Briefly discuss ["A Plan for Spam"](http://www.paulgraham.com/spam.html)
     * Probability and Bayes' Theorem ([original source](http://oscarbonilla.com/2009/05/visualizing-bayes-theorem/), [confusion matrix reference](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/))
     * Naive Bayes classification
-    * Creating a spam classifier
+    * Create a spam classifier using [CountVectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) and [MultinomialNB](http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html)
 
 **Resources:**
 
