@@ -303,6 +303,11 @@ Week | Tuesday | Thursday
     * Naive Bayes classification
     * Create a spam classifier using [CountVectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) and [MultinomialNB](http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html)
 
+**Homework:**
+
+* Open Python, type `import nltk`, type `nltk.download()`, find the 'NLTK Downloader` popup window, click on 'all', then click on `Download`. Do this at home, since it's more than 300 MB! If you have space constraints on your computer, we can tell you next class exactly which packages to download.
+* Download the [Stanford Named Entity Recognizer](http://www-nlp.stanford.edu/software/stanford-ner-2014-10-26.zip) (86 MB)
+
 **Resources:**
 
 * For clustering, scikit-learn has documentation on [K-means clustering](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html), [alternative clustering algorithms](http://scikit-learn.org/stable/modules/clustering.html), and [clustering metrics](http://scikit-learn.org/stable/modules/classes.html#clustering-metrics)
