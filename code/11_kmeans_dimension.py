@@ -34,6 +34,7 @@ labels_true = np.concatenate((labels0_true,labels1_true+1,labels2_true+2))
 colors = np.array(['#FF0054','#FBD039','#23C2BC'])
 
 plt.figure(figsize=(12, 6))
+plt.suptitle('Dimensions with Different Scales', fontsize=15)
 plt.subplot(121)
 for k, col in zip(range(3), colors):
     my_members = labels_true == k
@@ -70,6 +71,7 @@ plt.title('KMeans 3')
 [X, true_labels] = make_moons(n_samples=1000, noise=.05)
 
 plt.figure(figsize=(12, 6))
+plt.suptitle('Non-Spherical Shapes', fontsize=15)
 plt.subplot(121)
 for k, col in zip(range(2), colors):
     my_members = true_labels == k
@@ -107,6 +109,7 @@ X = np.concatenate((X0,X1,X2))
 labels_true = np.concatenate((labels0_true,labels1_true+1,labels2_true+2))
 
 plt.figure(figsize=(12, 6))
+plt.suptitle('Clusters of Different Sizes', fontsize=15)
 plt.subplot(121)
 for k, col in zip(range(3), colors):
     my_members = labels_true == k
