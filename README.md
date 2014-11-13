@@ -305,7 +305,7 @@ Week | Tuesday | Thursday
 
 **Homework:**
 
-* Open Python, type `import nltk`, type `nltk.download()`, find the 'NLTK Downloader` popup window, click on 'all', then click on `Download`. Do this at home, since it's more than 300 MB! If you have space constraints on your computer, we can tell you next class exactly which packages to download.
+* Open Python, type `import nltk`, type `nltk.download()`, find the 'NLTK Downloader' popup window, click on 'all', then click on `Download`. Do this at home, since it's more than 300 MB! If you have space constraints on your computer, we can tell you next class exactly which packages to download.
 * Download the [Stanford Named Entity Recognizer](http://www-nlp.stanford.edu/software/stanford-ner-2014-10-26.zip) (86 MB)
 
 **Resources:**
