@@ -297,7 +297,7 @@ Week | Tuesday | Thursday
     * Choosing K for k-means
     * [Exercises](code/11_kmeans_clustering_class.py)
     * Visualizing data in multi-dimensional space
-    * [Limitations of K-means](code/11_kmeans_dimension.py)
+    * [Limitations of K-means](code/11_kmeans_limitations.py), [K-means cluster validation](code/11_evaluating_cluster_validation.py)
 * Naive Bayes ([slides](slides/13_naive_bayes.pdf))
     * Briefly discuss ["A Plan for Spam"](http://www.paulgraham.com/spam.html)
     * Probability and Bayes' Theorem ([original source](http://oscarbonilla.com/2009/05/visualizing-bayes-theorem/), [confusion matrix reference](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/))
