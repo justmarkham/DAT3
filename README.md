@@ -15,7 +15,7 @@ Week | Tuesday | Thursday
 4 | 10/28: [Machine Learning and KNN](#class-8-machine-learning-and-knn) | 10/30: [Model Evaluation](#class-9-model-evaluation)
 5 | 11/4: [Logistic Regression](#class-10-logistic-regression)<br>**Milestone:** Data Exploration and<br>Analysis Plan | 11/6: [Logistic Regression Part 2, Clustering](#class-11-logistic-regression-part-2-clustering)
 6 | 11/11: [Dimension Reduction](#class-12-dimension-reduction) | 11/13: [Clustering Part 2, Naive Bayes](#class-13-clustering-part-2-naive-bayes)
-7 | 11/18: NLP | 11/20: Decision Trees
+7 | 11/18: [Natural Language Processing](#class-14-natural-language-processing) | 11/20: [Decision Trees](#class-15-decision-trees)
 8 | 11/25: Recommenders<br>**Milestone:** First Draft Due | *Thanksgiving*
 9 | 12/2: Ensembling: Random Forests | 12/4: Ensembling: Boosting
 10 | 12/9: Review <br>**Milestone:** Second Draft Due | 12/11: Neural Networks
@@ -295,13 +295,13 @@ Week | Tuesday | Thursday
 * Clustering Analysis ([slides](slides/11_clustering.pdf))
     * Understanding the K-means algorithm
     * Choosing K for k-means
-    * [Exercise](code/11_kmeans_clustering_class.py)
+    * [Exercises](code/11_kmeans_clustering_class.py)
     * Visualizing data in multi-dimensional space
-* Naive Bayes ([slides](slides/13_naive_bayes.pdf), [code](code/13_naive_bayes_class.py))
+    * [Limitations of K-means](code/11_kmeans_dimension.py)
+* Naive Bayes ([slides](slides/13_naive_bayes.pdf))
     * Briefly discuss ["A Plan for Spam"](http://www.paulgraham.com/spam.html)
     * Probability and Bayes' Theorem ([original source](http://oscarbonilla.com/2009/05/visualizing-bayes-theorem/), [confusion matrix reference](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/))
     * Naive Bayes classification
-    * Create a spam classifier using [CountVectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) and [MultinomialNB](http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html)
 
 **Homework:**
 
@@ -315,3 +315,13 @@ Week | Tuesday | Thursday
 * For an alternative introduction to Bayes' Theorem, [Bayes' Rule for Ducks](https://planspacedotorg.wordpress.com/2014/02/23/bayes-rule-for-ducks/), [Bayes' Rule in an animated gif](http://simplystatistics.org/2014/10/17/bayes-rule-in-a-gif/), and this [5-minute video on conditional probability](https://www.youtube.com/watch?v=Zxm4Xxvzohk) may be helpful
 * For more details on Naive Bayes classification, Wikipedia has two useful articles: [Naive Bayes classifier](http://en.wikipedia.org/wiki/Naive_Bayes_classifier), [Naive Bayes spam filtering](http://en.wikipedia.org/wiki/Naive_Bayes_spam_filtering)
 * If you enjoyed Paul Graham's article, you can read [his follow-up article](http://www.paulgraham.com/better.html) on how he improved his spam filter and this [related paper](http://www.merl.com/publications/docs/TR2004-091.pdf) about state-of-the-art spam filtering in 2004
+
+
+## Class 14: Natural Language Processing
+
+* Naive Bayes, continued ([code](code/13_naive_bayes_class.py))
+    * Create a spam classifier using [CountVectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) and [MultinomialNB](http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html)
+* Natural Language Processing
+
+
+## Class 15: Decision Trees
