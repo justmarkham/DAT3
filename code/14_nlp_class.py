@@ -203,3 +203,37 @@ def summarize():
     print '\nHIGHEST:\n'
     for sent_score in sorted(sent_scores, reverse=True)[:3]:
         print sent_score[1]
+
+
+'''
+TextBlob Demo: "Simplified Text Processing"
+Installation: pip install textblob
+'''
+
+from textblob import TextBlob, Word
+
+blob = TextBlob('Kevin and Josiah are instructors for General Assembly in Washington, D.C.')
+blob.words
+blob.noun_phrases
+
+blob = TextBlob('I hate this horrible movie. This movie is not very good.')
+blob.sentences
+blob.sentiment
+[sent.sentiment.polarity for sent in blob.sentences]
+
+blob = TextBlob('Put away the dishes.')
+[word.singularize() for word in blob.words]
+[word.pluralize() for word in blob.words]
+
+blob = TextBlob('15 minuets late')
+blob.correct()
+
+Word('parot').spellcheck()
+
+Word('bank').define()
+Word('bank').define('v')
+
+blob = TextBlob('Welcome to the classroom.')
+blob.translate(to='es')
+blob = TextBlob('Hola amigos')
+blob.detect_language()
