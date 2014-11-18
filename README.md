@@ -306,7 +306,6 @@ Week | Tuesday | Thursday
 **Homework:**
 
 * Open Python, type `import nltk`, type `nltk.download()`, find the "NLTK Downloader" popup window, click on "all", then click on "Download". Do this at home, since it's more than 300 MB! If you have space constraints on your computer, we can tell you next class exactly which packages to download.
-* Download the [Stanford Named Entity Recognizer](http://www-nlp.stanford.edu/software/stanford-ner-2014-10-26.zip) (86 MB)
 
 **Resources:**
 
@@ -321,7 +320,21 @@ Week | Tuesday | Thursday
 
 * Naive Bayes, continued ([code](code/13_naive_bayes_class.py))
     * Create a spam classifier using [CountVectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) and [MultinomialNB](http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html)
-* Natural Language Processing
+* Natural Language Processing ([code](code/14_nlp_class.py))
+    * Real-world examples
+    * [NLTK](http://www.nltk.org/): tokenization, stemming, lemmatization, stopwords, Named Entity Recognition ([Stanford NER Tagger](http://nlp.stanford.edu:8080/ner/process)), TF-IDF, document summarization
+    * Alternative: [TextBlob](http://textblob.readthedocs.org/en/dev/index.html)
+
+**Resources:**
+
+* [Natural Language Processing with Python](http://www.nltk.org/book/): free online book to go in-depth with NLTK
+* [NLP online course](https://www.coursera.org/course/nlp): no sessions are available, but [video lectures](https://class.coursera.org/nlp/lecture) and [slides](http://web.stanford.edu/~jurafsky/NLPCourseraSlides.html) are still accessible
+* [Brief slides](http://files.meetup.com/7616132/DC-NLP-2013-09%20Charlie%20Greenbacker.pdf) on the major task areas of NLP
+* [Detailed slides](https://github.com/ga-students/DAT_SF_9/blob/master/16_Text_Mining/DAT9_lec16_Text_Mining.pdf) on a lot of NLP terminology
+* [A visual survey of text visualization techniques](http://textvis.lnu.se/): for exploration and inspiration
+* [DC Natural Language Processing](http://www.meetup.com/DC-NLP/): active Meetup group
+* [Stanford CoreNLP](http://nlp.stanford.edu/software/corenlp.shtml): suite of tools if you want to get serious about NLP
+* Getting started with regex: [Python introductory lesson](https://developers.google.com/edu/python/regular-expressions) and [reference guide](code/05_regex_reference.py), [real-time regex tester](http://www.regexr.com/), [in-depth tutorials](http://www.rexegg.com/)
 
 
 ## Class 15: Decision Trees
