@@ -36,20 +36,24 @@ webtext.fileids()
 text = webtext.raw('wine.txt')
 text[:500]
 
+# tokenize into sentences
 sentences = [sent for sent in nltk.sent_tokenize(text)]
 sentences[:10]
 
+# tokenize into words
 tokens = [word for word in nltk.word_tokenize(text)]
 tokens[:100]
 
+# only keep tokens that start with a letter
 import re
 clean_tokens = [token for token in tokens if re.search(r'^[a-zA-Z]+', token)]
+clean_tokens[:100]
 
-# output is messy: mixed case, stopwords, counts similar words separately
+# count the tokens
 from collections import Counter
 c = Counter(clean_tokens)
-c.most_common(25)
-sorted(c.items())[:25]
+c.most_common(25)       # mixed case
+sorted(c.items())[:25]  # counts similar words separately
 for item in sorted(c.items())[:25]:
     print item[0], item[1]
 
@@ -65,19 +69,20 @@ Notes: Uses a "simple" and fast rule-based approach
 '''
 
 from nltk.stem.snowball import SnowballStemmer
-
 stemmer = SnowballStemmer('english')
 
+# example stemming
 stemmer.stem('charge')
 stemmer.stem('charging')
 stemmer.stem('charged')
 
+# stem the tokens
 stemmed_tokens = [stemmer.stem(t) for t in clean_tokens]
 
-# made words lowercase
+# count the stemmed tokens
 c = Counter(stemmed_tokens)
-c.most_common(25)
-sorted(c.items())[:25]
+c.most_common(25)       # all lowercase
+sorted(c.items())[:25]  # some are strange
 
 
 '''
@@ -101,14 +106,18 @@ What:  Remove common words that will likely appear in any text
 Why:   They don't tell you much about your text
 '''
 
-# most of top 25 tokens are "worthless"
-c = Counter(stemmed_tokens)
+# most of top 25 stemmed tokens are "worthless"
 c.most_common(25)
 
+# view the list of stopwords
 stopwords = nltk.corpus.stopwords.words('english')
 sorted(stopwords)
 
-stemmed_tokens_no_stop = [stemmer.stem(t) for t in stemmed_tokens if t not in stopwords]
+# stem the stopwords
+stemmed_stops = [stemmer.stem(t) for t in stopwords]
+
+# remove stopwords from stemmed tokens
+stemmed_tokens_no_stop = [stemmer.stem(t) for t in stemmed_tokens if t not in stemmed_stops]
 c = Counter(stemmed_tokens_no_stop)
 c.most_common(25)
 
@@ -203,6 +212,9 @@ def summarize():
     print '\nHIGHEST:\n'
     for sent_score in sorted(sent_scores, reverse=True)[:3]:
         print sent_score[1]
+
+# try it out!
+summarize()
 
 
 '''
