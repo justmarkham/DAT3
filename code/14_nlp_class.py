@@ -44,7 +44,7 @@ sentences[:10]
 tokens = [word for word in nltk.word_tokenize(text)]
 tokens[:100]
 
-# only keep tokens that start with a letter
+# only keep tokens that start with a letter (using regular expressions)
 import re
 clean_tokens = [token for token in tokens if re.search(r'^[a-zA-Z]+', token)]
 clean_tokens[:100]
@@ -94,8 +94,8 @@ Notes: Uses a dictionary-based approach (slower than stemming)
 
 lemmatizer = nltk.WordNetLemmatizer()
 
+# compare stemmer to lemmatizer
 temp_sent = 'Several women told me I have lying eyes'
-
 [stemmer.stem(t) for t in nltk.word_tokenize(temp_sent)]
 [lemmatizer.lemmatize(t) for t in nltk.word_tokenize(temp_sent)]
 
@@ -172,36 +172,43 @@ tfidf.get_feature_names()
 
 '''
 EXAMPLE: Automatically summarize a document
-DATA: corpus of 2000 movie reviews
 '''
 
+# corpus of 2000 movie reviews
 from nltk.corpus import movie_reviews
 reviews = [movie_reviews.raw(filename) for filename in movie_reviews.fileids()]
 
+# create document-term matrix
 tfidf = TfidfVectorizer(stop_words='english')
 dtm = tfidf.fit_transform(reviews)
 features = tfidf.get_feature_names()
 
 import numpy as np
 
+# find the most and least "interesting" sentences in a randomly selected review
 def summarize():
     
     # choose a random movie review    
     review_id = np.random.randint(0, len(reviews))
     review_text = reviews[review_id]
 
+    # we are going to score each sentence in the review for "interesting-ness"
     sent_scores = []
     # tokenize document into sentences
     for sentence in nltk.sent_tokenize(review_text):
-        score = 0
-        # tokenize sentence into words
-        tokens = nltk.word_tokenize(sentence)
-        # compute sentence "score" by summing TFIDF for each word
-        for token in tokens:
-            if token in features:
-                score += dtm[review_id, features.index(token)]
-        # divide score by number of tokens
-        sent_scores.append((score / float(len(tokens)), sentence))
+        # exclude short sentences
+        if len(sentence) > 6:
+            score = 0
+            token_count = 0
+            # tokenize sentence into words
+            tokens = nltk.word_tokenize(sentence)
+            # compute sentence "score" by summing TFIDF for each word
+            for token in tokens:
+                if token in features:
+                    score += dtm[review_id, features.index(token)]
+                    token_count += 1
+            # divide score by number of tokens
+            sent_scores.append((score / float(token_count + 1), sentence))
 
     # lowest scoring sentences
     print '\nLOWEST:\n'
@@ -224,27 +231,34 @@ Installation: pip install textblob
 
 from textblob import TextBlob, Word
 
+# identify words and noun phrases
 blob = TextBlob('Kevin and Josiah are instructors for General Assembly in Washington, D.C.')
 blob.words
 blob.noun_phrases
 
+# sentiment analysis
 blob = TextBlob('I hate this horrible movie. This movie is not very good.')
 blob.sentences
-blob.sentiment
+blob.sentiment.polarity
 [sent.sentiment.polarity for sent in blob.sentences]
 
+# singularize and pluralize
 blob = TextBlob('Put away the dishes.')
 [word.singularize() for word in blob.words]
 [word.pluralize() for word in blob.words]
 
+# spelling correction
 blob = TextBlob('15 minuets late')
 blob.correct()
 
+# spellcheck
 Word('parot').spellcheck()
 
+# definitions
 Word('bank').define()
 Word('bank').define('v')
 
+# translation and language identification
 blob = TextBlob('Welcome to the classroom.')
 blob.translate(to='es')
 blob = TextBlob('Hola amigos')
