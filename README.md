@@ -338,8 +338,9 @@ Week | Tuesday | Thursday
 
 **Homework:**
 
-* We will use graphviz to visualize the output of the classification trees. Please download this before class.  
-   * In order to [download and install for windows](http://www.graphviz.org/Download_windows.php) you will also need to manually add the folder location  (e.g., C:\Program Files (x86)\Graphviz2.30\bin;) to your environment path. (download graphviz-2.38.msi)
-   * You can also [download and install for mac](http://www.graphviz.org/Download_macos.php). I am not aware of any issues with installation.
+* We will use Graphviz to visualize the output of the classification trees. Please download this before class.  
+    * In order to [download and install for Windows](http://www.graphviz.org/Download_windows.php), you will also need to manually add the folder location (e.g., C:\Program Files (x86)\Graphviz2.30\bin;) to your environment path. (download graphviz-2.38.msi)
+    * You can also [download and install for Mac](http://www.graphviz.org/Download_macos.php). I am not aware of any issues with installation.
+
 
 ## Class 15: Decision Trees
