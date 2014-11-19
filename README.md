@@ -336,5 +336,10 @@ Week | Tuesday | Thursday
 * [Stanford CoreNLP](http://nlp.stanford.edu/software/corenlp.shtml): suite of tools if you want to get serious about NLP
 * Getting started with regex: [Python introductory lesson](https://developers.google.com/edu/python/regular-expressions) and [reference guide](code/05_regex_reference.py), [real-time regex tester](http://www.regexr.com/), [in-depth tutorials](http://www.rexegg.com/)
 
+**Homework:**
+
+* We will use graphviz to visualize the output of the classification trees. Please download this before class.  
+   * If you have a [windows](http://www.graphviz.org/Download_windows.php) you will also need to manually add the folder location  (e.g., C:\Program Files (x86)\Graphviz2.30\bin;) to your environment path
+   * For the [mac](http://www.graphviz.org/Download_macos.php) I am not aware of any issues with installation but I haven't tried to install on a mac either.
 
 ## Class 15: Decision Trees
