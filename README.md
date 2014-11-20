@@ -345,3 +345,21 @@ Week | Tuesday | Thursday
 
 
 ## Class 15: Decision Trees
+
+At the end of this class, you should be able to do the following:
+* Describe the output of a decision tree to someone without a data science background
+* Describe how the algorithm creates the decision tree 
+* Predict the likelihood of a binary event using the decision tree algorithm in scikit-learn
+* Create a decision tree visualization
+* Determine the optimal tree size using a tune grid and the AUC metric in Python
+* Describe the strengths and weaknesses of a decision tree
+
+**Homework:**
+* Work on your project. The first draft of your project is due on Tuesday at 5 pm.
+
+**Resources:**
+* Dr. Justin Esarey from Rice University has a nice [video lecture](https://www.youtube.com/watch?v=HW7Aib842Oo&hd=1) on CART that also includes a [code walkthrough](http://jee3.web.rice.edu/cart-and-random-forests.r)
+* For those of you with background in javascript, d3.js has a nice tree layout that would make more presentable tree diarams 
+   * Here is a link to a [static version](http://bl.ocks.org/mbostock/4339184), as well as a link to a [dynamic version](http://bl.ocks.org/mbostock/4339083) with collapsable nodes
+   * If this is something you are interested in, Gary Sieling wrote a nice [function](http://www.garysieling.com/blog/rending-scikit-decision-trees-d3-js) in python to take the output of a CART tree and convert into json 
+* Chapter 8.1 of the Introduction to Statistical Learning also covers the basics of Classification and Regression Trees
