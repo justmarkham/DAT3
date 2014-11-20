@@ -286,6 +286,7 @@ Week | Tuesday | Thursday
 
 **Resources:**
 
+* Kevin has a [video tutorial](http://youtu.be/OAl6eAyP-yo) (14 minutes) and [blog post](http://www.dataschool.io/roc-curves-and-auc-explained/) summarizing ROC curves and AUC
 * scikit-learn has extensive documentation on [model evaluation](http://scikit-learn.org/stable/modules/model_evaluation.html)
 * On Cross Validated, [this question](http://stats.stackexchange.com/questions/2691/making-sense-of-principal-component-analysis-eigenvectors-eigenvalues) has dozens of explanations of PCA, and [this question](http://stats.stackexchange.com/questions/62092/bottom-to-top-explanation-of-the-mahalanobis-distance) has a useful visualization of what is essentially PCA
 
