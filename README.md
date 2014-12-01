@@ -16,10 +16,10 @@ Week | Tuesday | Thursday
 5 | 11/4: [Logistic Regression](#class-10-logistic-regression)<br>**Milestone:** Data Exploration and<br>Analysis Plan | 11/6: [Logistic Regression Part 2, Clustering](#class-11-logistic-regression-part-2-clustering)
 6 | 11/11: [Dimension Reduction](#class-12-dimension-reduction) | 11/13: [Clustering Part 2, Naive Bayes](#class-13-clustering-part-2-naive-bayes)
 7 | 11/18: [Natural Language Processing](#class-14-natural-language-processing) | 11/20: [Decision Trees](#class-15-decision-trees)
-8 | 11/25: Recommenders<br>**Milestone:** First Draft Due | *Thanksgiving*
-9 | 12/2: Ensembling: Random Forests | 12/4: Ensembling: Boosting
-10 | 12/9: Review <br>**Milestone:** Second Draft Due | 12/11: Neural Networks
-11 | 12/16: Project Presentations | 12/18: Project Presentations
+8 | 11/25: [Recommenders](#class-16-recommenders)<br>**Milestone:** First Draft Due | *Thanksgiving*
+9 | 12/2: [Ensembling](#class-17-ensembling) | 12/4: [Ensembling Part 2, Python Companion Tools](#class-18-ensembling-part-2-python-companion-tools)
+10 | 12/9: [Working a Data Problem](#class-19-working-a-data-problem) <br>**Milestone:** Second Draft Due | 12/11: [Neural Networks](#class-20-neural-networks)
+11 | 12/16: [Review](#class-21-review) | 12/18: [Project Presentations](#class-22-project-presentations)
 
 
 ### Class 1: Introduction
@@ -364,3 +364,30 @@ At the end of this class, you should be able to do the following:
    * If this is something you are interested in, Gary Sieling wrote a nice [function](http://www.garysieling.com/blog/rending-scikit-decision-trees-d3-js) in python to take the output of a scikit-learn tree and convert into json format
    * If you are intersted in learning d3.js, this a good [tutorial](http://www.d3noob.org/2014/01/tree-diagrams-in-d3js_11.html) for understanding the building blocks of a decision tree. Here is another [tutorial](http://blog.pixelingene.com/2011/07/building-a-tree-diagram-in-d3-js/) focusing on building a tree diagram in d3.js.
 * Chapter 8.1 of the Introduction to Statistical Learning also covers the basics of Classification and Regression Trees
+
+
+## Class 16: Recommenders
+
+* Recommenders (Guest Lecturer: [Sinan Ozdemir](https://generalassemb.ly/instructors/sinan-ozdemir/2644))
+    * [Slides](slides/16_recommenders.pdf)
+    * [Code](code/16_recommenders_class.py)
+
+
+## Class 17: Ensembling
+
+
+## Class 18: Ensembling Part 2, Python Companion Tools
+
+
+## Class 19: Working a Data Problem
+
+
+## Class 20: Neural Networks
+
+
+## Class 21: Review
+
+* Special guest: Laura Lorenz
+
+
+## Class 22: Project Presentations
