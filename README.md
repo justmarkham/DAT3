@@ -370,7 +370,7 @@ At the end of this class, you should be able to do the following:
 
 * Recommenders (Guest Lecturer: [Sinan Ozdemir](https://generalassemb.ly/instructors/sinan-ozdemir/2644))
     * [Slides](slides/16_recommenders.pdf)
-    * [Code](code/16_recommenders_class.py)
+    * [Framework code](code/16_recommenders_class.py), [solution](code/16_recommenders_solution.py)
 
 
 ## Class 17: Ensembling
