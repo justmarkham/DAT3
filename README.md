@@ -375,6 +375,8 @@ At the end of this class, you should be able to do the following:
 
 ## Class 17: Ensembling
 
+**Resources:**
+* Leo Brieman's [paper](https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf) on Random Forests
 
 ## Class 18: Ensembling Part 2, Python Companion Tools
 
