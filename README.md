@@ -355,9 +355,11 @@ At the end of this class, you should be able to do the following:
 * Describe the strengths and weaknesses of a decision tree
 
 **Homework:**
+
 * Work on your project. The first draft of your project is due on Tuesday at 5 pm.
 
 **Resources:**
+
 * Dr. Justin Esarey from Rice University has a nice [video lecture](https://www.youtube.com/watch?v=HW7Aib842Oo&hd=1) on CART that also includes a [code walkthrough](http://jee3.web.rice.edu/cart-and-random-forests.r)
 * For those of you with background in javascript, d3.js has a nice tree layout that would make more presentable tree diagrams 
    * Here is a link to a [static version](http://bl.ocks.org/mbostock/4339184), as well as a link to a [dynamic version](http://bl.ocks.org/mbostock/4339083) with collapsable nodes
@@ -377,6 +379,17 @@ At the end of this class, you should be able to do the following:
 
 
 ## Class 18: Ensembling Part 2, Python Companion Tools
+
+* Ensembling
+* IPython Notebook
+    * [nbviewer](http://nbviewer.ipython.org/)
+    * Biostatistics course: [GitHub repo](https://github.com/fonnesbeck/Bios366/tree/master/notebooks), [direct links to nbviewer](http://fonnesbeck.github.io/Bios366/lectures.html)
+    * [A gallery of interesting IPython Notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks)
+* [Domino](http://www.dominodatalab.com/)
+
+**Resources:**
+
+* IPython documentation in [website form](http://ipython.org/ipython-doc/stable/index.html) and [notebook form](http://nbviewer.ipython.org/github/ipython/ipython/blob/2.x/examples/Index.ipynb): does not focus exclusively on the IPython Notebook
 
 
 ## Class 19: Working a Data Problem
