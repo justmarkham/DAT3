@@ -377,6 +377,7 @@ At the end of this class, you should be able to do the following:
 
 **Resources:**
 * Leo Brieman's [paper](https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf) on Random Forests
+* yhat has a brief [primer](http://blog.yhathq.com/posts/random-forests-in-python.html) on to Random Forests that can provide a review of many of the topics we covered today. 
 
 ## Class 18: Ensembling Part 2, Python Companion Tools
 
