@@ -382,6 +382,7 @@ At the end of this class, you should be able to do the following:
 * Leo Brieman's [paper](https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf) on Random Forests
 * yhat has a brief [primer](http://blog.yhathq.com/posts/random-forests-in-python.html) on Random Forests that can provide a review of many of the topics we covered today. 
 * Here is a link to some Kaggle competitions that were won using [Random Forests](https://www.kaggle.com/wiki/RandomForests)
+* Ensemble models... tend to strongly outperform their component models on new data. Doesn't this violate “Occam’s razor”? In this paper entitled: [The Generalization Paradox of Ensembles](http://datamininglab.com/media/pdfs/Paradox_JCGS.pdf) John Elder IV argues for a more refined understanding of model complexity. 
 
 
 ## Class 18: Ensembling Part 2, Python Companion Tools
