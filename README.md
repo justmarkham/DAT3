@@ -411,3 +411,5 @@ At the end of this class, you should be able to do the following:
 
 
 ## Class 22: Project Presentations
+
+* Note: Guests are welcome! Invite your friends and family!
