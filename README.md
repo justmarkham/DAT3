@@ -393,7 +393,6 @@ At the end of this class, you should be able to do the following:
     * Biostatistics course: [GitHub repo](https://github.com/fonnesbeck/Bios366/tree/master/notebooks), [direct links to nbviewer](http://fonnesbeck.github.io/Bios366/lectures.html)
     * [A gallery of interesting IPython Notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks)
 * [Domino Data Lab](http://www.dominodatalab.com/)
-    * [Signup link](https://app.dominodatalab.com/referSignup?referrer=user-justmarkham)
     * [Usage rates](https://app.dominodatalab.com/usageRates)
     * [Pricing](http://www.dominodatalab.com/pricing)
     * [Command reference](http://help.dominodatalab.com/howToReference)
