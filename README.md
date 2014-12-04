@@ -388,6 +388,10 @@ At the end of this class, you should be able to do the following:
 ## Class 18: Ensembling Part 2, Python Companion Tools
 
 * Ensembling
+    * Review the Random Forest algorithm
+    * Discuss tuning the Random Forest Algorithm
+    * Give an overview of the AdaBoost algorithm
+    * Implement boosted trees in Python
 * IPython Notebook
     * [nbviewer](http://nbviewer.ipython.org/)
     * Biostatistics course: [GitHub repo](https://github.com/fonnesbeck/Bios366/tree/master/notebooks), [direct links to nbviewer](http://fonnesbeck.github.io/Bios366/lectures.html)
