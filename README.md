@@ -407,6 +407,7 @@ At the end of this class, you should be able to do the following:
 
 ## Class 19: Working a Data Problem
 
+* [Kaggle: Avazu Click-Through Rate Prediction](http://www.kaggle.com/c/avazu-ctr-prediction)
 * [Domino Data Lab](http://www.dominodatalab.com/)
     * [Usage rates](https://app.dominodatalab.com/usageRates)
     * [Pricing](http://www.dominodatalab.com/pricing)
