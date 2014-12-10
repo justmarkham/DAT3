@@ -408,10 +408,6 @@ At the end of this class, you should be able to do the following:
 ## Class 19: Working a Data Problem
 
 * [Kaggle: Avazu Click-Through Rate Prediction](http://www.kaggle.com/c/avazu-ctr-prediction)
-* [Domino Data Lab](http://www.dominodatalab.com/)
-    * [Usage rates](https://app.dominodatalab.com/usageRates)
-    * [Pricing](http://www.dominodatalab.com/pricing)
-    * [Command reference](http://help.dominodatalab.com/howToReference)
 
 
 ## Class 20: Neural Networks
@@ -420,6 +416,12 @@ At the end of this class, you should be able to do the following:
 ## Class 21: Review
 
 * Special guest: Laura Lorenz
+* Working a Data Problem, continued
+* Content review
+* [Domino Data Lab](http://www.dominodatalab.com/)
+    * [Usage rates](https://app.dominodatalab.com/usageRates)
+    * [Pricing](http://www.dominodatalab.com/pricing)
+    * [Command reference](http://help.dominodatalab.com/howToReference)
 
 
 ## Class 22: Project Presentations
