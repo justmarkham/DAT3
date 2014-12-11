@@ -411,8 +411,16 @@ At the end of this class, you should be able to do the following:
 
 
 ## Class 20: Neural Networks
+* Inspiration for Neural Networks
+* Neural Networks
+* Gradient Descent
 
-**Homework:**
+**Resources:**
+* Michael Neilson has a free book called [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) that gives thorough introduction to Neural Networks
+* Geoffrey Hinton, one of the pioneers of the deep learning movement, has an entire class on Coursera called [Neural Networks for Machine Learning](https://class.coursera.org/neuralnets-2012-001/lecture)
+* The Python wiki has a list of Python packages commonly used for [Neural Networks](https://wiki.python.org/moin/PythonForArtificialIntelligence) 
+
+
 
 * Read this "classic" paper, which may help you to connect many of the topics we have studied throughout the course: [A Few Useful Things to Know about Machine Learning](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
 
