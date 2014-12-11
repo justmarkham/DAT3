@@ -412,6 +412,10 @@ At the end of this class, you should be able to do the following:
 
 ## Class 20: Neural Networks
 
+**Homework:**
+
+* Read this "classic" paper, which may help you to connect many of the topics we have studied throughout the course: [A Few Useful Things to Know about Machine Learning](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
+
 
 ## Class 21: Review
 
