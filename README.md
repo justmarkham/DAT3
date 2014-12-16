@@ -463,6 +463,17 @@ At the end of this class, you should be able to do the following:
     * [In-depth tutorials](http://www.rexegg.com/)
     * [Real-time regex tester](http://www.regexr.com/)
     * Fun example: [Exploring Expressions of Emotions in GitHub Commit Messages](http://geeksta.net/geeklog/exploring-expressions-emotions-github-commit-messages/)
+* Tidy data
+    * [Brief summary of tidy data](http://www.prometheusresearch.com/good-data-management-practices-for-data-analysis-tidy-data-part-2/)
+    * Tidy data resources from Hadley Wickham: [detailed paper](http://www.jstatsoft.org/v59/i10/paper), [shorter version of the paper with more R code](http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html), [slides](http://stat405.had.co.nz/lectures/18-tidy-data.pdf) from his class on tidy data, [video presentation](https://vimeo.com/33727555)
+    * Examples: [tidy](https://github.com/fivethirtyeight/data/tree/master/bob-ross), [untidy](https://github.com/fivethirtyeight/data/tree/master/airline-safety), [very untidy](https://github.com/fivethirtyeight/data/tree/master/region-survey)
+    * [Common issues](http://stats.stackexchange.com/a/83711/39543) with obtaining tidy data from Excel
+* Reproducibility
+    * [Overview of reproducibility and reproducible research](http://www.dataschool.io/reproducibility-is-not-just-for-researchers/)
+    * [Twitter definition of reproducibility](https://twitter.com/jakevdp/status/519563939177197571)
+    * [How to share data with a statistician](https://github.com/jtleek/datasharing): practical guide for turning raw data into tidy data in a reproducible and documented manner
+    * [Example of reproducible data processing](https://github.com/fivethirtyeight/data/tree/master/classic-rock): includes raw data, processed data, processing scripts, and documentation
+    * [Colbert on reproducibility](http://thecolbertreport.cc.com/videos/dcyvro/austerity-s-spreadsheet-error) (8-minute video)
 * [Domino Data Lab](http://www.dominodatalab.com/)
     * [Usage rates](https://app.dominodatalab.com/usageRates)
     * [Pricing](http://www.dominodatalab.com/pricing)
