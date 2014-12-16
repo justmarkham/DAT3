@@ -429,7 +429,7 @@ At the end of this class, you should be able to do the following:
 
 ## Class 21: Review
 
-* Review of all of data science (slides)
+* Review of all of data science ([slides](slides/21_review.pdf))
 * [Comparing supervised learning algorithms](https://docs.google.com/spreadsheets/d/16i47Wmjpj8k-mFRk-NnXXU5tmSQz8h37YxluDV8Zy9U/edit?usp=sharing)
 * Brief discussion: [A Few Useful Things to Know about Machine Learning](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
 * Working a Data Problem, continued
