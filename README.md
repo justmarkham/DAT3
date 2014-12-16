@@ -429,15 +429,32 @@ At the end of this class, you should be able to do the following:
 
 ## Class 21: Review
 
-* Special guest: Laura Lorenz
+* Review of all of data science (slides)
+* [Comparing supervised learning algorithms](https://docs.google.com/spreadsheets/d/16i47Wmjpj8k-mFRk-NnXXU5tmSQz8h37YxluDV8Zy9U/edit?usp=sharing)
+* Brief discussion: [A Few Useful Things to Know about Machine Learning](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
 * Working a Data Problem, continued
-* Content review
-* [Domino Data Lab](http://www.dominodatalab.com/)
-    * [Usage rates](https://app.dominodatalab.com/usageRates)
-    * [Pricing](http://www.dominodatalab.com/pricing)
-    * [Command reference](http://help.dominodatalab.com/howToReference)
+* Special guest: Laura Lorenz
+
+**Resources:**
+
+* [scikit-learn "machine learning map"](http://scikit-learn.org/stable/tutorial/machine_learning_map/): Guide for choosing the optimal estimator
+* [Choosing a Machine Learning Classifier](http://blog.echen.me/2011/04/27/choosing-a-machine-learning-classifier/): Short and highly readable
+* [Machine Learning Done Wrong](http://ml.posthaven.com/machine-learning-done-wrong): Thoughtful advice on common mistakes to avoid in machine learning
+* [Practical machine learning tricks from the KDD 2011 best industry paper](http://blog.david-andrzejewski.com/machine-learning/practical-machine-learning-tricks-from-the-kdd-2011-best-industry-paper/): More advanced advice than the resources above
+* [An Empirical Comparison of Supervised Learning Algorithms](http://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf): Research paper from 2006
+* [Getting in Shape for the Sport of Data Science](https://www.youtube.com/watch?v=kwt6XEh7U3g): 75-minute video of practical tips for machine learning (by the past president of Kaggle)
+* Resources for continued learning
+* Keep using Slack!
 
 
 ## Class 22: Project Presentations
 
 * Note: Guests are welcome! Invite your friends and family!
+
+
+## Bonus Content
+
+* [Domino Data Lab](http://www.dominodatalab.com/)
+    * [Usage rates](https://app.dominodatalab.com/usageRates)
+    * [Pricing](http://www.dominodatalab.com/pricing)
+    * [Command reference](http://help.dominodatalab.com/howToReference)
