@@ -335,7 +335,7 @@ Week | Tuesday | Thursday
 * [A visual survey of text visualization techniques](http://textvis.lnu.se/): for exploration and inspiration
 * [DC Natural Language Processing](http://www.meetup.com/DC-NLP/): active Meetup group
 * [Stanford CoreNLP](http://nlp.stanford.edu/software/corenlp.shtml): suite of tools if you want to get serious about NLP
-* Getting started with regex: [Python introductory lesson](https://developers.google.com/edu/python/regular-expressions) and [reference guide](code/05_regex_reference.py), [real-time regex tester](http://www.regexr.com/), [in-depth tutorials](http://www.rexegg.com/)
+* Getting started with regex: [Python introductory lesson](https://developers.google.com/edu/python/regular-expressions) and [reference guide](code/99_regex_reference.py), [real-time regex tester](http://www.regexr.com/), [in-depth tutorials](http://www.rexegg.com/)
 
 **Homework:**
 
@@ -444,6 +444,7 @@ At the end of this class, you should be able to do the following:
 * [An Empirical Comparison of Supervised Learning Algorithms](http://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf): Research paper from 2006
 * [Getting in Shape for the Sport of Data Science](https://www.youtube.com/watch?v=kwt6XEh7U3g): 75-minute video of practical tips for machine learning (by the past president of Kaggle)
 * Resources for continued learning
+* Bonus content (below)
 * Keep using Slack!
 
 
@@ -454,6 +455,13 @@ At the end of this class, you should be able to do the following:
 
 ## Bonus Content
 
+* Regular expressions ("regex"):
+    * Simple example of regex usage: [code](code/99_regex_example.py), [data](data/homicides.txt)
+    * [Detailed reference guide](code/99_regex_reference.py)
+    * [Python introductory lesson](https://developers.google.com/edu/python/regular-expressions)
+    * [In-depth tutorials](http://www.rexegg.com/)
+    * [Real-time regex tester](http://www.regexr.com/)
+    * Fun example: [Exploring Expressions of Emotions in GitHub Commit Messages](http://geeksta.net/geeklog/exploring-expressions-emotions-github-commit-messages/)
 * [Domino Data Lab](http://www.dominodatalab.com/)
     * [Usage rates](https://app.dominodatalab.com/usageRates)
     * [Pricing](http://www.dominodatalab.com/pricing)
