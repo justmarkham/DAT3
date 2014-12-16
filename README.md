@@ -455,6 +455,7 @@ At the end of this class, you should be able to do the following:
 
 ## Bonus Content
 
+* [Python reference guide](code/99_python_reference.py)
 * Regular expressions ("regex"):
     * Simple example of regex usage: [code](code/99_regex_example.py), [data](data/homicides.txt)
     * [Detailed reference guide](code/99_regex_reference.py)
