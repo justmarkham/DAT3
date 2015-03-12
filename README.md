@@ -114,7 +114,7 @@ Week | Tuesday | Thursday
 **Resources:**
 
 * [Online Python Tutor](http://pythontutor.com/) is useful for visualizing (and debugging) your code
-* [Directory of API wrappers](http://www.pythonapi.com/) for Python
+* [Directory of API wrappers](http://www.pythonforbeginners.com/api/list-of-python-apis) for Python
 
 
 ## Class 5: Exploratory Data Analysis
