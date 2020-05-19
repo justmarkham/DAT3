@@ -4,7 +4,7 @@
 ## Blogs
 
 * [Simply Statistics](http://simplystatistics.org/): Written by the Biostatistics professors at Johns Hopkins University who also run Coursera's [Data Science Specialization](https://www.coursera.org/specialization/jhudatascience/1)
-* [yhat's blog](http://blog.yhathq.com/): Beginner-friendly content, usually in Python
+* [yhat's blog](http://blog.yhat.com/): Beginner-friendly content, usually in Python
 * [No Free Hunch](http://blog.kaggle.com/) (Kaggle's blog): Mostly interviews with competition winners, or updates on their competitions
 * [FastML](http://fastml.com/): Various machine learning content, often with code
 * [Edwin Chen](http://blog.echen.me/): Infrequently updated, but long and thoughtful pieces
